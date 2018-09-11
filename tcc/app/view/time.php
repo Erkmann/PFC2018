@@ -146,6 +146,57 @@ require_once "navLogedAdmin.php";
       </div>
     </div>
   </div>
+<div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-primary w-50 mx-5 text-center p-1
+margin_vertical_1" href="#titulo">Titulos</a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary w-50 text-center p-1 mx-5
+margin_vertical_1" href="#ligas">Ligas</a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-primary w-50 mx-5 text-center text-capitalize p-1
+margin_vertical_1" href="#craques">Craques</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a name="titulo">
+                    <h1 class="">Títulos</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="">
+                    <li><?= $time-> getTitulos(); ?></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a name="ligas">
+                    <h1 class="">Ligas</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="py-5 bg-light">
         <div class="container">
             <div class="row">
@@ -158,30 +209,33 @@ require_once "navLogedAdmin.php";
             </div>
         </div>
     </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a name="titulo">
-            <h1 class="">Títulos</h1>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="">
-            <li><?= $time-> getTitulos(); ?></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
+<div class="py-5 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <a name="craques">
+                    <h1 class="">Craques</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class=""><?php foreach ($craques as $cr):?>
+                        <a href="CraqueController.php?rota=ver&id=<?= $cr->getIdCraque(); ?>"><?= $cr->getNomeCraque(); ?></a><br>
+                    <?php endforeach;?>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="py-5 ">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

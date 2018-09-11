@@ -15,6 +15,7 @@ if ($_GET['rota'] == 'ligas'){
     $crud = new CrudLiga();
     $liga = $crud->getLiga($_GET['id']);
     $equipes = $crud->getEquipes($_GET['id']);
+    $esporte = $crud->getEsporteLiga($liga);
     $curtidas = $crud->contadorCurtidas($liga);
     $comentarios = $crud->getComentariosPorLigaLimitado($liga);
     $comentariosArrayObj = [];

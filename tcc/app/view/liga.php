@@ -144,18 +144,22 @@
   <div class="py-5 bg-light">
     <div class="container">
       <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
               <a class="btn btn-primary w-50 mx-5 text-center p-1
 margin_vertical_1" href="#equipes">Equipes</a>
           </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <a class="btn btn-primary w-50 text-center p-1 mx-5
 margin_vertical_1" href="#regulamento">Regulamento</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <a class="btn btn-primary w-50 mx-5 text-center text-capitalize p-1
 margin_vertical_1" href="#historia">Historia</a>
         </div>
+          <div class="col-md-3">
+              <a class="btn btn-primary w-50 mx-5 text-center text-capitalize p-1
+margin_vertical_1" href="#esporte">Esporte</a>
+          </div>
       </div>
     </div>
   </div>
@@ -224,6 +228,30 @@ margin_vertical_1" href="#historia">Historia</a>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <a name="esporte">
+                      <h1 class="">Esporte</h1>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="py-5 bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="">
+                          <a href="EsporteController.php?rota=ver&id=<?= $esporte->getIdEsporte(); ?>"><?= $esporte->getNomeEsporte(); ?></a><br>
+                  </p>
+              </div>
+          </div>
+      </div>
   </div>
   <div class="py-5">
       <div class="container">

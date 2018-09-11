@@ -15,6 +15,8 @@ if ($rota == "times"){
     $crudU = new CrudUsuario();
     $c = new CrudEquipe();
     $time = $c->getEquipe($_GET['id']);
+    $ligass = $c->getLigasEquipe($time);
+    $craques = $c->getCraqueEquipe($time);
     $curtidas = $c->contadorCurtidas($time);
     $comentarios = $c->getComentariosPorEquipeLimitado($time);
     $comentariosArrayObj = [];

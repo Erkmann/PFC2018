@@ -195,16 +195,33 @@ class CrudEquipe
 
     }
 
+    public function getLigasEquipe(Equipe $e){
+        $sql = "SELECT ligas.id_liga, `historia`,`fundacao`,
+        `regulamento`,`pais`,`esporte_id_esporte`,`nome_liga`,`icon_liga` 
+        from ligas, equipes_ligas WHERE equipes_ligas.id_equipe = {$e->getIdEquipe()} AND ligas.id_liga = equipes_ligas.id_liga";
+        $resultado = $this->conexao->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+        $ligas = array();
+
+        foreach ($resultado as $r){
+            $a = new Liga($r['nome_liga'], $r['historia'], $r['fundacao'], $r['regulamento'], $r['pais'], $r['id_liga'], $r['esporte_id_esporte'], $r['icon_liga']);
+            $ligas[] = $a;
+        }
+
+        return $ligas;
+
+    }
+
 
 
 }
 
 
 
-$a = new CrudEquipe();
-$cb = new Equipe(18, 3, 24/05, "a", "5mil", "");
-$b = $a->getCraqueEquipe($cb);
-print_r($b);
+//$a = new CrudEquipe();
+//$cb = new Equipe(18, 3, 24/05, "a", "5mil", "");
+//$b = $a->getCraqueEquipe($cb);
+//print_r($b);
 //print_r($a->getEquipe(1));
 
 //teste insert
