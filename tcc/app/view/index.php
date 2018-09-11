@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -59,7 +59,7 @@
       <div class="row my-5 justify-content-center">
         <div class="col-md-10">
           <h1 class="text-dark">Bem Vindo&nbsp;</h1>
-          <p class="lead text-dark">Abaixo, você encontra algumas sugestões de times, esportes, ligas e jogadores da qual pode se interessar!</p>
+          <p class="lead text-dark"> esportes, ligas e jogadores da qual pode se interessar!</p>
           <div class="row">
             <div class="col-md-3">
               <a class="btn m-1 w-50 text-white btn-primary" href="../controller/EsporteController.php?rota=esportes">Esportes</a>
