@@ -122,7 +122,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4   ">
-          <img class="d-block mx-auto img-fluid rounded-circle" src="<?= $esporte->getIconEsporte();?>"> </div>
+          <img class="d-block mx-auto img-fluid rounded-circle" style="width: 350px; height: 350px;" src="<?= $esporte->getIconEsporte();?>"> </div>
         <div class="col-md-7 offset-md-1">
           <h1 class="display-1 text-capitalize"><?= $esporte->getNomeEsporte()?></h1>
           <p class="lead">Número de Praticantes: <?= $esporte->getNumPraticantes(); ?></p>

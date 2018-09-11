@@ -6,7 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../../assets/viewEsportes.css" type="text/css"> </head>
+    <link rel="stylesheet" href="../../assets/viewEsportes.css" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Anton');
+        @import url('../../assets/fonts/Anton-Regular.ttf');
+
+        .cabecalho{
+            background-color: #E4F0E4;
+            font-family: 'Anton', sans-serif;
+        }
+    </style>
+</head>
 
 <body>
 <?php
@@ -22,6 +33,15 @@ elseif (!isset($_SESSION['tipo'])){
 elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
     require_once "navLogedAdmin.php";
 }?>
+<div class="cabecalho text-center py-5">
+    <div class="container">
+        <div class="row my-5 justify-content-center">
+            <div class="col-md-10">
+                <p class="lead text-dark">Abaixo, você encontra algumas sugestões de ligas que podem-lhe interessar!</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="py-5">
     <div class="container">
         <div class="row">
@@ -29,14 +49,12 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Nome Liga</th>
+                        <th>Nome da Liga</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php foreach ($ligas as $l):?>
                     <tr>
-                        <td><?= $l->getIdLiga(); ?></td>
                         <td><a href="../controller/LigaController.php?rota=ver&id=<?= $l->getIdLiga();?>"><?= $l->getNomeLiga();?></a></td>
                     </tr>
                     <?php endforeach;?>

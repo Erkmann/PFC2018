@@ -7,6 +7,7 @@
  */
 
 require_once __DIR__."/../model/LigaEquipe.php";
+require_once __DIR__."/../model/LigaEquipe.php";
 require_once __DIR__."/../database/Conexao.php";
 
 class CrudLigaEquipe

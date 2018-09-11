@@ -2,6 +2,8 @@
 
 require_once "../database/Conexao.php";
 require_once "../model/Equipe.php";
+require_once "../model/Craque.php";
+require_once "../crud/CrudCraqueEquipe.php";
 require_once "../crud/CrudComentarEquipe.php";
 
 class CrudEquipe
@@ -178,15 +180,31 @@ class CrudEquipe
 
     }
 
+    public function getCraqueEquipe(Equipe $e){
+        $sql = "SELECT craques.`id_craques`,`nome_craque`,`morte`,`nascimento`,`titulos`,`numero_de_jogos`,`icon_craque`,`qtd_curtir` FROM craques, equipes_craques WHERE equipes_craques.id_equipe = {$e->getIdEquipe()} and craques.id_craques = equipes_craques.id_craques";
+        $resultado = $this->conexao->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+        $craques = array();
+
+        foreach ($resultado as $res){
+            $a = new Craque($res['id_craques'], $res['nome_craque'], $res['morte'], $res['nascimento'], $res['titulos'], $res['numero_de_jogos'], $res['icon_craque']);
+            $craques[] = $a;
+        }
+
+        return $craques;
+
+    }
+
 
 
 }
 
 
 
-//$a = new CrudEquipe();
-//$b = $a->ranking();
-//print_r($b);
+$a = new CrudEquipe();
+$cb = new Equipe(18, 3, 24/05, "a", "5mil", "");
+$b = $a->getCraqueEquipe($cb);
+print_r($b);
 //print_r($a->getEquipe(1));
 
 //teste insert

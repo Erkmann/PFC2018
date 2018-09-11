@@ -18,7 +18,7 @@ elseif (!isset($_SESSION)){
 elseif(isset($_SESSION) AND $tipo == '2'){
     require_once "navLogedAdmin.php";
 }?>
-<?php require_once '../controller/EsporteController.php'; ?>
+
 <ul>
     <li><?php foreach ($lista_esportes as $esporte): ?>
 

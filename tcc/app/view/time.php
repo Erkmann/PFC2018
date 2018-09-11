@@ -125,7 +125,7 @@ require_once "navLogedAdmin.php";
     <div class="container">
       <div class="row">
         <div class="col-md-5 offset-md-1">
-          <img class="img-fluid d-block float-left rounded-circle" src="<?= $time->getIconEquipe(); ?>"> </div>
+          <img class="img-fluid d-block float-left rounded-circle" style="width: 350px; height: 350px;" src="<?= $time->getIconEquipe(); ?>"> </div>
         <div class="col-md-6 w-50 p-0">
           <h1 class="display-1 w-25 text-left"><?=$time->getNomeEquipe(); ?></h1>
           <p class="lead">Fundação:&nbsp;<?= $time->getFundacao(); ?></p>
@@ -146,7 +146,18 @@ require_once "navLogedAdmin.php";
       </div>
     </div>
   </div>
-
+    <div class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class=""><?php foreach ($ligass as $l):?>
+                            <a href="LigaController.php?rota=ver&id=<?= $l->getIdLiga(); ?>"><?= $l->getNomeLiga(); ?></a><br>
+                        <?php endforeach;?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
   <div class="py-5 bg-light">
     <div class="container">
       <div class="row">

@@ -2,6 +2,7 @@
 session_start();
 
 require_once "../crud/CrudEquipe.php";
+require_once "../crud/CrudLiga.php";
 require_once "../crud/CrudUsuario.php";
 require_once "../crud/CrudLigaEquipe.php";
 $rota = $_GET['rota'];

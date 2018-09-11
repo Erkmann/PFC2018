@@ -1,44 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="" />
+    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tcc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/ComentarioController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/ControllerAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/CraqueController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/CurtirController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/EsporteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/LigaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/RankingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/TimeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/UsuarioController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controller/alertaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudComentarCraque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudComentarEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCraques.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCurtirCraque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCurtirEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCurtirEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudCurtirLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudLigaEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/crud/CrudUsuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/Conexao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/ComentarCraque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/ComentarEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/ComentarEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/ComentarLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Craque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/CraqueEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Curtir_craque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Curtir_equipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Curtir_esporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Curtir_liga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Equipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Esporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Liga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/LigaEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/Usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/alerta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/alertaE.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/atleta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/branco.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/cadastro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/esporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/esportes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/formEditUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/formUp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/formUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAddCraque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAddEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAddEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAddLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAttCraque.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAttEquipe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAttEsporte.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/forms/formAttLiga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/gravaupload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/liga.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/liga.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/ligas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/navLoged.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/navLogedAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/navLogedAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/navUnloged.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/ranking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/time.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/times.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/viewAtletas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/viewEsportes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/viewLigas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/view/viewTimes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Untitled.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Untitled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/admin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/atleta.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/atleta.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/attEsporte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/attEsporte.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/cadastro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/cadastro.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/cssLogin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/esporte.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/esporte.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Anton-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Anton.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/formUp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/formUp.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/06092018083201Koala.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/06092018083246Penguins.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/06092018083350Desert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/06092018083803Tulips.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/06092018084106Lighthouse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/09082018092511cavs512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018071020pelezao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018071130brasil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018071145pelezao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180718311200px-Flag_of_Russia.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018072207Bandeira-do-Ira.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018072435bandeira-japao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018072816nakata.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180731521200px-Flag_of_Mexico.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018073656hugo-sanchez.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180738272000px-Flag_of_Belgium.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018074114Jan-Ceulemans-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180743211200px-Flag_of_South_Korea.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018074749parkji-sung3_get_30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018075205Bandeira-Arabia-Saudita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018075500PA-289270.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018075820alemanha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018080259franz-beckenbauer-adidas-tracksuit-2222.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018080553Bandeira-da-Inglaterra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018080749maxresdefault-5-1024x679.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018081335espanha_bandeira.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018085547cca4af21708a0ea9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180858411200px-Flag_of_Nigeria.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018090215Jay-Jay-Okocha.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/100820180905551200px-Flag_of_Costa_Rica_(state).svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018090753Bryan+Ruiz+Scotland+Vs+Costa+Rica+International+BFmvsYgJetXl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018091311bandeira_polonia_media.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018091431polones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018091609egito.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092139islandia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092257sigurdsson.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092427servia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092600jugovic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092711salah.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018092900franca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018093036zidane.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018093200bandeira-portugal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018093328Cristiano-Ronaldo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018093757argentinaflag_grande.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018094025diego-maradona.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018094328bandeira-da-colombia-2000px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018094801valderrama.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018094949uruguai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018095102varela.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018095202panama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/10082018095258dely-valdes2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018024421123BRBR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/1108201802471345.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018024931123BRBR.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/1108201802494745.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018025040futebol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018061336800px-flag_of_russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018064240800px-flag_of_russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/11082018092840projetoLogico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/12082018021051800px-flag_of_russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/1208201802461710082018092900franca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/18052018112745NBA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/18052018112755NBA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/21082018074127programmable-humanoid-nao-evolution-robot-red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/21082018074210download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/21082018074230programmable-humanoid-nao-evolution-robot-red.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/21082018074243download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/22052018015643CzhGXjOXgAAV8CZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/22052018081712logico.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/2607201806520366bace7ea458bb065092e2b57cdd0137e3667af2_full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/2607201806545766bace7ea458bb065092e2b57cdd0137e3667af2_full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018041541Voo-balao-Arizona-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018041655Voo-balao-Arizona-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018041750Voo-balao-Arizona-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018041840Voo-balao-Arizona-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018041958Diagrama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018042036Diagrama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018042111Diagrama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018042203Diagrama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/28082018042933Voo-balao-Arizona-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/31072018041441nomercy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/800px-flag_of_russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/NBA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/alann.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/arshavin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bulls512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/cavs512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/champions-league.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/copa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/copa_rei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/futeba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/futebol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/handebol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/joao.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/lakers512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/montreal.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/nba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/neco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/nico.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/novoNBA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/pele.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/photo-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/russo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/spurs512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/superliga-de-volei-sky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/tombrady.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/volei.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/liga.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/liga.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/mainparts/navLoged.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/mainparts/navUnloged.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/mycss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/navLoged.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/navLoged.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ranking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/ranking.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/cover_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/cover_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/cover_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/cover_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styleguide/people_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/time.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/time.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/user.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/viewEsportes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/viewEsportes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/wireframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/wireframe.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consultaRanking" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/NBA.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bulls512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cavs512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/futeba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lakers512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/montreal.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/nba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/photo-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/spurs512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tombrady.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projeto.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styleguide.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wireframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wireframe.scss" afterDir="false" />
+    </list>
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-686189480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1237" />
+          <entry key="php" value="1315" />
+          <entry key="scss" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1237" />
+          <entry key="PHP" value="1315" />
+          <entry key="SCSS" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="24" />
+          <entry key="php" value="31" />
+          <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="24" />
+          <entry key="PHP" value="31" />
+          <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.rename.constructor" />
@@ -112,41 +391,128 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="235315710">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.57" value="2" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="615" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="615" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="tcc" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/admin.php">
+        <entry file="file://$PROJECT_DIR$/app/view/time.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2682">
-              <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="209">
+              <caret line="152" column="44" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
+        <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="47" selection-start-line="47" selection-end-line="64" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
+        <entry file="file://$PROJECT_DIR$/app/controller/TimeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="215" column="37" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
+            <state relative-caret-position="209">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/about.php">
+        <entry file="file://$PROJECT_DIR$/app/crud/CrudEquipe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+            <state relative-caret-position="306">
+              <caret line="188" column="142" selection-start-line="188" selection-start-column="142" selection-end-line="188" selection-end-column="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Craque.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Equipe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/EsporteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3893">
+              <caret line="229" column="8" selection-start-line="218" selection-start-column="2" selection-end-line="229" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2125">
+              <caret line="125" column="101" selection-start-line="125" selection-start-column="101" selection-end-line="125" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -166,14 +532,14 @@
       <find>id</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/crud/CrudLigaEquipe.php" />
-        <option value="$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php" />
         <option value="$PROJECT_DIR$/app/model/ComentarCraque.php" />
         <option value="$PROJECT_DIR$/app/view/times.php" />
-        <option value="$PROJECT_DIR$/app/view/atleta.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddEquipe.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddLiga.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddEsporte.php" />
@@ -184,42 +550,45 @@
         <option value="$PROJECT_DIR$/app/view/forms/formAttCraque.php" />
         <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudUsuario.php" />
-        <option value="$PROJECT_DIR$/app/view/time.php" />
         <option value="$PROJECT_DIR$/app/controller/EsporteController.php" />
         <option value="$PROJECT_DIR$/app/controller/CurtirController.php" />
         <option value="$PROJECT_DIR$/app/view/login.php" />
-        <option value="$PROJECT_DIR$/app/view/cadastro.php" />
-        <option value="$PROJECT_DIR$/app/view/liga.php" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/app/view/esporte.php" />
         <option value="$PROJECT_DIR$/app/model/Curtir_esporte.php" />
-        <option value="$PROJECT_DIR$/app/view/viewAtletas.php" />
-        <option value="$PROJECT_DIR$/app/view/viewTimes.php" />
-        <option value="$PROJECT_DIR$/app/view/viewEsportes.php" />
         <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudEsporte.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
         <option value="$PROJECT_DIR$/app/controller/RankingController.php" />
-        <option value="$PROJECT_DIR$/app/crud/CrudEquipe.php" />
-        <option value="$PROJECT_DIR$/app/view/ranking.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudCraques.php" />
         <option value="$PROJECT_DIR$/app/model/ComentarEsporte.php" />
-        <option value="$PROJECT_DIR$/app/view/viewLigas.php" />
-        <option value="$PROJECT_DIR$/app/database/Conexao.php" />
         <option value="$PROJECT_DIR$/app/model/LigaEquipe.php" />
-        <option value="$PROJECT_DIR$/app/controller/TimeController.php" />
         <option value="$PROJECT_DIR$/app/controller/CraqueController.php" />
         <option value="$PROJECT_DIR$/app/view/admin.php" />
         <option value="$PROJECT_DIR$/app/view/formUp.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddCraque.php" />
-        <option value="$PROJECT_DIR$/app/view/gravaupload.php" />
         <option value="$PROJECT_DIR$/app/view/navLogedAdmin.html" />
         <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
         <option value="$PROJECT_DIR$/app/view/navLoged.php" />
         <option value="$PROJECT_DIR$/app/view/navUnloged.php" />
         <option value="$PROJECT_DIR$/app/controller/UsuarioController.php" />
-        <option value="$PROJECT_DIR$/app/view/esportes.php" />
         <option value="$PROJECT_DIR$/app/view/about.php" />
+        <option value="$PROJECT_DIR$/app/view/cadastro.php" />
+        <option value="$PROJECT_DIR$/assets/esporte.scss" />
+        <option value="$PROJECT_DIR$/app/view/gravaupload.php" />
+        <option value="$PROJECT_DIR$/app/view/liga.php" />
+        <option value="$PROJECT_DIR$/app/view/atleta.php" />
+        <option value="$PROJECT_DIR$/app/database/Conexao.php" />
+        <option value="$PROJECT_DIR$/app/view/esportes.php" />
+        <option value="$PROJECT_DIR$/app/view/viewLigas.php" />
+        <option value="$PROJECT_DIR$/app/view/viewEsportes.php" />
+        <option value="$PROJECT_DIR$/app/view/viewTimes.php" />
+        <option value="$PROJECT_DIR$/app/view/viewAtletas.php" />
+        <option value="$PROJECT_DIR$/app/view/ranking.php" />
+        <option value="$PROJECT_DIR$/app/view/esporte.php" />
+        <option value="$PROJECT_DIR$/app/view/time.php" />
+        <option value="$PROJECT_DIR$/app/crud/CrudLigaEquipe.php" />
+        <option value="$PROJECT_DIR$/app/controller/TimeController.php" />
+        <option value="$PROJECT_DIR$/app/crud/CrudEquipe.php" />
       </list>
     </option>
   </component>
@@ -234,21 +603,20 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7">
     <include_path>
-      <path value="$PROJECT_DIR$/../../php" />
+      <path value="$PROJECT_DIR$/../../../php" />
       <path value="" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="180" />
-    <option name="width" value="1320" />
-    <option name="height" value="395" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,52 +629,11 @@
               <item name="tcc" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tcc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="tcc" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +665,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.CrudCraques.php">
+  <component name="RunManager" selected="PHP Script.CrudEquipe.php">
     <configuration name="CrudCraques.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/crud/CrudCraques.php">
       <method v="2" />
     </configuration>
@@ -361,21 +688,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.CrudCurtirEquipe.php" />
       <item itemvalue="PHP Script.CrudCurtirCraque.php" />
-      <item itemvalue="PHP Script.CrudUsuario.php" />
-      <item itemvalue="PHP Script.CrudEsporte.php" />
-      <item itemvalue="PHP Script.CrudLiga.php" />
+      <item itemvalue="PHP Script.CrudCurtirEquipe.php" />
       <item itemvalue="PHP Script.CrudCraques.php" />
       <item itemvalue="PHP Script.CrudEquipe.php" />
+      <item itemvalue="PHP Script.CrudEsporte.php" />
+      <item itemvalue="PHP Script.CrudLiga.php" />
+      <item itemvalue="PHP Script.CrudUsuario.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.CrudCraques.php" />
         <item itemvalue="PHP Script.CrudEquipe.php" />
+        <item itemvalue="PHP Script.CrudUsuario.php" />
         <item itemvalue="PHP Script.CrudLiga.php" />
         <item itemvalue="PHP Script.CrudEsporte.php" />
-        <item itemvalue="PHP Script.CrudUsuario.php" />
+        <item itemvalue="PHP Script.CrudCraques.php" />
       </list>
     </recent_temporary>
   </component>
@@ -479,11 +806,17 @@
       <workItem from="1534791820734" duration="3039000" />
       <workItem from="1534849751339" duration="4645000" />
       <workItem from="1534869759599" duration="4471000" />
+      <workItem from="1535474011003" duration="1858000" />
+      <workItem from="1536258357378" duration="1927000" />
+      <workItem from="1536275929437" duration="2757000" />
+      <workItem from="1536324735912" duration="3502000" />
+      <workItem from="1536607209322" duration="1791000" />
+      <workItem from="1536666279549" duration="2410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="328210000" />
+    <option name="totallyTimeSpent" value="342455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,28 +828,50 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28120807" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2730711" />
+      <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991131" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32815966" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32815966" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25716442" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -524,95 +879,43 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/view/forms/formAttEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state>
           <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" selection-start-line="46" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Curtir_esporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state>
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/CurtirController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state>
           <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/times.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="43" selection-start-line="43" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewAtletas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewTimes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/EsporteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state>
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
+        <state>
           <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -623,112 +926,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="75" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudCurtirEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state>
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state>
           <caret line="39" column="139" selection-start-line="39" selection-start-column="139" selection-end-line="39" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3915">
-          <caret line="261" column="27" selection-start-line="259" selection-start-column="2" selection-end-line="267" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
+        <state>
           <caret line="173" column="229" selection-start-line="173" selection-start-column="229" selection-end-line="173" selection-end-column="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
+        <state>
           <caret line="37" column="19" selection-start-line="37" selection-end-line="37" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudUsuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
+        <state>
           <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewLigas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ligas.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/ComentarEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state>
           <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudCraques.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state>
           <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudLiga.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
+        <state>
           <caret line="263" column="5" selection-start-line="263" selection-start-column="5" selection-end-line="263" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudEquipe.php">
+    <entry file="file://$PROJECT_DIR$/app/model/LigaEquipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="203" column="23" selection-start-line="203" selection-start-column="23" selection-end-line="203" selection-end-column="23" />
+        <state>
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ranking.php">
+    <entry file="file://$PROJECT_DIR$/app/controller/CraqueController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="195" column="6" selection-start-line="189" selection-start-column="54" selection-end-line="195" selection-end-column="6" />
+        <state>
+          <caret line="60" column="63" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/RankingController.php">
+    <entry file="file://$PROJECT_DIR$/app/view/formUp.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state>
+          <caret line="21" column="6" selection-start-line="1" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudCurtirCraque.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddCraque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddEquipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/navLoged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/navUnloged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3870">
+          <caret line="215" column="37" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/cadastro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" column="100" selection-start-line="122" selection-start-column="100" selection-end-line="122" selection-end-column="100" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/Conexao.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -737,135 +1087,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/LigaEquipe.php">
+    <entry file="file://$PROJECT_DIR$/app/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="18" selection-start-line="56" selection-start-column="2" selection-end-line="89" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Equipe.php">
+    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TimeController.php">
+    <entry file="file://$PROJECT_DIR$/assets/esporte.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="79" column="71" selection-start-line="79" selection-start-column="71" selection-end-line="79" selection-end-column="71" />
+        <state relative-caret-position="546">
+          <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/esportes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/viewTimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/viewLigas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="18" selection-start-line="35" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/viewAtletas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ranking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="51" column="111" selection-start-line="51" selection-start-column="111" selection-end-line="51" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/RankingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/gravaupload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/formUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudLigaEquipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/EsporteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3893">
+          <caret line="229" column="8" selection-start-line="218" selection-start-column="2" selection-end-line="229" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="101" selection-start-line="125" selection-start-column="101" selection-end-line="125" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="152" column="44" selection-start-line="152" selection-start-column="44" selection-end-line="152" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/TimeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/CraqueController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="60" column="63" lean-forward="true" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/formUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="1" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="e#973#979#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddCraque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddEquipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/gravaupload.php">
+    <entry file="file://$PROJECT_DIR$/app/model/Equipe.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.html">
+    <entry file="file://$PROJECT_DIR$/app/model/Craque.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="195">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navLoged.php">
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudEquipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navUnloged.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="215" column="37" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esportes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2682">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="47" selection-start-line="47" selection-end-line="64" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="188" column="142" selection-start-line="188" selection-start-column="142" selection-end-line="188" selection-end-column="142" />
         </state>
       </provider>
     </entry>

@@ -123,7 +123,7 @@ if (isset($_SESSION["tipo"]) AND $_SESSION['tipo'] != '2') {
     <div class="container">
       <div class="row">
         <div class="col-md-4 offset-md-1">
-          <img class="d-block rounded-circle mx-auto img-fluid" src="../../assets/images/<?= $craque->getIconCraque();?>"> </div>
+          <img class="d-block rounded-circle mx-auto img-fluid" style="width: 350px; height: 350px;" src="../../assets/images/<?= $craque->getIconCraque();?>"> </div>
         <div class="col-md-6">
           <h1 class="display-1"><?= $craque->getNomeCraque(); ?></h1>
           <p class="lead">Data de Nascimento:&nbsp;<?= $craque->getNascimento(); ?></p>

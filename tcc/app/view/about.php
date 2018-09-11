@@ -11,15 +11,15 @@
 <body>
 <?php
 
-if (isset($_SESSION)){$tipo = $_SESSION['tipo'];}
+if (isset($_SESSION['tipo'])){$tipo = $_SESSION['tipo'];}
 
-if(isset($_SESSION) AND $tipo != '2'){
+if(isset($_SESSION['tipo']) AND $tipo != '2'){
     require_once "navLoged.php";
 }
-elseif (!isset($_SESSION)){
+elseif (!isset($_SESSION['tipo'])){
     require_once "navUnloged.php";
 }
-elseif(isset($_SESSION) AND $tipo == '2'){
+elseif(isset($_SESSION['tipo']) AND $tipo == '2'){
     require_once "navLogedAdmin.php";
 }?>
 

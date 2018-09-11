@@ -9,7 +9,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/cadastro.css" type="text/css"> </head>
+  <link rel="stylesheet" href="../../assets/cadastro.css" type="text/css">
+
+    <script>
+        function validarSenha(form){
+            senha = document.formulario.senha.value;
+            senhaRepetida = document.formulario.repetir_senha.value;
+            if (senha != senhaRepetida){
+                alert("Repita a senha corretamente");
+                document.formulario.repetir_senha.focus();
+                return false;
+            }
+        }
+    </script>
+
+</head>
 
 <body class="">
 <?php
@@ -29,15 +43,15 @@ elseif(isset($_SESSION) AND $tipo == '2'){
     <div class="container">
       <div class="row">
         <div class="col-md-6  offset-md-3">
-          <form class="" action="../controller/UsuarioController.php?rota=realizar_cadastro" method="post">
+          <form class="formulario" name="formulario" onsubmit="return validarSenha(this);" action="../controller/UsuarioController.php?rota=realizar_cadastro" method="post">
             <div class="form-group"> <label>Usuario</label>
               <input type="text" name="usuario" class="form-control" placeholder="Usuario"> <small class="form-text text-muted"></small> </div>
             <div class="form-group"> <label>Email</label>
               <input type="email" name="email" class="form-control" placeholder="Email"> <small class="form-text text-muted"></small> </div>
             <div class="form-group"> <label>Senha</label>
-              <input type="password" name="senha" class="form-control" placeholder="Senha"> </div>
+              <input type="password" name="senha" class="form-control senha" placeholder="Senha"> </div>
             <div class="form-group"> <label>Confirme sua senha</label>
-              <input type="password" class="form-control" placeholder="Repita a Senha"> </div>
+              <input type="password" name="repetir_senha" class="form-control repetir_senha" placeholder="Repita a Senha"> </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>

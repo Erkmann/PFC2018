@@ -120,7 +120,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 ">
-          <img class="img-fluid d-block rounded-circle mx-auto" src="<?= $liga->getIconLiga();?>"> </div>
+          <img class="img-fluid d-block rounded-circle mx-auto" style="width: 350px; height: 350px;" src="<?= $liga->getIconLiga();?>"> </div>
         <div class="col-md-6 offset-md-1">
           <h3 class="display-1"><?= $liga->getNomeLiga() ?></h3>
           <p class="lead">Fundação: <?= $liga->getFundacao() ?>

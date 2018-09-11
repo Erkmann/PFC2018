@@ -14,7 +14,21 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="../../assets/ranking.css" type="text/css"> </head>
+  <link rel="stylesheet" href="../../assets/ranking.css" type="text/css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Anton');
+        @import url('../../assets/fonts/Anton-Regular.ttf');
+
+        .cabecalho{
+            background-color: #E4F0E4;
+            font-family: 'Anton', sans-serif;
+        }
+    </style>
+
+
+
+</head>
 
 <body>
 <?php
@@ -31,6 +45,15 @@ if (isset($_SESSION["tipo"]) AND $tipo != '2') {
 
 
 ?>
+<div class="cabecalho text-center py-5">
+    <div class="container">
+        <div class="row my-5 justify-content-center">
+            <div class="col-md-10">
+                <p class="lead text-dark">Abaixo, você encontra o ranking dos esportes, ligas, times, e atletas mais curtidos pelos usuários.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="py-5">
     <div class="container">
         <div class="row">
