@@ -91,8 +91,8 @@ class CrudComentarEsporte
     }
 }
 
-$comentario = new ComentarEsporte(1, 1, "Esporte topp");
-$c = new CrudComentarEsporte();
+//$comentario = new ComentarEsporte(3, 1, "Esporte topp");
+//$c = new CrudComentarEsporte();
 //$c->insert_comentario_esporte($comentario);
-//$a = $c->getComentariosPorEsporteTotal($comentario);
+//$a = $c->getComentariosPorEsporteLimitado($comentario);
 //print_r($a);

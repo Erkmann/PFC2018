@@ -22,6 +22,7 @@
             var num_curtidas = $("#numCurtidas").html();
             var id_usuario = $("#a").html();
             var id_esporte = $("#b").html();
+            var id_comentario = $("#id_comentario").html();
 
             $.get("CurtirController.php",
                 {
@@ -92,12 +93,49 @@
 
                 )
             })
+
+            $("#exclui_comentario_esporte").click(function () {
+                alert("chegoooo");
+
+                $.get("ComentarioController.php"){
+                    rota: "excluir_esporte",
+                    id_esporte: id_esporte,
+                    id_usuario: id_usuario,
+                    id_comentario: id_comentario
+
+                }
+            })
         })
     </script>
 
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+        @import url('../../assets/fonts/FredokaOne-Regular.ttf');
+        @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+        @import url('../../assets/fonts/AlfaSlabOne-Regular.ttf');
+
+
         .curtido{
             background-color: #12bbad ;
+        }
+
+        #close_icon{
+            margin-left: 90%;
+        }
+
+        #linha_separa_comentarios{
+            width: 100%;
+            height: 2%;
+            background-color: black;
+        }
+        .cabecalho{
+            background-color: #E4F0E4;
+            font-family: 'Fredoka One', cursive;
+            width: 80%;
+        }
+
+        .chamada_comentario{
+            font-family: 'Alfa Slab One', cursive;
         }
     </style>
 </head>
@@ -239,22 +277,36 @@ margin_vertical_1" href="#ligas">Ligas</a>
           </div>
       </div>
   </div>
+  <div class="py-5 bg-light">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h1 class="chamada_comentario">COMENTÁRIOS</h1>
+              </div>
+          </div>
+      </div>
+  </div>
   <?php foreach ($comentariosArrayObj as $comentario): ?>
 
-      <div id = "comentarios" class="py-5 bg-info">
+      <div id = "comentarios" class="py-5">
+          <a id="exclui_comentario" href="#"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+          <a id="edita_comentario" href="#"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
           <div class="container">
               <div class="row">
                   <div class="col-md-12">
-                      <?php        $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?>
+                      <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
+                      <p class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
 
-                      <p class="lead text-left"> <?= $comentario->getDtComentario() ?> <br>
-                          <?= $comentario->getTxtComentario() ?>
+                      <p class="cabecalho lead text-left"> DATA: <?= $comentario->getDtComentario() ?></p> <br>
+                      <p class="cabecalho lead text-left"> COMENTÁRIO: <?= $comentario->getTxtComentario() ?>
                       </p>
 
                   </div>
               </div>
+
           </div>
       </div>
+      <div id="linha_separa_comentarios"></div>
   <?php endforeach;?>
 
   <div class="text-white bg-secondary">

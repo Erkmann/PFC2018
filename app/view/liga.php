@@ -93,9 +93,35 @@
     </script>
 
     <style>
+        @import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+        @import url('../../assets/fonts/FredokaOne-Regular.ttf');
+        @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+        @import url('../../assets/fonts/AlfaSlabOne-Regular.ttf');
+
         .curtido{
             background-color: #12bbad ;
         }
+
+        #close_icon{
+            margin-left: 90%;
+        }
+
+        #linha_separa_comentarios{
+            width: 100%;
+            height: 2%;
+            background-color: black;
+        }
+        .cabecalho{
+            background-color: #E4F0E4;
+            font-family: 'Fredoka One', cursive;
+            width: 80%;
+        }
+
+        .chamada_comentario{
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+
     </style>
 
 </head>
@@ -264,22 +290,33 @@ margin_vertical_1" href="#esporte">Esporte</a>
           </div>
       </div>
   </div>
-  <?php foreach ($comentariosArrayObj as $comentario): ?>
-
-  <div id = "comentarios" class="py-5 bg-info">
+  <div class="py-5 bg-light">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
-          <?php        $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?>
-
-          <p class="lead text-left"> <?= $comentario->getDtComentario() ?> <br>
-                      <?= $comentario->getTxtComentario() ?>
-                  </p>
+                  <h1 class="chamada_comentario">COMENTÁRIOS</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+  <?php foreach ($comentariosArrayObj as $comentario): ?>
+  <?php //ARRUMAR ORDEM DOS COMENTÁRIOS  ?>
+  <div id = "comentarios" class="py-5">
+      <div class="container">
+          <a href="m"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+          <a href="a"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                  <p class="cabecalho lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
+                  <p class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
 
               </div>
           </div>
       </div>
   </div>
+  <div id="linha_separa_comentarios"></div>
+
   <?php endforeach;?>
 
   <div class="text-white bg-secondary">

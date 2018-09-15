@@ -88,3 +88,19 @@ if ($_GET['rota'] == 'comentarCraque') {
         echo "Faça login ou cadastre-se";
     }
 }
+
+if ($_GET['rota'] == 'exclui_comentario_esporte'){
+    echo "a";
+    if (isset($_SESSION['tipo'])){
+        $rota = $_GET['rota'];
+        $id_usuario = $_GET['id_usuario'];
+        $id_craque = $_GET['id_craque'];
+        $txt_comentario = $_GET['txt_comentario'];
+        $id_comentario = $_GET['id_comentario'];
+
+
+    //TODO CONTINUAR
+
+    }
+
+}

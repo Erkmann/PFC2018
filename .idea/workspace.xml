@@ -2,275 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/tcc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/ComentarioController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/ControllerAdmin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/CraqueController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/CurtirController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/EsporteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/LigaController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/RankingController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/TimeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/UsuarioController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/controller/alertaController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudComentarCraque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudComentarEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudComentarEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudComentarLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCraqueEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCraques.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCurtirCraque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCurtirEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCurtirEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudCurtirLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudLigaEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/crud/CrudUsuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/database/Conexao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/ComentarCraque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/ComentarEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/ComentarEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/ComentarLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Craque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/CraqueEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Curtir_craque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Curtir_equipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Curtir_esporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Curtir_liga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Equipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Esporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Liga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/LigaEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/model/Usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/about.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/alerta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/alertaE.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/atleta.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/branco.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/cadastro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/editar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/esporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/esportes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/formEditUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/formUp.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/formUpload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAddCraque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAddEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAddEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAddLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAttCraque.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAttEquipe.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAttEsporte.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/forms/formAttLiga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/gravaupload.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/liga.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/liga.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/ligas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/navLoged.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/navLogedAdmin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/navLogedAdmin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/navUnloged.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/ranking.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/time.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/time.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/times.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/viewAtletas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/viewEsportes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/viewLigas.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/app/view/viewTimes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/Untitled.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/Untitled.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/admin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/atleta.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/atleta.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/attEsporte.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/attEsporte.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/cadastro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/cadastro.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/cssLogin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/esporte.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/esporte.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/fonts/Anton-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/fonts/Anton.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/fonts/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/formUp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/formUp.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/06092018083201Koala.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/06092018083246Penguins.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/06092018083350Desert.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/06092018083803Tulips.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/06092018084106Lighthouse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/09082018092511cavs512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018071020pelezao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018071130brasil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018071145pelezao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180718311200px-Flag_of_Russia.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018072207Bandeira-do-Ira.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018072435bandeira-japao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018072816nakata.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180731521200px-Flag_of_Mexico.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018073656hugo-sanchez.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180738272000px-Flag_of_Belgium.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018074114Jan-Ceulemans-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180743211200px-Flag_of_South_Korea.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018074749parkji-sung3_get_30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018075205Bandeira-Arabia-Saudita.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018075500PA-289270.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018075820alemanha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018080259franz-beckenbauer-adidas-tracksuit-2222.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018080553Bandeira-da-Inglaterra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018080749maxresdefault-5-1024x679.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018081335espanha_bandeira.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018085547cca4af21708a0ea9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180858411200px-Flag_of_Nigeria.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018090215Jay-Jay-Okocha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/100820180905551200px-Flag_of_Costa_Rica_(state).svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018090753Bryan+Ruiz+Scotland+Vs+Costa+Rica+International+BFmvsYgJetXl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018091311bandeira_polonia_media.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018091431polones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018091609egito.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092139islandia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092257sigurdsson.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092427servia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092600jugovic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092711salah.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018092900franca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018093036zidane.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018093200bandeira-portugal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018093328Cristiano-Ronaldo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018093757argentinaflag_grande.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018094025diego-maradona.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018094328bandeira-da-colombia-2000px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018094801valderrama.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018094949uruguai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018095102varela.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018095202panama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/10082018095258dely-valdes2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018024421123BRBR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/1108201802471345.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018024931123BRBR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/1108201802494745.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018025040futebol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018061336800px-flag_of_russia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018064240800px-flag_of_russia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/11082018092840projetoLogico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/12082018021051800px-flag_of_russia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/1208201802461710082018092900franca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/18052018112745NBA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/18052018112755NBA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/21082018074127programmable-humanoid-nao-evolution-robot-red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/21082018074210download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/21082018074230programmable-humanoid-nao-evolution-robot-red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/21082018074243download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/22052018015643CzhGXjOXgAAV8CZ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/22052018081712logico.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/2607201806520366bace7ea458bb065092e2b57cdd0137e3667af2_full.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/2607201806545766bace7ea458bb065092e2b57cdd0137e3667af2_full.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018041541Voo-balao-Arizona-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018041655Voo-balao-Arizona-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018041750Voo-balao-Arizona-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018041840Voo-balao-Arizona-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018041958Diagrama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018042036Diagrama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018042111Diagrama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018042203Diagrama.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/28082018042933Voo-balao-Arizona-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/31072018041441nomercy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/800px-flag_of_russia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/Like.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/NBA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/alann.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/arshavin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/bulls512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/cavs512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/champions-league.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/copa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/copa_rei.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/futeba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/futebol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/handebol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/joao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/lakers512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/montreal.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/nba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/neco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/nico.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/novoNBA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/pele.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/photo-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/russo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/spurs512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/superliga-de-volei-sky.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/tombrady.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/images/volei.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/liga.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/liga.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/mainparts/navLoged.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/mainparts/navUnloged.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/min.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/mycss.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/navLoged.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/navLoged.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/ranking.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/ranking.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/scripts/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/scripts/jquery-3.2.1.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/scripts/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/cover_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/cover_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/cover_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/cover_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/styleguide/people_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/time.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/time.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/user.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/user.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/viewEsportes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/viewEsportes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/wireframe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/assets/wireframe.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/consultaRanking" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/NBA.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/bulls512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/cavs512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/futeba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/lakers512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/montreal.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/nba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/photo-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/spurs512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/images/tombrady.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/min.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/projeto.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/styleguide.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/wireframe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcc/wireframe.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/ComentarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/ComentarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/EsporteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/EsporteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/esporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/esporte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/liga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/liga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Anton.zip" beforeDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -436,12 +174,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1" />
+          <entry key="php" value="1110" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1" />
+          <entry key="PHP" value="1110" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -452,55 +200,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/time.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4165">
-              <caret line="245" column="14" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/liga.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4012">
-              <caret line="236" column="34" selection-start-line="236" selection-start-column="34" selection-end-line="236" selection-end-column="34" />
+            <state relative-caret-position="328">
+              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crud/CrudLiga.php">
+        <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4097">
-              <caret line="246" column="24" selection-start-line="246" selection-start-column="24" selection-end-line="246" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Esporte.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="328">
+              <caret line="160" column="4" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
+        <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            <state relative-caret-position="260">
+              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Liga.php">
+        <entry file="file://$PROJECT_DIR$/app/model/ComentarEsporte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="328">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -526,7 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/model/ComentarCraque.php" />
         <option value="$PROJECT_DIR$/app/view/times.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddEquipe.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddLiga.php" />
@@ -536,9 +274,7 @@
         <option value="$PROJECT_DIR$/app/view/forms/formAttEsporte.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAttLiga.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAttCraque.php" />
-        <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudUsuario.php" />
-        <option value="$PROJECT_DIR$/app/controller/EsporteController.php" />
         <option value="$PROJECT_DIR$/app/controller/CurtirController.php" />
         <option value="$PROJECT_DIR$/app/view/login.php" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
@@ -569,14 +305,17 @@
         <option value="$PROJECT_DIR$/app/view/viewTimes.php" />
         <option value="$PROJECT_DIR$/app/view/viewAtletas.php" />
         <option value="$PROJECT_DIR$/app/view/ranking.php" />
-        <option value="$PROJECT_DIR$/app/view/esporte.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLigaEquipe.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudEquipe.php" />
         <option value="$PROJECT_DIR$/app/controller/TimeController.php" />
         <option value="$PROJECT_DIR$/app/view/time.php" />
-        <option value="$PROJECT_DIR$/app/view/liga.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
         <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
+        <option value="$PROJECT_DIR$/app/view/liga.php" />
+        <option value="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" />
+        <option value="$PROJECT_DIR$/app/controller/EsporteController.php" />
+        <option value="$PROJECT_DIR$/app/view/esporte.php" />
+        <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
       </list>
     </option>
   </component>
@@ -589,7 +328,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
       <path value="$PROJECT_DIR$/../../../php" />
       <path value="" />
@@ -614,6 +353,46 @@
             <path>
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -650,8 +429,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.CrudEquipe.php">
-    <configuration name="CrudCraques.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/crud/CrudCraques.php">
+  <component name="RunManager" selected="PHP Script.CrudComentarEsporte.php">
+    <configuration name="CrudComentarEsporte.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
       <method v="2" />
     </configuration>
     <configuration name="CrudCurtirCraque.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/app/crud/CrudCurtirCraque.php">
@@ -675,19 +454,19 @@
     <list>
       <item itemvalue="PHP Script.CrudCurtirCraque.php" />
       <item itemvalue="PHP Script.CrudCurtirEquipe.php" />
-      <item itemvalue="PHP Script.CrudCraques.php" />
       <item itemvalue="PHP Script.CrudEquipe.php" />
       <item itemvalue="PHP Script.CrudEsporte.php" />
       <item itemvalue="PHP Script.CrudLiga.php" />
       <item itemvalue="PHP Script.CrudUsuario.php" />
+      <item itemvalue="PHP Script.CrudComentarEsporte.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.CrudComentarEsporte.php" />
         <item itemvalue="PHP Script.CrudEquipe.php" />
         <item itemvalue="PHP Script.CrudUsuario.php" />
         <item itemvalue="PHP Script.CrudLiga.php" />
         <item itemvalue="PHP Script.CrudEsporte.php" />
-        <item itemvalue="PHP Script.CrudCraques.php" />
       </list>
     </recent_temporary>
   </component>
@@ -798,12 +577,12 @@
       <workItem from="1536607209322" duration="1791000" />
       <workItem from="1536666279549" duration="2410000" />
       <workItem from="1536704108631" duration="2940000" />
-      <workItem from="1537029186386" duration="679000" />
+      <workItem from="1537029186386" duration="14818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346074000" />
+    <option name="totallyTimeSpent" value="360213000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,20 +595,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -891,31 +671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudCurtirEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="39" column="139" selection-start-line="39" selection-start-column="139" selection-end-line="39" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudEsporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="173" column="229" selection-start-line="173" selection-start-column="229" selection-end-line="173" selection-end-column="229" />
         </state>
       </provider>
     </entry>
@@ -930,13 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="121" column="35" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/ComentarEsporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="98" column="51" selection-start-line="98" selection-start-column="51" selection-end-line="98" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1052,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/esporte.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -1146,20 +891,6 @@
     <entry file="file://$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/EsporteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="229" column="8" selection-start-line="218" selection-start-column="2" selection-end-line="229" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1188,13 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4012">
-          <caret line="236" column="34" selection-start-line="236" selection-start-column="34" selection-end-line="236" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudLiga.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4097">
@@ -1216,10 +940,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="173" column="229" selection-start-line="173" selection-start-column="229" selection-end-line="173" selection-end-column="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/EsporteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="160" column="4" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state relative-caret-position="328">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/ComentarEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
         </state>
       </provider>
     </entry>

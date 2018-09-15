@@ -19,6 +19,7 @@ function telas_individuais_esportes($id){
     foreach ($comentarios as $comentario) {
         $id_usuario = $comentario->getIdUsuario();
         $id_esporte = $comentario->getIdEsporte();
+        $id_comentario = $comentario->getIdComentario();
         $txt_comentario = $comentario->getTxtComentario();
         $dt_comentario = $comentario->getDtComentario();
         $usuario_comentario = $crudU->getUsuario($id_usuario);
@@ -26,9 +27,11 @@ function telas_individuais_esportes($id){
         $nomes[] = $nome;
         $comentarioObj = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
         $comentarioObj->setDtComentario($dt_comentario);
+        $comentarioObj->setIdComentario($id_comentario);
 
         $comentariosArrayObj[] = $comentarioObj;
-        //TODO MOSTRAR POR PRIMEIRO OS COMENTÁRIOS MAIS ATUAIS
+
+
     }
     include_once '../view/esporte.php';
 
