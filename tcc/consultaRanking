@@ -1,1 +1,0 @@
-SELECT `nome_esporte`, COUNT(curtir_esportes.id_esporte) AS qtd_curtidas FROM `curtir_esportes`, `esportes` GROUP by nome_esporte
