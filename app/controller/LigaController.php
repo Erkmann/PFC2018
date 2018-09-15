@@ -3,6 +3,7 @@
 require_once __DIR__."/../crud/CrudLiga.php";
 require_once __DIR__."/../crud/CrudUsuario.php";
 require_once __DIR__."/../crud/CrudComentarLiga.php";
+require_once __DIR__."/../crud/CrudComentarLiga.php";
 
 
 
