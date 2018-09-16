@@ -4,11 +4,7 @@
     <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/ComentarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/ComentarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/EsporteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/EsporteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/esporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/esporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/liga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/liga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Anton.zip" beforeDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,18 +164,20 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1110" />
+          <entry key="php" value="1497" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1110" />
+          <entry key="PHP" value="1497" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -202,7 +200,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/liga.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="1649">
               <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
             </state>
           </provider>
@@ -212,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
-              <caret line="160" column="4" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
+              <caret line="107" column="4" lean-forward="true" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -220,8 +218,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+            <state relative-caret-position="209">
+              <caret line="101" column="63" lean-forward="true" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -238,8 +236,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
+            <state relative-caret-position="260">
+              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -312,10 +310,10 @@
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
         <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
         <option value="$PROJECT_DIR$/app/view/liga.php" />
-        <option value="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" />
         <option value="$PROJECT_DIR$/app/controller/EsporteController.php" />
         <option value="$PROJECT_DIR$/app/view/esporte.php" />
         <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
+        <option value="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" />
       </list>
     </option>
   </component>
@@ -346,7 +344,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -398,6 +395,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -577,12 +575,13 @@
       <workItem from="1536607209322" duration="1791000" />
       <workItem from="1536666279549" duration="2410000" />
       <workItem from="1536704108631" duration="2940000" />
-      <workItem from="1537029186386" duration="14818000" />
+      <workItem from="1537029186386" duration="15027000" />
+      <workItem from="1537107707416" duration="2823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360213000" />
+    <option name="totallyTimeSpent" value="363245000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,19 +596,19 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17246597" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -947,24 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="173" column="229" selection-start-line="173" selection-start-column="229" selection-end-line="173" selection-end-column="229" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="94" column="2" selection-start-line="94" selection-start-column="2" selection-end-line="94" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -975,17 +960,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="160" column="4" lean-forward="true" selection-start-line="160" selection-start-column="4" selection-end-line="160" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="39" column="25" lean-forward="true" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="107" column="4" lean-forward="true" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -998,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        <state relative-caret-position="209">
+          <caret line="101" column="63" lean-forward="true" selection-start-line="101" selection-start-column="63" selection-end-line="101" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -94,12 +94,16 @@ if ($_GET['rota'] == 'exclui_comentario_esporte'){
     if (isset($_SESSION['tipo'])){
         $rota = $_GET['rota'];
         $id_usuario = $_GET['id_usuario'];
-        $id_craque = $_GET['id_craque'];
+        $id_esporte = $_GET['id_esporte'];
         $txt_comentario = $_GET['txt_comentario'];
         $id_comentario = $_GET['id_comentario'];
 
+        $comentarioSolicitado = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
 
-    //TODO CONTINUAR
+
+
+        if ($)
 
     }
 
