@@ -94,17 +94,8 @@
                 )
             })
 
-            $("#exclui_comentario_esporte").click(function () {
-                alert("chegoooo");
 
-                $.get("ComentarioController.php"){
-                    rota: "excluir_esporte",
-                    id_esporte: id_esporte,
-                    id_usuario: id_usuario,
-                    id_comentario: id_comentario
 
-                }
-            })
         })
     </script>
 

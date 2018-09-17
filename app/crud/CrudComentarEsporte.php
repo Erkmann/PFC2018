@@ -83,6 +83,7 @@ class CrudComentarEsporte
         $sql = "SELECT `id_comentario`,`id_esporte`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_esportes` WHERE id_comentario = '{$c->getIdComentario()}' and id_esporte = '{$c->getIdEsporte()}' AND id_usuario = '{$c->getIdUsuario()}'";
         $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
 
+
         $id_comentario = $resultado['id_comentario'];
         $id_esporte = $resultado['id_esporte'];
         $id_usuario = $resultado['id_usuario'];
@@ -94,15 +95,32 @@ class CrudComentarEsporte
         $comentario->setDtComentario($dt_comentario);
 
         return $comentario;
-
         //So far Inútil
 
     }
+
+    public function getComentarioById(ComentarEsporte $c)
+    {
+        $sql = "SELECT `id_comentario`,`id_esporte`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_esportes` WHERE id_comentario = '{$c->getIdComentario()}'";
+        $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+        $id_comentario = $resultado['id_comentario'];
+        $id_esporte = $resultado['id_esporte'];
+        $id_usuario = $resultado['id_usuario'];
+        $txt_comentario = $resultado['txt_comentario'];
+        $dt_comentario = $resultado['dt_comentario'];
+
+        $comentario = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentario->setIdComentario($id_comentario);
+        $comentario->setDtComentario($dt_comentario);
+
+        return $comentario;
+    }
 }
 
-$comentario = new ComentarEsporte(3, 104, "Esporte topp");
-$comentario->setIdComentario(29);
-$c = new CrudComentarEsporte();
+//$comentario = new ComentarEsporte(3, 104, "Esporte topp");
+//$comentario->setIdComentario(28);
+//$c = new CrudComentarEsporte();
 //$c->insert_comentario_esporte($comentario);
-$a = $c->getComentarioExato($comentario);
-print_r($a);
+//$a = $c->getComentarioById($comentario);
+//print_r($a);

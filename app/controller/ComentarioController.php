@@ -43,6 +43,8 @@ if ($_GET['rota'] == 'comentarEsporte') {
 
         $crud = new CrudComentarEsporte();
         $comentario = new ComentarEsporte( $id_usuario, $id_esporte, $txt_comentario);
+        print_r($comentario);
+
         //$numComentariosExatos = $crud->getComentarioExato($comentario);
         //try {
             //TODO PQ N CADASTRA O COMENTÁRIO
@@ -101,10 +103,12 @@ if ($_GET['rota'] == 'exclui_comentario_esporte'){
         $comentarioSolicitado = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
         $comentarioSolicitado->setIdComentario($id_comentario);
 
+        $crud = new CrudComentarEsporte();
+        $comentario_real = $crud->getComentarioById($comentarioSolicitado);
 
-
-        if ($)
-
+        if ($comentario_real == $comentarioSolicitado){
+            $crud->delete_comentario_esporte($comentarioSolicitado);
+        }
     }
 
 }
