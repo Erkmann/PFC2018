@@ -91,20 +91,28 @@ if ($_GET['rota'] == 'comentarCraque') {
     }
 }
 
-if ($_GET['rota'] == 'exclui_comentario_esporte'){
-    echo "a";
+if ($_GET['rota'] == 'excluir_comentario_esporte'){
+
     if (isset($_SESSION['tipo'])){
         $rota = $_GET['rota'];
         $id_usuario = $_GET['id_usuario'];
         $id_esporte = $_GET['id_esporte'];
         $txt_comentario = $_GET['txt_comentario'];
         $id_comentario = $_GET['id_comentario'];
+        $dt_comentario = $_GET['dt_comentario'];
 
-        $comentarioSolicitado = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentarioSolicitado = new ComentarEsporte($id_usuario, $id_esporte, $txt_comentario);
         $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
+        $comentarioSolicitado->setTxtComentario($txt_comentario);
+
 
         $crud = new CrudComentarEsporte();
         $comentario_real = $crud->getComentarioById($comentarioSolicitado);
+        print_r($comentario_real);
+        print_r($comentarioSolicitado);
+
+
 
         if ($comentario_real == $comentarioSolicitado){
             $crud->delete_comentario_esporte($comentarioSolicitado);

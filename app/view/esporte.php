@@ -23,6 +23,10 @@
             var id_usuario = $("#a").html();
             var id_esporte = $("#b").html();
             var id_comentario = $("#id_comentario").html();
+            var txt_comentario = $("#txt_comentario").val();
+            var text_comentario = $("#text_comentario").html();
+            var date = $("#dt_comentario").html();
+
 
             $.get("CurtirController.php",
                 {
@@ -91,6 +95,24 @@
 
                     }
 
+                )
+            })
+            
+            $("#exclui_comentario").click(function () {
+                $.get("ComentarioController.php",
+                    {
+                        rota: "excluir_comentario_esporte",
+                        id_usuario: id_usuario,
+                        id_esporte: id_esporte,
+                        id_comentario: id_comentario,
+                        txt_comentario: text_comentario,
+                        dt_comentario: date
+
+                    },
+                function (data) {
+                    location.reload();
+                    //alert(data);
+                }
                 )
             })
 
@@ -286,6 +308,8 @@ margin_vertical_1" href="#ligas">Ligas</a>
               <div class="row">
                   <div class="col-md-12">
                       <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
+                      <p id="dt_comentario" class="text-hide"><?= $comentario->getDtComentario() ?></p>
+                      <p id="text_comentario" class="text-hide"><?= $comentario->getTxtComentario() ?></p>
                       <p class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
 
                       <p class="cabecalho lead text-left"> DATA: <?= $comentario->getDtComentario() ?></p> <br>
