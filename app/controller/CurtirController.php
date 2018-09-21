@@ -9,7 +9,7 @@ if ($_GET['rota'] == "corEsporte"){
     $id_esporte = $_GET['id_esporte'];
     $curtir = 1;
 
-    $a = new Curtir_esporte($id_usuario, $id_esporte, $curtir);
+    $a = new Curtir_esporte($id_esporte, $id_usuario, $curtir);
     $b = new CrudCurtirEsporte();
     $c = $b->contadorCurtidasExata($a);
 
@@ -24,7 +24,7 @@ if ($_GET['rota'] == "curtirEsporte")
         $numClicks = $_GET['numClicks'];
         $curtir = 1;
 
-        $a = new Curtir_esporte($id_usuario, $id_esporte, $curtir);
+        $a = new Curtir_esporte($id_esporte, $id_usuario, $curtir);
         $b = new CrudCurtirEsporte();
         $c = $b->contadorCurtidasExata($a);
         if ($c == 0){

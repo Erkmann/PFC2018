@@ -42,8 +42,8 @@ if ($_GET['rota'] == 'comentarEsporte') {
         $txt_comentario = $_GET['txt_comentario'];
 
         $crud = new CrudComentarEsporte();
-        $comentario = new ComentarEsporte( $id_usuario, $id_esporte, $txt_comentario);
-        print_r($comentario);
+        $comentario = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        //print_r($comentario);
 
         //$numComentariosExatos = $crud->getComentarioExato($comentario);
         //try {
@@ -96,27 +96,34 @@ if ($_GET['rota'] == 'excluir_comentario_esporte'){
     if (isset($_SESSION['tipo'])){
         $rota = $_GET['rota'];
         $id_usuario = $_GET['id_usuario'];
-        //$id_esporte = $_GET['id_esporte'];
+        $id_esporte = $_GET['id_esporte'];
         $txt_comentario = $_GET['txt_comentario'];
         $id_comentario = $_GET['id_comentario'];
-        //$dt_comentario = $_GET['dt_comentario'];
-        $comentarioSolicitado = new ComentarEsporte($id_usuario, $id_esporte, $txt_comentario);
-        //TODO PEGAR O ID DO COMENTARIO
-        //$comentarioSolicitado->setIdComentario($id_comentario);
-        //$comentarioSolicitado->setDtComentario($dt_comentario);
-        //$comentarioSolicitado->setTxtComentario($txt_comentario);
+        $dt_comentario = $_GET['dt_comentario'];
+        $comentarioSolicitado = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
 
+        //print_r($comentarioSolicitado);
 
         $crud = new CrudComentarEsporte();
         $comentario_real = $crud->getComentarioById($comentarioSolicitado);
 
-//        print_r($comentario_real);
-//        print_r($comentarioSolicitado);
 
 
 
-        if ($comentario_real == $comentarioSolicitado){
-            $crud->delete_comentario_esporte($comentarioSolicitado);
+        if ($comentario_real->getIdUsuario() == $comentarioSolicitado->getIdUsuario()){
+            $crud->delete_comentario_esporte($comentario_real);
+            header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+        }
+        else{
+            echo '<script language="javascript">';
+            echo 'alert("Esse comentário não foi feito por você")';  //not showing an alert box.
+            echo '</script>';
+
+            header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+
+            //echo("Esse comentário não foi feito por você");
         }
     }
 

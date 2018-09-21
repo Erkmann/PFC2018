@@ -20,8 +20,8 @@
         $(document).ready(function () {
             var verificadorBotao = 0;
             var num_curtidas = $("#numCurtidas").html();
-            var id_usuario = $("#a").html();
-            var id_esporte = $("#b").html();
+            var id_usuario = $("#b").html();
+            var id_esporte = $("#a").html();
             var id_comentario = $("#id_comentario").html();
             var txt_comentario = $("#txt_comentario").val();
             var text_comentario = $("#text_comentario").html();
@@ -186,7 +186,8 @@
             }
             ?>
             <p id="a" class="text-hide"><?= $_GET['id']?></p>
-            <p id="b" class="text-hide"><?= $_SESSION['id']?></p>
+            <p id="b" class="text-hide"><?= // TODO TROCAR O ID NO JQUERY
+                $_SESSION['id']?></p>
             <p id="c" class="text-hide"></p>
           <div>
 
@@ -302,7 +303,7 @@ margin_vertical_1" href="#ligas">Ligas</a>
   <?php foreach ($comentariosArrayObj as $comentario): ?>
 
       <div id = "comentarios" class="py-5">
-          <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_esporte&id_usuario=<?= $comentario->getIdUsuario()?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+          <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_esporte&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
           <a id="edita_comentario" href="#"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
           <div class="container">
               <div class="row">
