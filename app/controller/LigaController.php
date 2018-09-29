@@ -26,11 +26,13 @@ if ($_GET['rota'] == 'ligas'){
         $id_liga = $comentario->getIdLiga();
         $txt_comentario = $comentario->getTxtComentario();
         $dt_comentario = $comentario->getDtComentario();
+        $id_comentario = $comentario->getIdComentario();
         $usuario_comentario = $crudU->getUsuario($id_usuario);
         $nome = $usuario_comentario->getNomeUsuario();
         $nomes[] = $nome;
         $comentarioObj = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
         $comentarioObj->setDtComentario($dt_comentario);
+        $comentarioObj->setIdComentario($id_comentario);
 
         $comentariosArrayObj[] = $comentarioObj;
         //TODO MOSTRAR POR PRIMEIRO OS COMENTÁRIOS MAIS ATUAIS

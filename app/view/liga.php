@@ -18,6 +18,11 @@
             var num_curtidas = $("#numCurtidas").html();
             var id_usuario = $("#b").html();
             var id_liga = $("#a").html();
+            var text_comentario = $("#txt_comentario_feito").html();
+            var dt_comentario = $("#dt_comentario").html();
+            var user_comentario = $("#id_user_comentario").html();
+            var id_comentario = $("#id_comentario").html();
+
 
             $.get("CurtirController.php",
                 {
@@ -89,6 +94,8 @@
 
             )
             })
+
+
         })
     </script>
 
@@ -303,13 +310,46 @@ margin_vertical_1" href="#esporte">Esporte</a>
   <?php //ARRUMAR ORDEM DOS COMENTÁRIOS  ?>
   <div id = "comentarios" class="py-5">
       <div class="container">
-          <a href="m"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+          <a id="exclui_comentario" href="#"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
           <a href="a"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
           <div class="row">
               <div class="col-md-12">
-                  <p class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
-                  <p class="cabecalho lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
-                  <p class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
+                  <p id="id_user_comentario" class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                  <p id="date_comentario" class="cabecalho lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
+                  <p id="text_comentario" class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
+                  <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
+                  <p id="txt_comentario_feito" class="text-hide"><?= $comentario->getTxtComentario() ?> </p>
+
+                  <script>
+                      $("#exclui_comentario").click(function () {
+
+                          var id_usuario = $("#b").html();
+                          var id_liga = $("#a").html();
+                          var text_comentario = $("#txt_comentario_feito").html();
+                          var dt_comentario = $("#dt_comentario").html();
+                          var user_comentario = $("#id_user_comentario").html();
+                          var id_comentario = $("#id_comentario").html();
+
+                          $.get("ComentarioController.php",
+                              {
+                                  rota: 'excluir_comentario_liga',
+                                  id_usuario: id_usuario,
+                                  id_liga: id_liga,
+                                  id_comentario: id_comentario,
+                                  txt_comentario: text_comentario,
+                                  dt_comentario: dt_comentario,
+                                  user_comentario: user_comentario
+
+                              },
+                              function (data) {
+                                  alert(data);
+                                  //location.reload();
+                              }
+                          )
+
+                      })
+                  </script>
+
 
               </div>
           </div>

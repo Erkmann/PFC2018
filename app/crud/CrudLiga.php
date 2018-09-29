@@ -158,9 +158,11 @@ class CrudLiga
             $id_usuario = $comentario['id_usuario'];
             $txt_comentario = $comentario['txt_comentario'];
             $dt_comentario = $comentario['dt_comentario'];
+            $id_comentario = $comentario['id_comentario'];
 
             $comentario = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
             $comentario->setDtComentario($dt_comentario);
+            $comentario->setIdComentario($id_comentario);
             $comentariosArrayObj[] = $comentario;
         }
         return $comentariosArrayObj;
