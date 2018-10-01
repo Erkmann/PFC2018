@@ -296,6 +296,7 @@ margin_vertical_1" href="#pej">Pontos/Num de Jogos</a>
 </div>
 <div id="linha_separa_comentarios"></div>
 <?php endforeach;?>
+
 <div class="text-white bg-secondary">
     <div class="container">
         <div class="row">

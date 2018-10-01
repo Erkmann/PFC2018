@@ -117,11 +117,9 @@ if ($_GET['rota'] == 'excluir_comentario_esporte'){
             header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
         }
         else{
-            echo '<script language="javascript">';
-            echo 'alert("Esse comentário não foi feito por você")';  //not showing an alert box.
-            echo '</script>';
-
-            header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+            //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
+            include_once "../view/alert_comentario.html";
+            //header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
 
             //echo("Esse comentário não foi feito por você");
         }
@@ -156,9 +154,8 @@ if ($_GET['rota'] == 'excluir_comentario_liga'){
             header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
         }
         else{
-            echo '<script language="javascript">';
-            echo 'alert("Esse comentário não foi feito por você")';  //not showing an alert box.
-            echo '</script>';
+            header("../view/alert_comentario.html");
+
 
             header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
 
