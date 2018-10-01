@@ -96,9 +96,36 @@
     </script>
 
     <style>
+
+        @import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+        @import url('../../assets/fonts/FredokaOne-Regular.ttf');
+        @import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+        @import url('../../assets/fonts/AlfaSlabOne-Regular.ttf');
+
         .curtido{
             background-color: #12bbad ;
         }
+
+        #close_icon{
+            margin-left: 90%;
+        }
+
+        #linha_separa_comentarios{
+            width: 100%;
+            height: 2%;
+            background-color: black;
+        }
+        .cabecalho{
+            background-color: #E4F0E4;
+            font-family: 'Fredoka One', cursive;
+            width: 80%;
+        }
+
+        .chamada_comentario{
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+
     </style>
 
 </head>
@@ -241,24 +268,34 @@ margin_vertical_1" href="#pej">Pontos/Num de Jogos</a>
         </div>
     </div>
 </div>
-<?php foreach ($comentariosArrayObj as $comentario): ?>
-
-    <div id = "comentarios" class="py-5 bg-info">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php        $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?>
-
-                    <p class="lead text-left"> <?= $comentario->getDtComentario() ?> <br>
-                        <?= $comentario->getTxtComentario() ?>
-                    </p>
-
-                </div>
+<div class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="chamada_comentario">COMENTÁRIOS</h1>
             </div>
         </div>
     </div>
-<?php endforeach;?>
+</div>
+<?php foreach ($comentariosArrayObj as $comentario): ?>
 
+<div id = "comentarios" class="py-5">
+    <div class="container">
+        <a id="exclui_comentario" href="#"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+        <a href="a"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
+        <div class="row">
+            <div class="col-md-12">
+                <p id="id_user_comentario" class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                <p id="date_comentario" class="cabecalho lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
+                <p id="text_comentario" class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
+                <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
+                <p id="txt_comentario_feito" class="text-hide"><?= $comentario->getTxtComentario() ?> </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="linha_separa_comentarios"></div>
+<?php endforeach;?>
 <div class="text-white bg-secondary">
     <div class="container">
         <div class="row">
