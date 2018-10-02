@@ -304,7 +304,7 @@ margin_vertical_1" href="#ligas">Ligas</a>
 
       <div id = "comentarios" class="py-5">
           <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_esporte&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
-          <a id="edita_comentario" href="#"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
+          <a id="edita_comentario" href="ComentarioControlle.php?rota=edita_comentario_esporte&id_usuario="><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
           <div class="container">
               <div class="row">
                   <div class="col-md-12">

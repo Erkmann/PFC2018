@@ -90,6 +90,24 @@ class CrudComentarCraque
         return $qtd_c;
 
     }
+
+    public function getComentarioById(ComentarCraque $e)
+    {
+        $sql = "SELECT `id_comentario`,`id_craques`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_craques` WHERE id_comentario = '{$e->getIdComentario()}'";
+        $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+        $id_comentario = $resultado['id_comentario'];
+        $id_craques = $resultado['id_craques'];
+        $id_usuario = $resultado['id_usuario'];
+        $txt_comentario = $resultado['txt_comentario'];
+        $dt_comentario = $resultado['dt_comentario'];
+
+        $comentario = new ComentarCraque($id_craques, $id_usuario, $txt_comentario);
+        $comentario->setIdComentario($id_comentario);
+        $comentario->setDtComentario($dt_comentario);
+
+        return $comentario;
+    }
 }
 
 //$a = new ComentarCraque(1, 1, "Que craquee");

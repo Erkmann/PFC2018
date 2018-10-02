@@ -104,5 +104,5 @@ class CrudComentarEquipe
 //$b = new ComentarEquipe(1, 1, "Bláb");
 //$b->setIdComentario(1);
 //$a = new CrudComentarEquipe();
-//$c = $a->getComentariosPorEquipeTotal($b);
+//$c = $a->getComentarioById($b);
 //print_r($c);

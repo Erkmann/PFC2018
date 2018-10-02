@@ -26,11 +26,13 @@ if ($rota == "times"){
         $id_equipe = $comentario->getIdEquipe();
         $txt_comentario = $comentario->getTxtComentario();
         $dt_comentario = $comentario->getDtComentario();
+        $id_comentario = $comentario->getIdComentario();
         $usuario_comentario = $crudU->getUsuario($id_usuario);
         $nome = $usuario_comentario->getNomeUsuario();
         $nomes[] = $nome;
         $comentarioObj = new ComentarEquipe($id_equipe, $id_usuario, $txt_comentario);
         $comentarioObj->setDtComentario($dt_comentario);
+        $comentarioObj->setIdComentario($id_comentario);
 
         $comentariosArrayObj[] = $comentarioObj;
         //TODO MOSTRAR POR PRIMEIRO OS COMENTÁRIOS MAIS ATUAIS

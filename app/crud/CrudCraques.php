@@ -206,6 +206,15 @@ class CrudCraques
 
     }
 
+    public function getEsporteLigaById($id_l){
+        $sql = "SELECT `nome_esporte`,esportes.`historia`,`id_esporte`,`num_praticantes`,`regras`,`icon_esporte`
+        from ligas, esportes WHERE esporte_id_esporte = id_esporte AND id_liga = {$id_l}";
+
+        $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+        $esporte = new Esporte($resultado['nome_esporte'], $resultado['historia'], $resultado['num_praticantes'], $resultado['regras'], $resultado['id_esporte'], $resultado['icon_esporte']);
+        return $esporte;
+    }
 
 
 
