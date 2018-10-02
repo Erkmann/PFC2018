@@ -92,6 +92,24 @@ class CrudComentarLiga
 
     }
 
+    public function getComentarioById(ComentarLiga $l)
+    {
+        $sql = "SELECT `id_comentario`,`id_liga`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_liga` WHERE id_comentario = '{$l->getIdComentario()}'";
+        $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+        $id_comentario = $resultado['id_comentario'];
+        $id_liga = $resultado['id_liga'];
+        $id_usuario = $resultado['id_usuario'];
+        $txt_comentario = $resultado['txt_comentario'];
+        $dt_comentario = $resultado['dt_comentario'];
+
+        $comentario = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
+        $comentario->setIdComentario($id_comentario);
+        $comentario->setDtComentario($dt_comentario);
+
+        return $comentario;
+    }
+
 }
 
 

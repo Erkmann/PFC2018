@@ -81,14 +81,24 @@ class CrudComentarEquipe
         return $comentariosArrayObj;
     }
 
-    public function getComentarioExato(ComentarLiga $c){
 
-        $sql = "SELECT COUNT(`id_liga`) AS qtd_comentario FROM `comentar_liga` WHERE `id_liga` = '{$c->getIdLiga()}' AND `id_usuario` = '{$c->getIdUsuario()}' LIMIT 1";
+
+    public function getComentarioById(ComentarEquipe $e)
+    {
+        $sql = "SELECT `id_comentario`,`id_equipe`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_equipes` WHERE id_comentario = '{$e->getIdComentario()}'";
         $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
 
-        $qtd_c = $resultado['qtd_comentario'];
-        return $qtd_c;
+        $id_comentario = $resultado['id_comentario'];
+        $id_equipe = $resultado['id_equipe'];
+        $id_usuario = $resultado['id_usuario'];
+        $txt_comentario = $resultado['txt_comentario'];
+        $dt_comentario = $resultado['dt_comentario'];
 
+        $comentario = new ComentarEquipe($id_equipe, $id_usuario, $txt_comentario);
+        $comentario->setIdComentario($id_comentario);
+        $comentario->setDtComentario($dt_comentario);
+
+        return $comentario;
     }
 }
 //$b = new ComentarEquipe(1, 1, "Bláb");

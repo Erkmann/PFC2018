@@ -281,7 +281,7 @@ margin_vertical_1" href="#craques">Craques</a>
 
     <div id = "comentarios" class="py-5">
         <div class="container">
-            <a id="exclui_comentario" href="#"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+            <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_time&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_equipe=<?= $comentario->getIdEquipe() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
             <a href="a"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
             <div class="row">
                 <div class="col-md-12">

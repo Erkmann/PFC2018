@@ -35,6 +35,7 @@ if ($_GET['rota'] == 'ligas'){
         $comentarioObj->setIdComentario($id_comentario);
 
         $comentariosArrayObj[] = $comentarioObj;
+        $comentariosArrayObj = array_reverse($comentariosArrayObj, true);
         //TODO MOSTRAR POR PRIMEIRO OS COMENTÁRIOS MAIS ATUAIS
 
 
