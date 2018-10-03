@@ -107,12 +107,12 @@ if ($_GET['rota'] == 'excluir_comentario_esporte'){
         //print_r($comentarioSolicitado);
 
         $crud = new CrudComentarEsporte();
-        $comentario_real = $crud->getComentarioById($comentarioSolicitado);
+        $comentario_real = $crud->getComentarioByIdObject($comentarioSolicitado);
 
 
 
 
-        if ($comentario_real->getIdUsuario() == $comentarioSolicitado->getIdUsuario()){
+        if ($comentario_real == $comentarioSolicitado){
             $crud->delete_comentario_esporte($comentario_real);
             header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
         }
@@ -149,7 +149,7 @@ if ($_GET['rota'] == 'excluir_comentario_liga') {
         $comentario_real = $crud->getComentarioById($comentarioSolicitado);
 
 
-        if ($comentario_real->getIdUsuario() == $comentarioSolicitado->getIdUsuario()) {
+        if ($comentario_real == $comentarioSolicitado) {
             $crud->delete_comentario_liga($comentario_real);
             header('Location: LigaController.php?rota=ver&id='.$comentarioSolicitado->getIdLiga());
         } else {
@@ -181,7 +181,7 @@ if ($_GET['rota'] == 'excluir_comentario_time') {
         $crud = new CrudComentarEquipe();
         $comentario_real = $crud->getComentarioById($comentarioSolicitado);
 
-        if ($comentario_real->getIdUsuario() == $comentarioSolicitado->getIdUsuario()) {
+        if ($comentario_real == $comentarioSolicitado) {
             $crud->delete_comentario_equipe($comentario_real);
             header('Location: TimeController.php?rota=ver&id='.$comentarioSolicitado->getIdEquipe());
         } else {
@@ -212,7 +212,7 @@ if ($_GET['rota'] == 'excluir_comentario_craque') {
         $crud = new CrudComentarCraque();
         $comentario_real = $crud->getComentarioById($comentarioSolicitado);
 
-        if ($comentario_real->getIdUsuario() == $comentarioSolicitado->getIdUsuario()) {
+        if ($comentario_real == $comentarioSolicitado) {
             $crud->delete_comentario_craque($comentario_real);
             header('Location: CraqueController.php?rota=ver&id='.$comentarioSolicitado->getIdCraque());
         } else {
@@ -225,4 +225,59 @@ if ($_GET['rota'] == 'excluir_comentario_craque') {
     } else {
         include_once "../view/alert_comentario_deslogado.html";
     }
+}
+
+if ($_GET['rota'] == 'edita_comentario_esporte'){
+
+    if (isset($_SESSION['tipo'])){
+        $rota = $_GET['rota'];
+        $id_usuario = $_GET['id_usuario'];
+        $id_esporte = $_GET['id_esporte'];
+        $txt_comentario = $_GET['txt_comentario'];
+        $id_comentario = $_GET['id_comentario'];
+        $dt_comentario = $_GET['dt_comentario'];
+
+        $comentarioSolicitado = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
+
+
+
+
+        $crud = new CrudComentarEsporte();
+        $comentario_real = $crud->getComentarioByIdObject($comentarioSolicitado);
+
+
+        if ($comentario_real == $comentarioSolicitado){
+//            $crud->update_comentario_esporte($comentario_real);
+            include_once "../view/edita_comentario.php";
+            //header('Location: ../view/edita_comentario.php');
+        }
+        else{
+            //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
+            include_once "../view/alert_comentario.html";
+            //header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+
+            //echo("Esse comentário não foi feito por você");
+        }
+    }
+    else{
+        include_once "../view/alert_comentario_deslogado.html";
+    }
+
+}
+
+if ($_GET['rota'] == 'fimEditar'){
+    $id_comentario = $_GET['id_comentario'];
+    $txt_comentario = $_GET['texto'];
+    $id_usuario = $_GET['id_usuario'];
+    $id_esporte = $_GET['id_esporte'];
+
+
+    $comentario = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+    $comentario->setIdComentario($id_comentario);
+    print_r($comentario);
+    $crud = new CrudComentarEsporte();
+    $comentario = $crud->update_comentario_esporte($comentario);
+//    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
 }

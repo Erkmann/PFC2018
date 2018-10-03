@@ -30,7 +30,7 @@ class CrudComentarEsporte
 
     public function update_comentario_esporte(ComentarEsporte $e)
     {
-        $sql = "UPDATE `comentar_esportes` SET `txt_comentario`= '{$e->getTxtComentario()}',`dt_comentario`= CURRENT_TIMESTAMP WHERE `id_comentario` =  '{$e->getIdComentario()}'";
+        $sql = "UPDATE `comentar_esportes` SET `txt_comentario`= '{$e->getTxtComentario()}',`dt_comentario`= CURRENT_TIMESTAMP WHERE `id_comentario` =  '{$e->getIdComentario()}' and id_usuario = '{$e->getIdUsuario()}'";
         $this->conexao->exec($sql);
 
     }
@@ -99,7 +99,7 @@ class CrudComentarEsporte
 
     }
 
-    public function getComentarioById(ComentarEsporte $c)
+    public function getComentarioByIdObject(ComentarEsporte $c)
     {
         $sql = "SELECT `id_comentario`,`id_esporte`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_esportes` WHERE id_comentario = '{$c->getIdComentario()}'";
         $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
@@ -116,11 +116,29 @@ class CrudComentarEsporte
 
         return $comentario;
     }
+
+    public function getComentarioById($id)
+    {
+        $sql = "SELECT `id_comentario`,`id_esporte`,`id_usuario`,`txt_comentario`,`dt_comentario` FROM `comentar_esportes` WHERE id_comentario = '{$id}'";
+        $resultado = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);
+
+        $id_comentario = $resultado['id_comentario'];
+        $id_esporte = $resultado['id_esporte'];
+        $id_usuario = $resultado['id_usuario'];
+        $txt_comentario = $resultado['txt_comentario'];
+        $dt_comentario = $resultado['dt_comentario'];
+
+        $comentario = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);
+        $comentario->setIdComentario($id_comentario);
+        $comentario->setDtComentario($dt_comentario);
+
+        return $comentario;
+    }
 }
 
-//$comentario = new ComentarEsporte(3, 104, "Esporte topp");
-//$comentario->setIdComentario(28);
+//$comentario = new ComentarEsporte(3, 107, "Esporte");
+//$comentario->setIdComentario(30);
 //$c = new CrudComentarEsporte();
-//$c->insert_comentario_esporte($comentario);
+//$c->update_comentario_esporte($comentario);
 //$a = $c->getComentarioById($comentario);
 //print_r($a);
