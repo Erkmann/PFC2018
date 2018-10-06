@@ -98,26 +98,7 @@
                 )
             })
             
-            // $("#exclui_comentario").click(function () {
-            //     $(this).click(function () {
-            //
-            //     $.get("ComentarioController.php",
-            //         {
-            //             rota: "excluir_comentario_esporte",
-            //             id_usuario: id_usuario,
-            //             id_esporte: id_esporte,
-            //             id_comentario: id_comentario,
-            //             txt_comentario: text_comentario,
-            //             dt_comentario: date
-            //
-            //         },
-            //     function (data) {
-            //         alert(data);
-            //         //location.reload();
-            //     }
-            //     )
-            //     })
-            // })
+
         })
     </script>
 

@@ -67,8 +67,8 @@
              id_usuario: id_usuario,
              id_esporte: id_esporte
 
-         }, function (data) {
-            alert(data);
+         }, function (data){
+            window.history.back();
          }
 
      )

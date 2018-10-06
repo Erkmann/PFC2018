@@ -250,8 +250,8 @@ if ($_GET['rota'] == 'edita_comentario_esporte'){
 
         if ($comentario_real == $comentarioSolicitado){
 //            $crud->update_comentario_esporte($comentario_real);
-            include_once "../view/edita_comentario.php";
-            //header('Location: ../view/edita_comentario.php');
+            include_once "../view/edita_comentario_esporte.php";
+            //header('Location: ../view/edita_comentario_esporte.php');
         }
         else{
             //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
@@ -279,5 +279,57 @@ if ($_GET['rota'] == 'fimEditar'){
     print_r($comentario);
     $crud = new CrudComentarEsporte();
     $comentario = $crud->update_comentario_esporte($comentario);
+//    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+}
+
+if ($_GET['rota'] == 'edita_comentario_liga'){
+
+    if (isset($_SESSION['tipo'])){
+        $rota = $_GET['rota'];
+        $id_usuario = $_GET['id_usuario'];
+        $id_liga = $_GET['id_liga'];
+        $txt_comentario = $_GET['txt_comentario'];
+        $id_comentario = $_GET['id_comentario'];
+        $dt_comentario = $_GET['dt_comentario'];
+
+        $comentarioSolicitado = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
+
+
+        $crud = new CrudComentarLiga();
+        $comentario_real = $crud->getComentarioById($comentarioSolicitado);
+
+        if ($comentario_real == $comentarioSolicitado){
+//            $crud->update_comentario_esporte($comentario_real);
+            include_once "../view/edita_comentario_liga.php";
+            //header('Location: ../view/edita_comentario_esporte.php');
+        }
+        else{
+            //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
+            include_once "../view/alert_comentario.html";
+            //header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+
+            //echo("Esse comentário não foi feito por você");
+        }
+    }
+    else{
+        include_once "../view/alert_comentario_deslogado.html";
+    }
+
+}
+
+if ($_GET['rota'] == 'fimEditarLiga'){
+    $id_comentario = $_GET['id_comentario'];
+    $txt_comentario = $_GET['texto'];
+    $id_usuario = $_GET['id_usuario'];
+    $id_liga = $_GET['id_liga'];
+
+
+    $comentario = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
+    $comentario->setIdComentario($id_comentario);
+    $crud = new CrudComentarLiga();
+    $comentario = $crud->update_comentario_liga($comentario);
+
 //    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
 }

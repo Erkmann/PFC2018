@@ -115,7 +115,8 @@ class CrudComentarLiga
 
 //Teste
 
-//$a = new ComentarLiga(1, 11, "Blá");
-//$b = new CrudComentarLiga();
-//$c = $b->getComentariosPorLigaLimitado($a);
+$a = new ComentarLiga(1, 11, "Blá");
+$a->setIdComentario(23);
+$b = new CrudComentarLiga();
+$c = $b->update_comentario_liga($a);
 //print_r($c);
