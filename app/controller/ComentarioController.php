@@ -333,3 +333,108 @@ if ($_GET['rota'] == 'fimEditarLiga'){
 
 //    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
 }
+
+if ($_GET['rota'] == 'edita_comentario_time'){
+
+    if (isset($_SESSION['tipo'])){
+        $rota = $_GET['rota'];
+        $id_usuario = $_GET['id_usuario'];
+        $id_time = $_GET['id_equipe'];
+        $txt_comentario = $_GET['txt_comentario'];
+        $id_comentario = $_GET['id_comentario'];
+        $dt_comentario = $_GET['dt_comentario'];
+
+        $comentarioSolicitado = new ComentarEquipe($id_time, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
+
+
+        $crud = new CrudComentarEquipe();
+        $comentario_real = $crud->getComentarioById($comentarioSolicitado);
+
+
+        if ($comentario_real == $comentarioSolicitado){
+//            $crud->update_comentario_esporte($comentario_real);
+            include_once "../view/edita_comentario_time.php";
+            //header('Location: ../view/edita_comentario_esporte.php');
+        }
+        else{
+            //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
+            include_once "../view/alert_comentario.html";
+            //header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+
+            //echo("Esse comentário não foi feito por você");
+        }
+    }
+    else{
+        include_once "../view/alert_comentario_deslogado.html";
+    }
+
+}
+
+if ($_GET['rota'] == 'fimEditarTime'){
+    $id_comentario = $_GET['id_comentario'];
+    $txt_comentario = $_GET['texto'];
+    $id_usuario = $_GET['id_usuario'];
+    $id_time = $_GET['id_time'];
+
+
+    $comentario = new ComentarEquipe($id_time, $id_usuario, $txt_comentario);
+    $comentario->setIdComentario($id_comentario);
+    $crud = new CrudComentarEquipe();
+    $comentario = $crud->update_comentario_equipe($comentario);
+
+//    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+}
+
+if ($_GET['rota'] == 'edita_comentario_craque'){
+
+    if (isset($_SESSION['tipo'])){
+        $rota = $_GET['rota'];
+        $id_usuario = $_GET['id_usuario'];
+        $id_craque = $_GET['id_craque'];
+        $txt_comentario = $_GET['txt_comentario'];
+        $id_comentario = $_GET['id_comentario'];
+        $dt_comentario = $_GET['dt_comentario'];
+
+        $comentarioSolicitado = new ComentarCraque($id_craque, $id_usuario, $txt_comentario);
+        $comentarioSolicitado->setIdComentario($id_comentario);
+        $comentarioSolicitado->setDtComentario($dt_comentario);
+
+
+        $crud = new CrudComentarCraque();
+        $comentario_real = $crud->getComentarioById($comentarioSolicitado);
+
+        if ($comentario_real == $comentarioSolicitado){
+//            $crud->update_comentario_esporte($comentario_real);
+            include_once "../view/edita_comentario_craque.php";
+            //header('Location: ../view/edita_comentario_esporte.php');
+        }
+        else{
+            //header("Location: ../view/alert_comentario.html?id=<?= $comentario_real->getIdEsporte() ");
+            include_once "../view/alert_comentario.html";
+            //header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+
+            //echo("Esse comentário não foi feito por você");
+        }
+    }
+    else{
+        include_once "../view/alert_comentario_deslogado.html";
+    }
+
+}
+
+if ($_GET['rota'] == 'fimEditarCraque'){
+    $id_comentario = $_GET['id_comentario'];
+    $txt_comentario = $_GET['texto'];
+    $id_usuario = $_GET['id_usuario'];
+    $id_craque = $_GET['id_craque'];
+
+
+    $comentario = new ComentarCraque($id_craque, $id_usuario, $txt_comentario);
+    $comentario->setIdComentario($id_comentario);
+    $crud = new CrudComentarCraque();
+    $comentario = $crud->update_comentario_craque($comentario);
+
+//    header('Location: EsporteController.php?rota=ver&id='.$comentarioSolicitado->getIdEsporte());
+}

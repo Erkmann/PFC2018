@@ -4,11 +4,8 @@
     <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controller/ComentarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/ComentarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/edita_comentario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/edita_comentario_esporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/esporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/esporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/liga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/liga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/atleta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/atleta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/time.php" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,7 +165,7 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.131" value="1" />
@@ -178,6 +175,7 @@
           <entry key="project.open.time.2281" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="1" />
@@ -188,32 +186,33 @@
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="61" />
-          <entry key="php" value="6294" />
+          <entry key="php" value="6516" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="61" />
-          <entry key="PHP" value="6294" />
+          <entry key="PHP" value="6516" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="3" />
-          <entry key="php" value="68" />
+          <entry key="php" value="77" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="PHP" value="68" />
+          <entry key="PHP" value="77" />
         </counts>
       </usages-collector>
     </session>
@@ -224,10 +223,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarCraque.php">
+        <entry file="file://$PROJECT_DIR$/app/view/liga.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1581">
-              <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
+            <state relative-caret-position="410">
+              <caret line="313" column="21" selection-start-line="313" selection-end-line="314" />
             </state>
           </provider>
         </entry>
@@ -235,44 +234,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="286" column="45" lean-forward="true" selection-start-line="286" selection-end-line="287" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="314" column="27" lean-forward="true" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="18" selection-start-line="56" selection-start-column="2" selection-end-line="89" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_esporte.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="4862">
+              <caret line="286" column="45" selection-start-line="286" selection-end-line="287" />
             </state>
           </provider>
         </entry>
@@ -280,17 +243,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_liga.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+            <state relative-caret-position="1292">
+              <caret line="76" column="9" selection-end-line="80" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_time.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="330" column="20" lean-forward="true" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="7" selection-end-line="80" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -298,8 +261,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="529">
               <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="284" column="92" selection-start-line="284" selection-start-column="69" selection-end-line="284" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="409" column="58" lean-forward="true" selection-start-line="409" selection-start-column="58" selection-end-line="409" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_craque.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -325,8 +315,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/app/model/Curtir_esporte.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudEsporte.php" />
         <option value="$PROJECT_DIR$/app/controller/RankingController.php" />
         <option value="$PROJECT_DIR$/app/model/ComentarEsporte.php" />
@@ -357,11 +345,9 @@
         <option value="$PROJECT_DIR$/app/view/alert_comentario.php" />
         <option value="$PROJECT_DIR$/app/view/alert_comentario.html" />
         <option value="$PROJECT_DIR$/app/view/alert_comentario_deslogado.html" />
-        <option value="$PROJECT_DIR$/app/view/time.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudComentarEquipe.php" />
         <option value="$PROJECT_DIR$/app/controller/TimeController.php" />
         <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
-        <option value="$PROJECT_DIR$/app/view/atleta.php" />
         <option value="$PROJECT_DIR$/app/controller/CraqueController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudCraques.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
@@ -375,6 +361,10 @@
         <option value="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" />
         <option value="$PROJECT_DIR$/app/view/edita_comentario_liga.php" />
+        <option value="$PROJECT_DIR$/app/view/time.php" />
+        <option value="$PROJECT_DIR$/app/view/edita_comentario_time.php" />
+        <option value="$PROJECT_DIR$/app/view/atleta.php" />
+        <option value="$PROJECT_DIR$/app/view/edita_comentario_craque.php" />
         <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
       </list>
     </option>
@@ -478,32 +468,6 @@
             <path>
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -710,11 +674,13 @@
       <workItem from="1538505755017" duration="4163000" />
       <workItem from="1538570335720" duration="22352000" />
       <workItem from="1538826851888" duration="10139000" />
+      <workItem from="1539024108428" duration="3215000" />
+      <workItem from="1539082246639" duration="370000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452595000" />
+    <option name="totallyTimeSpent" value="456180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,8 +693,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22617246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20574887" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -760,20 +727,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3870">
@@ -963,13 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEquipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="2" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/ComentarCraque.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1015,24 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="285" column="25" lean-forward="true" selection-start-line="285" selection-start-column="25" selection-end-line="285" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/CraqueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4947">
-          <caret line="291" column="103" selection-start-line="291" selection-start-column="103" selection-end-line="291" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1064,31 +996,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+    <entry file="file://$PROJECT_DIR$/app/view/time.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="286" column="45" lean-forward="true" selection-start-line="286" selection-end-line="287" />
+        <state relative-caret-position="257">
+          <caret line="284" column="278" selection-start-line="284" selection-start-column="278" selection-end-line="284" selection-end-column="278" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEquipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="314" column="27" lean-forward="true" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        <state relative-caret-position="216">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1099,17 +1017,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="313" column="21" selection-start-line="313" selection-end-line="314" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="286" column="45" selection-start-line="286" selection-end-line="287" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_liga.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
+        <state relative-caret-position="1292">
+          <caret line="76" column="9" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="7" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="284" column="92" selection-start-line="284" selection-start-column="69" selection-end-line="284" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="330" column="20" lean-forward="true" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+        <state relative-caret-position="374">
+          <caret line="409" column="58" lean-forward="true" selection-start-line="409" selection-start-column="58" selection-end-line="409" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_craque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
         </state>
       </provider>
     </entry>
