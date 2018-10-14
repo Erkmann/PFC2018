@@ -148,7 +148,7 @@ class CrudLiga
 
     public function getComentariosPorLigaLimitado(Liga $c)
     {
-        $sql = "SELECT * FROM `comentar_liga` WHERE `id_liga` = '{$c->getIdLiga()}' LIMIT 5";
+        $sql = "SELECT * FROM `comentar_liga` WHERE `id_liga` = '{$c->getIdLiga()}'  ORDER BY `comentar_liga`.`dt_comentario` DESC LIMIT 5 ";
         $comentarios = $this->conexao->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
         $comentariosArrayObj = [];

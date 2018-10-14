@@ -119,17 +119,17 @@
 
         #linha_separa_comentarios{
             width: 100%;
-            height: 2%;
-            background-color: black;
+            height: 0.3%;
+            background-color: #827674;
         }
         .cabecalho{
             background-color: #E4F0E4;
-            font-family: 'Fredoka One', cursive;
+            font-family:  cursive;
             width: 80%;
         }
 
         .chamada_comentario{
-            font-family: 'Alfa Slab One', cursive;
+            font-family: cursive;
         }
     </style>
 </head>
@@ -291,10 +291,10 @@ margin_vertical_1" href="#ligas">Ligas</a>
                       <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
                       <p id="dt_comentario" class="text-hide"><?= $comentario->getDtComentario() ?></p>
                       <p id="text_comentario" class="text-hide"><?= $comentario->getTxtComentario() ?></p>
-                      <p class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                      <p class=" lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
 
-                      <p class="cabecalho lead text-left"> DATA: <?= $comentario->getDtComentario() ?></p> <br>
-                      <p class="cabecalho lead text-left"> COMENTÁRIO: <?= $comentario->getTxtComentario() ?>
+                      <p class="  lead text-left"> DATA: <?= $comentario->getDtComentario() ?></p> <br>
+                      <p class=" cabecalho lead text-left"> COMENTÁRIO: <?= $comentario->getTxtComentario() ?>
                       </p>
 
                   </div>

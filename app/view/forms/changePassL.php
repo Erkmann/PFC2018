@@ -40,19 +40,19 @@ elseif(isset($_SESSION['tipo']) AND $tipo == '2'){
     require_once "../view/navLogedAdmin.php";
 }?>
 <div class="container" style="margin-bottom: 3%"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6  offset-md-3">
-                <form class="formulario" name="formulario" onsubmit="return validarSenha(this);" action="../controller/UsuarioController.php?rota=attSenha&id=<?=$user->getIdUsuario()?>" method="post">
-                    <div class="form-group"> <label>Sua nova Senha</label>
-                        <input type="password" name="senha" class="form-control senha" placeholder="Senha"> </div>
-                    <div class="form-group"> <label>Confirme sua nova senha</label>
-                        <input type="password" name="repetir_senha" class="form-control repetir_senha" placeholder="Repita a Senha"> </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6  offset-md-3">
+            <form class="formulario" name="formulario" onsubmit="return validarSenha(this);" action="../controller/UsuarioController.php?rota=attSenhaL&id=<?=$_GET['id']?>" method="post">
+                <div class="form-group"> <label>Sua nova Senha</label>
+                    <input type="password" name="senha" class="form-control senha" placeholder="Senha"> </div>
+                <div class="form-group"> <label>Confirme sua nova senha</label>
+                    <input type="password" name="repetir_senha" class="form-control repetir_senha" placeholder="Repita a Senha"> </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
     </div>
+</div>
 </div>
 <div class="container" style="margin-bottom: 26%"></div>
 <div class="text-white bg-secondary">

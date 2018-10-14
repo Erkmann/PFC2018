@@ -126,6 +126,7 @@ function reeenviarEmailConfirmacao($id, $email){
 
     $emailE = new Email($email, $subject, $message);
     $emailE->sendEmail();
+
 }
 
 if ($_GET['rota'] == "cadastrar"){
@@ -270,10 +271,10 @@ elseif ($_GET['rota'] == 'enviarEmailCh'){
     $c = new CrudUsuario();
     $user = $c->getUsuarioByEmail($_POST['email']);
 
-//    if ($user->getIdPass() != 1){
-//        include_once "../view/alertaEV.php";
-//        die();
-//    }
+    if ($user->getVerificado() != 1){
+        include_once "../view/alertaEV.php";
+        die();
+    }
 
     $idP = $c->updateIdPass($user->getIdUsuario());
 
@@ -293,6 +294,14 @@ elseif ($_GET['rota'] == 'attSenha'){
 
 elseif ($_GET['rota'] == 'resendVal'){
     reeenviarEmailConfirmacao($_GET['id'], $_GET['email']);
+    include_once '../view/alertaH.php';
 }
 
+elseif ($_GET['rota'] == 'chPass'){
+    include_once "../view/forms/changePassL.php";
+}
+
+elseif ($_GET['rota'] == 'attSenhaL'){
+    attSenha($_POST['senha'],$_GET['id']);
+}
 

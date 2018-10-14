@@ -9,7 +9,7 @@
 
           <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="btn navbar-btn ml-2 text-white btn-secondary" ><i class="fa d-inline fa-lg"></i><?= $_SESSION['nome'] ?></a>
+              <a href="../controller/UsuarioController.php?rota=chPass&id=<?= $_SESSION['id'] ?>" class="btn navbar-btn ml-2 text-white btn-secondary" ><i class="fa d-inline fa-lg"></i><?= $_SESSION['nome'] ?></a>
           </li>
         </ul>
         <a class="btn navbar-btn ml-2 text-white btn-secondary" href="../controller/UsuarioController.php?rota=logout"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbspLogout</a>

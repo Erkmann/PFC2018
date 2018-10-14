@@ -10,6 +10,7 @@ class Usuario
     private $email;
     private $senhaUsuario;
     private $id_pass;
+    private $verificado;
 
     public function __construct($nome_usuario, $senhaUsuario, $email,  $id_tipo_usuario = 1, $id_usuario = null){
 
@@ -19,6 +20,22 @@ class Usuario
         $this->setSenhaUsuario($senhaUsuario);
         $this->setEmail($email);
 
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVerificado()
+    {
+        return $this->verificado;
+    }
+
+    /**
+     * @param mixed $verificado
+     */
+    public function setVerificado($verificado)
+    {
+        $this->verificado = $verificado;
     }
 
     /**

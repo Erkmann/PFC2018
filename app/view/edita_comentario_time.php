@@ -24,21 +24,32 @@ if (isset($_SESSION["tipo"]) AND $tipo != '2') {
 }
 
 ?>
+
+
 <div class="py-5">
     <div class="container">
         <div class="row">
+
             <p id="id_comentario" class="text-hide"><?= $comentario_real->getIdComentario() ?></p>
             <p id="id_usuario" class="text-hide"><?= $comentario_real->getIdUsuario() ?></p>
             <p id="id_time" class="text-hide"><?= $comentario_real->getIdEquipe() ?></p>
             <p id="dt_comentario" class="text-hide"><?= $comentario_real->getDtComentario() ?></p>
-            <textarea id="txt" class="col-md-12">
-            <?= $comentario_real->getTxtComentario() ?>
-        </textarea>
-            <a id="botao_edita"><button type="button">Enviar</button></a>
         </div>
+        <div class="col-md-6  offset-md-3">
+            <div class="form-group">
+                <label>Comentário</label>
+                <input type="text" value="<?= $comentario_real->getTxtComentario() ?>" class="form-control" id="txt" ></div>
+
+
+
+            <a id="botao_edita"> <button type="submit" class="btn btn-primary">Enviar</button></a>
+        </div>
+
     </div>
 </div>
 
+
+<div class="container" style="margin-bottom: 24%"></div>
 <div class="text-white bg-secondary">
     <div class="container">
         <div class="row">

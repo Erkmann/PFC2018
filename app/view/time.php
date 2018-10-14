@@ -115,17 +115,17 @@ if(!isset($_SESSION["tipo"]))
 
         #linha_separa_comentarios{
             width: 100%;
-            height: 2%;
-            background-color: black;
+            height: 0.3%;
+            background-color: #827674;
         }
         .cabecalho{
             background-color: #E4F0E4;
-            font-family: 'Fredoka One', cursive;
+            font-family:  cursive;
             width: 80%;
         }
 
         .chamada_comentario{
-            font-family: 'Alfa Slab One', cursive;
+            font-family: cursive;
         }
 
     </style>
@@ -285,8 +285,8 @@ margin_vertical_1" href="#craques">Craques</a>
             <a id="edita_comentario" href="ComentarioController.php?rota=edita_comentario_time&id_usuario=<?= $_SESSION['id']?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_equipe=<?= $comentario->getIdEquipe()?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="update_icon" src="../../assets/images/update_icon.png" width="20px"></a>
             <div class="row">
                 <div class="col-md-12">
-                    <p id="id_user_comentario" class="cabecalho lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
-                    <p id="date_comentario" class="cabecalho lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
+                    <p id="id_user_comentario" class=" lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                    <p id="date_comentario" class=" lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
                     <p id="text_comentario" class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
                     <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
                     <p id="txt_comentario_feito" class="text-hide"><?= $comentario->getTxtComentario() ?> </p>

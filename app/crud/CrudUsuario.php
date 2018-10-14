@@ -46,6 +46,11 @@ class CrudUsuario {
         $email = $user['email'];
         $usuario = new Usuario($nome_usuario, $senha, $email, $id_tipo_usuario, $id_usuario);
         $usuario->setIdPass($user['id_pass']);
+        $usuario->setVerificado($user['verificado']);
+
+        if ($usuario->getIdUsuario() == null){
+            include_once '../view/alertaEN.php';
+        }
 
         return $usuario;
     }
