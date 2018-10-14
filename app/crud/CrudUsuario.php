@@ -27,10 +27,27 @@ class CrudUsuario {
             }
         }
 
-        $sql = "INSERT INTO usuario (email, senha, nome_usuario, tipo_usuario_id_tipo_usuario) VALUES ('{$user->getEmail()}','{$this->criptografarPass($user->getSenhaUsuario())}','{$user->getNomeUsuario()}','{$user->getIdTipoUsuario()}')";
+        $sql = "INSERT INTO usuario (email, senha, nome_usuario, tipo_usuario_id_tipo_usuario,verificado) VALUES ('{$user->getEmail()}','{$this->criptografarPass($user->getSenhaUsuario())}','{$user->getNomeUsuario()}','{$user->getIdTipoUsuario()}', 0)";
 
         $this->conexao->exec($sql);
 
+    }
+
+    public function getUsuarioByEmail($email){
+        $sql = "SELECT * FROM usuario WHERE email= '{$email}'";
+        try{$user = $this->conexao->query($sql)->fetch(PDO::FETCH_ASSOC);}catch (PDOException $e){
+            include_once '../view/alertaEN.php';
+        }
+
+        $id_usuario = $user['id_usuario'];
+        $nome_usuario = $user['nome_usuario'];
+        $senha = $user['senha'];
+        $id_tipo_usuario = $user['tipo_usuario_id_tipo_usuario'];
+        $email = $user['email'];
+        $usuario = new Usuario($nome_usuario, $senha, $email, $id_tipo_usuario, $id_usuario);
+        $usuario->setIdPass($user['id_pass']);
+
+        return $usuario;
     }
 
 
@@ -67,11 +84,12 @@ class CrudUsuario {
     }
 
     public function getId($email, $senha){
-        $sql = "SELECT id_usuario FROM usuario WHERE senha = '{$senha}' and email = '{$email}'";
-        $b = $this->conexao->query($sql);
-        $resultado = $b->fetch(PDO::FETCH_ASSOC);
-
-        return $resultado['id_usuario'];
+        $users = $this->getUsuarios();
+        foreach ($users as $u){
+            if (password_verify($senha, $u->getSenhaUsuario()) and $u->getEmail() == $email){
+                return $u->getIdUsuario();
+            }
+        }
 
     }
 
@@ -98,10 +116,7 @@ class CrudUsuario {
             $usuario = new Usuario($nome_usuario, $senha, $email, $id_tipo_usuario, $id_usuario);
         }
 
-
-
         return $usuario;
-
     }
 
 
@@ -142,17 +157,41 @@ class CrudUsuario {
         return $novaSenha;
     }
 
+    public function verificarUserEmail($id){
+        $sql = "UPDATE usuario SET verificado = 1 WHERE id_usuario = {$id}";
+        $this->conexao->exec($sql);
 
+        return true;
 
+    }
+
+    public function updateIdPass($id){
+
+        $idP = uniqid(rand());
+        $sql = "UPDATE usuario SET id_pass = '{$idP}' WHERE id_usuario = {$id}";
+        $this->conexao->exec($sql);
+
+        return $idP;
+    }
+
+    public function updateSenha($senha, $id){
+
+        $sql = "UPDATE usuario SET senha = '{$this->criptografarPass($senha)}' WHERE id_usuario = {$id}";
+        $this->conexao->exec($sql);
+
+        return true;
+    }
 
 }
+//
 
-//$c = new CrudUsuario();
-//$c->deletarUsuario(135);
-//print_r($c->getUsuarios());
+
+//print_r($c->getUsuario(102));
 //
 ///$u = new Usuario('Jac', 'minhasenha', 'meuemail@email', null,'99');
 //$a = $c->getUsuario(99);
 //print_r($a);
-
+//
+//$c= new CrudUsuario();
+//echo $c->updateIdPass(115);
 

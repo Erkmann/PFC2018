@@ -29,6 +29,7 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
               <input type="email" name="email" class="form-control" placeholder="Digite o seu Email"> <small class="form-text text-muted"></small> </div>
             <div class="form-group"> <label>Sua Senha</label>
               <input type="password" name="senha" class="form-control" placeholder="Sua Senha"> </div>
+              <a href="../controller/UsuarioController.php?rota=chamarCh"><small class="form-text text-muted" >Esqueceu sua Senha?</small></a>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
         </div>

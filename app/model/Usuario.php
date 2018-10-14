@@ -9,6 +9,7 @@ class Usuario
     private $id_tipo_usuario;
     private $email;
     private $senhaUsuario;
+    private $id_pass;
 
     public function __construct($nome_usuario, $senhaUsuario, $email,  $id_tipo_usuario = 1, $id_usuario = null){
 
@@ -18,6 +19,22 @@ class Usuario
         $this->setSenhaUsuario($senhaUsuario);
         $this->setEmail($email);
 
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdPass()
+    {
+        return $this->id_pass;
+    }
+
+    /**
+     * @param mixed $id_pass
+     */
+    public function setIdPass($id_pass)
+    {
+        $this->id_pass = $id_pass;
     }
 
     /**

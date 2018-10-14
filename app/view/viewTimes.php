@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="../../assets/viewEsportes.css" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $('#pesquisa').keyup(function () {
-            var nomeFiltro = $(this).val().toLowerCase();
-            $('table tbody').find('tr').each(function () {
-                var conteudoCelula = $(this).find('td:first').text();
-                var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-                $(this).css('display', corresponde ? '':'none');
-            })
-        })
-    </script>
+<!--    <script>-->
+<!--        $('#pesquisa').keyup(function () {-->
+<!--            var nomeFiltro = $(this).val().toLowerCase();-->
+<!--            $('table tbody').find('tr').each(function () {-->
+<!--                var conteudoCelula = $(this).find('td:first').text();-->
+<!--                var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;-->
+<!--                $(this).css('display', corresponde ? '':'none');-->
+<!--            })-->
+<!--        })-->
+<!--    </script>-->
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Anton');
@@ -57,14 +57,14 @@
 <div class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <form class="form-inline" action="">
-                    <div class="input-group"> <input type="text" id="pesquisa" class="form-control" placeholder="Filtro pelo Nome">
-                        <div class="input-group-append"> <button class="btn btn-primary" type="button"><i class="fa fa-search
- fa-fw"></i></button> </div>
-                    </div>
-                </form>
-            </div>
+<!--            <div class="col-md-12">-->
+<!--                <form class="form-inline" action="">-->
+<!--                    <div class="input-group"> <input type="text" id="pesquisa" class="form-control" placeholder="Filtro pelo Nome">-->
+<!--                        <div class="input-group-append"> <button class="btn btn-primary" type="button"><i class="fa fa-search-->
+<!-- fa-fw"></i></button> </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
             <div class="col-md-12">
 
                 <table class="table">

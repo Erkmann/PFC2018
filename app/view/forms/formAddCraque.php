@@ -13,7 +13,7 @@
 
 <?php
 
-if (isset($_SESSION)){$tipo = $_SESSION['tipo'];}
+if (isset($_SESSION['tipo'])){$tipo = $_SESSION['tipo'];}
 
 if(isset($_SESSION) AND $tipo != '2'){
     require_once "../view/navLoged.php";

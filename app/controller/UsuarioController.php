@@ -7,6 +7,7 @@ require_once __DIR__.'/../crud/CrudLigaEquipe.php';
 require_once __DIR__.'/../crud/CrudCraques.php';
 require_once __DIR__.'/../crud/CrudCraqueEquipe.php';
 require_once __DIR__.'/../crud/CrudEsporte.php';
+require_once __DIR__.'/../model/Email.php';
 
 function formularioCadastro(){
     //abir a tela
@@ -20,8 +21,15 @@ function cadastrar(){
     $crudUsuario = new CrudUsuario();
     $crudUsuario->cadastrarUsuario($usuario);
 
-    header('location: HomeController.php');
+    $id = $crudUsuario->getId($_POST['email'], $_POST['senha']);
 
+    $subject = 'Email de Confirmacao!';
+    $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
+
+    $email = new Email($_POST['email'], $subject, $message);
+    $email->sendEmail();
+
+    include_once '../view/alertaV.php';
 }
 
 function formularioLogin(){
@@ -91,6 +99,33 @@ function deletar($id){
     $c->deletarUsuario($id);
     header ('location: UsuarioController.php?rota=getUsers');
 
+}
+
+function changePassword($email,$id){
+    $c = new CrudUsuario();
+    $user = $c->getUsuarioByEmail($email);
+
+    if ($id != $user->getIdPass()){
+        die('Nao eh seu usuario!');
+    }
+
+    include_once "../view/forms/changePassword.php";
+
+}
+
+function attSenha($senha, $id){
+
+    $c = new CrudUsuario();
+    $c->updateSenha($senha,$id);
+    header('location: HomeController.php');
+}
+
+function reeenviarEmailConfirmacao($id, $email){
+    $subject = 'Email de Confirmacao!';
+    $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
+
+    $emailE = new Email($email, $subject, $message);
+    $emailE->sendEmail();
 }
 
 if ($_GET['rota'] == "cadastrar"){
@@ -214,6 +249,50 @@ elseif ($_GET['rota'] == 'cadastroForm'){
 
 elseif ($_GET['rota'] == 'about'){
     include_once "../view/about.php";
+}
+
+elseif ($_GET['rota'] == 'verificar'){
+    $c = new CrudUsuario();
+    $c->verificarUserEmail($_GET['id']);
+
+include_once "../view/alertaVd.php";
+}
+
+elseif ($_GET['rota'] == 'changePass'){
+    changePassword($_GET['email'],$_GET['id']);
+}
+
+elseif ($_GET['rota'] == 'chamarCh'){
+    include_once "../view/forms/email.php";
+}
+
+elseif ($_GET['rota'] == 'enviarEmailCh'){
+    $c = new CrudUsuario();
+    $user = $c->getUsuarioByEmail($_POST['email']);
+
+//    if ($user->getIdPass() != 1){
+//        include_once "../view/alertaEV.php";
+//        die();
+//    }
+
+    $idP = $c->updateIdPass($user->getIdUsuario());
+
+    $subject = 'Alterar Senha';
+    $message = "Para alterar sua senha acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=changePass&id=".$idP."&email=".$_POST['email'];
+
+    $email = new Email($_POST['email'], $subject, $message);
+    $email->sendEmail();
+
+    include_once "../view/alertaECh.php";
+
+}
+
+elseif ($_GET['rota'] == 'attSenha'){
+    attSenha($_POST['senha'], $_GET['id']);
+}
+
+elseif ($_GET['rota'] == 'resendVal'){
+    reeenviarEmailConfirmacao($_GET['id'], $_GET['email']);
 }
 
 

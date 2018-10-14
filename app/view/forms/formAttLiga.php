@@ -12,15 +12,15 @@
 
 <?php
 
-if (isset($_SESSION)){$tipo = $_SESSION['tipo'];}
+if (isset($_SESSION['tipo'])){$tipo = $_SESSION['tipo'];}
 
-if(isset($_SESSION) AND $tipo != '2'){
+if(isset($_SESSION['tipo']) AND $tipo != '2'){
     require_once "../view/navLoged.php";
 }
-elseif (!isset($_SESSION)){
+elseif (!isset($_SESSION['tipo'])){
     require_once "../view/navUnloged.php";
 }
-elseif(isset($_SESSION) AND $tipo == '2'){
+elseif(isset($_SESSION['tipo']) AND $tipo == '2'){
     require_once "../view/navLogedAdmin.php";
 }?>
 
