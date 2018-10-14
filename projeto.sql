@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Tempo de geração: 18/09/2018 às 08:43
--- Versão do servidor: 5.7.21-0ubuntu0.16.04.1
--- Versão do PHP: 7.0.22-0ubuntu0.16.04.1
+-- Host: 127.0.0.1
+-- Generation Time: 14-Out-2018 às 06:19
+-- Versão do servidor: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -17,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `projeto`
+-- Database: `projeto`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `comentar_craques`
+-- Estrutura da tabela `comentar_craques`
 --
 
 CREATE TABLE `comentar_craques` (
@@ -35,7 +37,7 @@ CREATE TABLE `comentar_craques` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `comentar_craques`
+-- Extraindo dados da tabela `comentar_craques`
 --
 
 INSERT INTO `comentar_craques` (`id_comentario`, `id_usuario`, `id_craques`, `txt_comentario`, `dt_comentario`) VALUES
@@ -44,7 +46,7 @@ INSERT INTO `comentar_craques` (`id_comentario`, `id_usuario`, `id_craques`, `tx
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `comentar_equipes`
+-- Estrutura da tabela `comentar_equipes`
 --
 
 CREATE TABLE `comentar_equipes` (
@@ -56,7 +58,7 @@ CREATE TABLE `comentar_equipes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `comentar_equipes`
+-- Extraindo dados da tabela `comentar_equipes`
 --
 
 INSERT INTO `comentar_equipes` (`id_comentario`, `id_equipe`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
@@ -66,7 +68,7 @@ INSERT INTO `comentar_equipes` (`id_comentario`, `id_equipe`, `id_usuario`, `txt
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `comentar_esportes`
+-- Estrutura da tabela `comentar_esportes`
 --
 
 CREATE TABLE `comentar_esportes` (
@@ -78,16 +80,17 @@ CREATE TABLE `comentar_esportes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `comentar_esportes`
+-- Extraindo dados da tabela `comentar_esportes`
 --
 
 INSERT INTO `comentar_esportes` (`id_comentario`, `id_esporte`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(27, 3, 104, 'topper', '2018-08-10 17:44:33');
+(27, 3, 104, 'topper', '2018-08-10 17:44:33'),
+(29, 1, 106, '  321', '2018-10-14 00:10:59');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `comentar_liga`
+-- Estrutura da tabela `comentar_liga`
 --
 
 CREATE TABLE `comentar_liga` (
@@ -99,11 +102,11 @@ CREATE TABLE `comentar_liga` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `comentar_liga`
+-- Extraindo dados da tabela `comentar_liga`
 --
 
 INSERT INTO `comentar_liga` (`id_comentario`, `id_liga`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(23, 1, 102, 'A', '2018-07-24 18:58:13'),
+(23, 1, 102, 'Blá', '2018-10-14 00:11:14'),
 (26, 1, 102, 'C', '2018-07-24 19:12:20'),
 (28, 1, 102, 'D', '2018-07-24 20:39:26'),
 (29, 1, 103, 'F', '2018-07-24 21:46:57'),
@@ -112,7 +115,7 @@ INSERT INTO `comentar_liga` (`id_comentario`, `id_liga`, `id_usuario`, `txt_come
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `craques`
+-- Estrutura da tabela `craques`
 --
 
 CREATE TABLE `craques` (
@@ -127,7 +130,7 @@ CREATE TABLE `craques` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `craques`
+-- Extraindo dados da tabela `craques`
 --
 
 INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titulos`, `numero_de_jogos`, `icon_craque`, `qtd_curtir`) VALUES
@@ -165,7 +168,7 @@ INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titu
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `curtir_craques`
+-- Estrutura da tabela `curtir_craques`
 --
 
 CREATE TABLE `curtir_craques` (
@@ -176,7 +179,7 @@ CREATE TABLE `curtir_craques` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Fazendo dump de dados para tabela `curtir_craques`
+-- Extraindo dados da tabela `curtir_craques`
 --
 
 INSERT INTO `curtir_craques` (`id_usuario`, `id_craques`, `dt_curtir`, `curtir`) VALUES
@@ -185,7 +188,7 @@ INSERT INTO `curtir_craques` (`id_usuario`, `id_craques`, `dt_curtir`, `curtir`)
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `curtir_equipe`
+-- Estrutura da tabela `curtir_equipe`
 --
 
 CREATE TABLE `curtir_equipe` (
@@ -198,7 +201,7 @@ CREATE TABLE `curtir_equipe` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `curtir_esportes`
+-- Estrutura da tabela `curtir_esportes`
 --
 
 CREATE TABLE `curtir_esportes` (
@@ -209,7 +212,7 @@ CREATE TABLE `curtir_esportes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Fazendo dump de dados para tabela `curtir_esportes`
+-- Extraindo dados da tabela `curtir_esportes`
 --
 
 INSERT INTO `curtir_esportes` (`id_esporte`, `id_usuario`, `curtir`, `dt_curtir`) VALUES
@@ -220,7 +223,7 @@ INSERT INTO `curtir_esportes` (`id_esporte`, `id_usuario`, `curtir`, `dt_curtir`
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `curtir_ligas`
+-- Estrutura da tabela `curtir_ligas`
 --
 
 CREATE TABLE `curtir_ligas` (
@@ -231,7 +234,7 @@ CREATE TABLE `curtir_ligas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `curtir_ligas`
+-- Extraindo dados da tabela `curtir_ligas`
 --
 
 INSERT INTO `curtir_ligas` (`id_usuario`, `dt_curtir`, `curtir`, `id_liga`) VALUES
@@ -242,7 +245,7 @@ INSERT INTO `curtir_ligas` (`id_usuario`, `dt_curtir`, `curtir`, `id_liga`) VALU
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `equipes`
+-- Estrutura da tabela `equipes`
 --
 
 CREATE TABLE `equipes` (
@@ -255,7 +258,7 @@ CREATE TABLE `equipes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `equipes`
+-- Extraindo dados da tabela `equipes`
 --
 
 INSERT INTO `equipes` (`titulos`, `id_equipe`, `fundacao`, `nome_equipe`, `numero_torcedores`, `icon_equipe`) VALUES
@@ -306,7 +309,7 @@ INSERT INTO `equipes` (`titulos`, `id_equipe`, `fundacao`, `nome_equipe`, `numer
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `equipes_craques`
+-- Estrutura da tabela `equipes_craques`
 --
 
 CREATE TABLE `equipes_craques` (
@@ -316,7 +319,7 @@ CREATE TABLE `equipes_craques` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `equipes_craques`
+-- Extraindo dados da tabela `equipes_craques`
 --
 
 INSERT INTO `equipes_craques` (`id_equipe`, `id_craques`, `id_associativa`) VALUES
@@ -327,7 +330,7 @@ INSERT INTO `equipes_craques` (`id_equipe`, `id_craques`, `id_associativa`) VALU
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `equipes_ligas`
+-- Estrutura da tabela `equipes_ligas`
 --
 
 CREATE TABLE `equipes_ligas` (
@@ -337,7 +340,7 @@ CREATE TABLE `equipes_ligas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `equipes_ligas`
+-- Extraindo dados da tabela `equipes_ligas`
 --
 
 INSERT INTO `equipes_ligas` (`id_associativa`, `id_equipe`, `id_liga`) VALUES
@@ -388,7 +391,7 @@ INSERT INTO `equipes_ligas` (`id_associativa`, `id_equipe`, `id_liga`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `esportes`
+-- Estrutura da tabela `esportes`
 --
 
 CREATE TABLE `esportes` (
@@ -401,7 +404,7 @@ CREATE TABLE `esportes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `esportes`
+-- Extraindo dados da tabela `esportes`
 --
 
 INSERT INTO `esportes` (`nome_esporte`, `historia`, `id_esporte`, `num_praticantes`, `regras`, `icon_esporte`) VALUES
@@ -411,7 +414,7 @@ INSERT INTO `esportes` (`nome_esporte`, `historia`, `id_esporte`, `num_praticant
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `ligas`
+-- Estrutura da tabela `ligas`
 --
 
 CREATE TABLE `ligas` (
@@ -426,18 +429,18 @@ CREATE TABLE `ligas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `ligas`
+-- Extraindo dados da tabela `ligas`
 --
 
 INSERT INTO `ligas` (`id_liga`, `historia`, `fundacao`, `regulamento`, `pais`, `esporte_id_esporte`, `nome_liga`, `icon_liga`) VALUES
 (1, 'A história da Copa do Mundo de Futebol da FIFA se iniciou em 1928, durante um congresso da entidade, quando Jules Rimet conseguiu a aprovação para criar um torneio internacional. A primeira competição ocorreu em 1930, tendo a participação de 13 equipes convidadas, tendo o Uruguai como país-sede e como campeão.', '1930', 'A Copa do Mundo é disputada atualmente por 32 times e dividida em 8 grupos com 4 seleções cada, sendo jogo único, onde todas as equipes do grupo se enfrentam e os 2 melhores colocados se classificam para a fase de mata-mata.', 'null', 1, 'Copa do Mundo', '../../assets/images/copa.jpg'),
 (6, 'Ao longo da história, várias tentativas foram criadas para tentar iniciar um torneio que reunisse os melhores clubes europeus. O primeiro torneio pan-europeu foi o Challenge Cup , uma competição entre clubes no Império Austro-Húngaro. A Mitropa Cup, uma competição inspirada na Copa Challenge, foi criada em 1927, uma ideia do austríaco Hugo Meisl, e foi disputada entre clubes da Europa Central. Em 1930, a Coupe des Nations, a primeira tentativa de criar uma copa para clubes campeões nacionais da Europa, foi jogada e organizada pelo clube suíço Servette. Realizada em Genebra, reuniu dez campeões de todo o continente. O torneio foi conquistado pela ?jpest da Hungria. As nações latino-européias se uniram para formar a Copa Latina em 1949. Até que finalmente em 1955 foi criado uma nova competição, que viria a ser a principal competição de clubes da Europa. A Taça dos Clubes Campeões Europeus (português europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro) foi inspirada no Cam', '1955', 'O torneio come?a com uma fase de grupos de 32 equipes, divididas em oito grupos. Os grupos s?o definidos atrav?s de sorteio, sendo que equipes do mesmo pa?s n?o podem cair em grupos iguais. Cada equipe se encontra com os outros em sua casa e fora em um formato de ida e volta. A equipe vencedora e segundo colocado de cada grupo passam para a pr?xima rodada. A equipe que fica na terceira coloca??o entra na Liga Europa da UEFA.  Para este est?gio, a equipe vencedora de um grupo joga contra os vice-campe?es de outro grupo, e os times da mesma associa??o podem se enfrentar um contra o outro. A partir das quartas de final, o sorteio ? inteiramente aleat?rio, sem prote??o de associa??o. O torneio usa a regra do gol fora de casa: se a pontua??o agregada dos dois jogos estiver empatada, ent?o a equipe que marcou mais golos no est?dio do seu oponente avan?a.  A fase de grupos ocorre de setembro a dezembro, enquanto o mata-mata come?a em fevereiro. O sistema de mata-mata tamb?m ? de ida e volta, ', 'null', 1, 'Champions League', '../../assets/images/champions-league.jpg'),
-(7, 'Superliga Brasileira de Voleibol Masculino ? o "nome-fantasia" da principal divis?o do Campeonato Brasileiro de Voleibol. A denomina??o "S?rie A" passou a ser utilizada a partir da temporada 2011/2012, na qual foi criada a S?rie B. Todos os campe?es anteriores da Superliga s?o reconhecidos como campe?es brasileiros de voleibol, assim como todos os campe?es da S?rie A desta temporada em diante. O torneio ? organizado anualmente pela Confedera??o Brasileira de Voleibol (CBV) e d? acesso ao seu campe?o ao Campeonato Sul-Americano de Clubes. Os dois ?ltimos colocados s?o rebaixados ? S?rie B na temporada seguinte.', '2011', 'A forma de disputa tem sido com uma fase classificat?ria em pontos corridos, turno e returno, quartas-de-final definidas em s?rie melhor-de-tr?s, semifinais em melhor-de-cinco e final em jogo ?nico.  O campe?o ganha o direito de disputar o Campeonato Sul-Americano de Clubes.', 'Brasil', 3, 'Superliga Masculina', '../../assets/images/superliga-de-volei-sky.jpg');
+(7, 'Superliga Brasileira de Voleibol Masculino ? o \"nome-fantasia\" da principal divis?o do Campeonato Brasileiro de Voleibol. A denomina??o \"S?rie A\" passou a ser utilizada a partir da temporada 2011/2012, na qual foi criada a S?rie B. Todos os campe?es anteriores da Superliga s?o reconhecidos como campe?es brasileiros de voleibol, assim como todos os campe?es da S?rie A desta temporada em diante. O torneio ? organizado anualmente pela Confedera??o Brasileira de Voleibol (CBV) e d? acesso ao seu campe?o ao Campeonato Sul-Americano de Clubes. Os dois ?ltimos colocados s?o rebaixados ? S?rie B na temporada seguinte.', '2011', 'A forma de disputa tem sido com uma fase classificat?ria em pontos corridos, turno e returno, quartas-de-final definidas em s?rie melhor-de-tr?s, semifinais em melhor-de-cinco e final em jogo ?nico.  O campe?o ganha o direito de disputar o Campeonato Sul-Americano de Clubes.', 'Brasil', 3, 'Superliga Masculina', '../../assets/images/superliga-de-volei-sky.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tipo_usuario`
+-- Estrutura da tabela `tipo_usuario`
 --
 
 CREATE TABLE `tipo_usuario` (
@@ -446,7 +449,7 @@ CREATE TABLE `tipo_usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `tipo_usuario`
+-- Extraindo dados da tabela `tipo_usuario`
 --
 
 INSERT INTO `tipo_usuario` (`id_tipo_usuario`, `nome_tipo_usuario`) VALUES
@@ -456,7 +459,7 @@ INSERT INTO `tipo_usuario` (`id_tipo_usuario`, `nome_tipo_usuario`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuario`
+-- Estrutura da tabela `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -464,27 +467,30 @@ CREATE TABLE `usuario` (
   `senha` varchar(64) NOT NULL,
   `id_usuario` int(10) NOT NULL,
   `nome_usuario` varchar(64) NOT NULL,
-  `tipo_usuario_id_tipo_usuario` int(10) NOT NULL
+  `tipo_usuario_id_tipo_usuario` int(10) NOT NULL,
+  `verificado` int(1) DEFAULT NULL,
+  `id_pass` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Fazendo dump de dados para tabela `usuario`
+-- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`email`, `senha`, `id_usuario`, `nome_usuario`, `tipo_usuario_id_tipo_usuario`) VALUES
-('email@email.com', '123', 102, 'Jefferson Chaves', 2),
-('suli@suli.suli', 'minhasenha', 103, 'Su', 1),
-('vini123@gmail.com', '$2y$10$D/OJZkHv4gQZPY.xl6mzfO5a2noZ9hFYeHUn1OFZ/345ppy90Q86O', 104, 'vini', 2),
-('joaovitorjec@gmail.com', '$2y$10$ov2dgwhND0ZQMud30T9pEuEFDZ.UCDs7dlKAOLuQNEFdKlTqy8X9q', 105, 'joao', 2),
-('senha@senha', '$2y$10$QqT8yVK3wV1Av/AcyJrkQObWSDrckKKbNzv5fq49ZX6UCQxWkUEd2', 106, 'Russo', 2),
-('123@123', '$2y$10$XVw9lnZqrjuQF0fnLzCp0ex8dyLylvkm5ocgD39ChlOj2YBjlwvqS', 107, 'asda', 1);
+INSERT INTO `usuario` (`email`, `senha`, `id_usuario`, `nome_usuario`, `tipo_usuario_id_tipo_usuario`, `verificado`, `id_pass`) VALUES
+('email@email.com', '123', 102, 'Jefferson Chaves', 2, 1, '0'),
+('suli@suli.suli', 'minhasenha', 103, 'Su', 1, NULL, '0'),
+('vini123@gmail.com', '$2y$10$D/OJZkHv4gQZPY.xl6mzfO5a2noZ9hFYeHUn1OFZ/345ppy90Q86O', 104, 'vini', 2, NULL, '0'),
+('joaovitorjec@gmail.com', '$2y$10$ov2dgwhND0ZQMud30T9pEuEFDZ.UCDs7dlKAOLuQNEFdKlTqy8X9q', 105, 'joao', 2, NULL, '0'),
+('senha@senha', '$2y$10$QqT8yVK3wV1Av/AcyJrkQObWSDrckKKbNzv5fq49ZX6UCQxWkUEd2', 106, 'Russo', 2, NULL, '0'),
+('123@123', '$2y$10$XVw9lnZqrjuQF0fnLzCp0ex8dyLylvkm5ocgD39ChlOj2YBjlwvqS', 107, 'asda', 1, NULL, '0'),
+('erkmann08@gmail.com', '$2y$10$bGrqauBq3UptAW.nw8m7Zu8ktlIZdul.t0T8mHawcxewDA3HWojBa', 115, 'Mateus', 1, 0, '17712341055bc2bf995428b');
 
 --
--- Índices de tabelas apagadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `comentar_craques`
+-- Indexes for table `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
   ADD PRIMARY KEY (`id_comentario`),
@@ -492,7 +498,7 @@ ALTER TABLE `comentar_craques`
   ADD KEY `fk_usuario_has_craques_usuario1_idx` (`id_usuario`);
 
 --
--- Índices de tabela `comentar_equipes`
+-- Indexes for table `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
   ADD PRIMARY KEY (`id_comentario`),
@@ -500,7 +506,7 @@ ALTER TABLE `comentar_equipes`
   ADD KEY `fk_equipes_has_usuario_equipes1_idx` (`id_equipe`);
 
 --
--- Índices de tabela `comentar_esportes`
+-- Indexes for table `comentar_esportes`
 --
 ALTER TABLE `comentar_esportes`
   ADD PRIMARY KEY (`id_comentario`),
@@ -508,7 +514,7 @@ ALTER TABLE `comentar_esportes`
   ADD KEY `fk_esportes_has_usuario_esportes1_idx` (`id_esporte`);
 
 --
--- Índices de tabela `comentar_liga`
+-- Indexes for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
   ADD PRIMARY KEY (`id_comentario`),
@@ -516,47 +522,47 @@ ALTER TABLE `comentar_liga`
   ADD KEY `fk_ligas_has_usuario_ligas1_idx` (`id_liga`);
 
 --
--- Índices de tabela `craques`
+-- Indexes for table `craques`
 --
 ALTER TABLE `craques`
   ADD PRIMARY KEY (`id_craques`);
 
 --
--- Índices de tabela `curtir_craques`
+-- Indexes for table `curtir_craques`
 --
 ALTER TABLE `curtir_craques`
   ADD KEY `id_usuario` (`id_usuario`),
   ADD KEY `id_craques` (`id_craques`);
 
 --
--- Índices de tabela `curtir_equipe`
+-- Indexes for table `curtir_equipe`
 --
 ALTER TABLE `curtir_equipe`
   ADD KEY `id_usuario` (`id_usuario`),
   ADD KEY `id_equipe` (`id_equipe`);
 
 --
--- Índices de tabela `curtir_esportes`
+-- Indexes for table `curtir_esportes`
 --
 ALTER TABLE `curtir_esportes`
   ADD KEY `id_esporte` (`id_esporte`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Índices de tabela `curtir_ligas`
+-- Indexes for table `curtir_ligas`
 --
 ALTER TABLE `curtir_ligas`
   ADD KEY `id_usuario` (`id_usuario`),
   ADD KEY `fk_curtir_ligas_ligas2_idx` (`id_liga`);
 
 --
--- Índices de tabela `equipes`
+-- Indexes for table `equipes`
 --
 ALTER TABLE `equipes`
   ADD PRIMARY KEY (`id_equipe`);
 
 --
--- Índices de tabela `equipes_craques`
+-- Indexes for table `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
   ADD PRIMARY KEY (`id_associativa`),
@@ -564,7 +570,7 @@ ALTER TABLE `equipes_craques`
   ADD KEY `equipes_craques_ibfk_2` (`id_craques`);
 
 --
--- Índices de tabela `equipes_ligas`
+-- Indexes for table `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
   ADD PRIMARY KEY (`id_associativa`),
@@ -572,129 +578,141 @@ ALTER TABLE `equipes_ligas`
   ADD KEY `id_equipe` (`id_equipe`) USING BTREE;
 
 --
--- Índices de tabela `esportes`
+-- Indexes for table `esportes`
 --
 ALTER TABLE `esportes`
   ADD PRIMARY KEY (`id_esporte`);
 
 --
--- Índices de tabela `ligas`
+-- Indexes for table `ligas`
 --
 ALTER TABLE `ligas`
   ADD PRIMARY KEY (`id_liga`),
   ADD KEY `id_esporte` (`esporte_id_esporte`);
 
 --
--- Índices de tabela `tipo_usuario`
+-- Indexes for table `tipo_usuario`
 --
 ALTER TABLE `tipo_usuario`
   ADD PRIMARY KEY (`id_tipo_usuario`);
 
 --
--- Índices de tabela `usuario`
+-- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`),
   ADD KEY `id_tipo_usuario` (`tipo_usuario_id_tipo_usuario`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `comentar_craques`
+-- AUTO_INCREMENT for table `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
   MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
--- AUTO_INCREMENT de tabela `comentar_equipes`
+-- AUTO_INCREMENT for table `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
   MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
--- AUTO_INCREMENT de tabela `comentar_esportes`
+-- AUTO_INCREMENT for table `comentar_esportes`
 --
 ALTER TABLE `comentar_esportes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
 --
--- AUTO_INCREMENT de tabela `comentar_liga`
+-- AUTO_INCREMENT for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
   MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
 --
--- AUTO_INCREMENT de tabela `craques`
+-- AUTO_INCREMENT for table `craques`
 --
 ALTER TABLE `craques`
   MODIFY `id_craques` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+
 --
--- AUTO_INCREMENT de tabela `equipes`
+-- AUTO_INCREMENT for table `equipes`
 --
 ALTER TABLE `equipes`
   MODIFY `id_equipe` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
 --
--- AUTO_INCREMENT de tabela `equipes_craques`
+-- AUTO_INCREMENT for table `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
   MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
 --
--- AUTO_INCREMENT de tabela `equipes_ligas`
+-- AUTO_INCREMENT for table `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
   MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+
 --
--- AUTO_INCREMENT de tabela `esportes`
+-- AUTO_INCREMENT for table `esportes`
 --
 ALTER TABLE `esportes`
   MODIFY `id_esporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
--- AUTO_INCREMENT de tabela `ligas`
+-- AUTO_INCREMENT for table `ligas`
 --
 ALTER TABLE `ligas`
   MODIFY `id_liga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
--- AUTO_INCREMENT de tabela `tipo_usuario`
+-- AUTO_INCREMENT for table `tipo_usuario`
 --
 ALTER TABLE `tipo_usuario`
   MODIFY `id_tipo_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
--- AUTO_INCREMENT de tabela `usuario`
+-- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+
 --
--- Restrições para dumps de tabelas
+-- Constraints for dumped tables
 --
 
 --
--- Restrições para tabelas `comentar_craques`
+-- Limitadores para a tabela `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
   ADD CONSTRAINT `fk_usuario_has_craques_craques1` FOREIGN KEY (`id_craques`) REFERENCES `craques` (`id_craques`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_usuario_has_craques_usuario1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `comentar_equipes`
+-- Limitadores para a tabela `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
   ADD CONSTRAINT `fk_equipes_has_usuario_equipes1` FOREIGN KEY (`id_equipe`) REFERENCES `equipes` (`id_equipe`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_equipes_has_usuario_usuario1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `comentar_esportes`
+-- Limitadores para a tabela `comentar_esportes`
 --
 ALTER TABLE `comentar_esportes`
   ADD CONSTRAINT `fk_esportes_has_usuario_esportes1` FOREIGN KEY (`id_esporte`) REFERENCES `esportes` (`id_esporte`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_esportes_has_usuario_usuario1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `comentar_liga`
+-- Limitadores para a tabela `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
   ADD CONSTRAINT `fk_ligas_has_usuario_ligas1` FOREIGN KEY (`id_liga`) REFERENCES `ligas` (`id_liga`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_ligas_has_usuario_usuario1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `curtir_craques`
+-- Limitadores para a tabela `curtir_craques`
 --
 ALTER TABLE `curtir_craques`
   ADD CONSTRAINT `curtir_craques_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`),
@@ -702,7 +720,7 @@ ALTER TABLE `curtir_craques`
   ADD CONSTRAINT `curtir_craques_ibfk_3` FOREIGN KEY (`id_craques`) REFERENCES `craques` (`id_craques`);
 
 --
--- Restrições para tabelas `curtir_equipe`
+-- Limitadores para a tabela `curtir_equipe`
 --
 ALTER TABLE `curtir_equipe`
   ADD CONSTRAINT `curtir_equipe_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`),
@@ -710,44 +728,45 @@ ALTER TABLE `curtir_equipe`
   ADD CONSTRAINT `curtir_equipe_ibfk_3` FOREIGN KEY (`id_equipe`) REFERENCES `equipes` (`id_equipe`);
 
 --
--- Restrições para tabelas `curtir_esportes`
+-- Limitadores para a tabela `curtir_esportes`
 --
 ALTER TABLE `curtir_esportes`
   ADD CONSTRAINT `curtir_esportes_ibfk_1` FOREIGN KEY (`id_esporte`) REFERENCES `esportes` (`id_esporte`),
   ADD CONSTRAINT `curtir_esportes_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
 
 --
--- Restrições para tabelas `curtir_ligas`
+-- Limitadores para a tabela `curtir_ligas`
 --
 ALTER TABLE `curtir_ligas`
   ADD CONSTRAINT `curtir_ligas_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`),
   ADD CONSTRAINT `fk_curtir_ligas_ligas2` FOREIGN KEY (`id_liga`) REFERENCES `ligas` (`id_liga`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `equipes_craques`
+-- Limitadores para a tabela `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
   ADD CONSTRAINT `equipes_craques_ibfk_1` FOREIGN KEY (`id_equipe`) REFERENCES `equipes` (`id_equipe`),
   ADD CONSTRAINT `equipes_craques_ibfk_2` FOREIGN KEY (`id_craques`) REFERENCES `craques` (`id_craques`);
 
 --
--- Restrições para tabelas `equipes_ligas`
+-- Limitadores para a tabela `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
   ADD CONSTRAINT `equipes_ligas_ibfk_1` FOREIGN KEY (`id_equipe`) REFERENCES `equipes` (`id_equipe`),
   ADD CONSTRAINT `equipes_ligas_ibfk_2` FOREIGN KEY (`id_liga`) REFERENCES `ligas` (`id_liga`);
 
 --
--- Restrições para tabelas `ligas`
+-- Limitadores para a tabela `ligas`
 --
 ALTER TABLE `ligas`
   ADD CONSTRAINT `ligas_ibfk_1` FOREIGN KEY (`esporte_id_esporte`) REFERENCES `esportes` (`id_esporte`);
 
 --
--- Restrições para tabelas `usuario`
+-- Limitadores para a tabela `usuario`
 --
 ALTER TABLE `usuario`
   ADD CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`tipo_usuario_id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_tipo_usuario`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
