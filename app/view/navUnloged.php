@@ -8,7 +8,7 @@
 
             <a class="btn navbar-btn ml-2 text-white btn-secondary mx-1" href="UsuarioController.php?rota=logar"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Login</a>
             <a class="btn navbar-btn ml-2 text-white btn-secondary" href="UsuarioController.php?rota=cadastrar"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Cadastrar</a>
-            <form class="form-inline my-2 my-lg-0"> <input class="form-control mr-sm-2 form-control-sm w-50 mx-1" type="text" placeholder="Pesquise"> <button class="btn my-2 my-sm-0 btn-outline-success" type="submit">Search</button> </form>
+            <form method="post" action="../controller/UsuarioController.php?rota=pesquisa" class="form-inline my-2 my-lg-0"> <input class="form-control mr-sm-2 form-control-sm w-50 mx-1" type="text" name="termo" placeholder="Pesquise"> <button class="btn my-2 my-sm-0 btn-outline-success" type="submit">Search</button> </form>
             <a class="btn btn-default navbar-btn" href="../controller/UsuarioController.php?rota=about">
                 <i class="fa fa-question fa-fw"></i>
             </a>

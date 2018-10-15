@@ -7,6 +7,7 @@ require_once __DIR__.'/../crud/CrudLigaEquipe.php';
 require_once __DIR__.'/../crud/CrudCraques.php';
 require_once __DIR__.'/../crud/CrudCraqueEquipe.php';
 require_once __DIR__.'/../crud/CrudEsporte.php';
+require_once __DIR__.'/../crud/CrudPesquisa.php';
 require_once __DIR__.'/../model/Email.php';
 
 function formularioCadastro(){
@@ -126,6 +127,14 @@ function reeenviarEmailConfirmacao($id, $email){
 
     $emailE = new Email($email, $subject, $message);
     $emailE->sendEmail();
+
+}
+
+function pesquisa($termo){
+    $c = new CrudPesquisa();
+    $resultado = $c->pesquisa($termo);
+
+    include_once '../view/resultadoPesquisa.php';
 
 }
 
@@ -303,5 +312,9 @@ elseif ($_GET['rota'] == 'chPass'){
 
 elseif ($_GET['rota'] == 'attSenhaL'){
     attSenha($_POST['senha'],$_GET['id']);
+}
+
+elseif ($_GET['rota'] == 'pesquisa'){
+    pesquisa($_POST['termo']);
 }
 
