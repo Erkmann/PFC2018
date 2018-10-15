@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 
@@ -52,7 +53,7 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
                     <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Tipo</th>
+                        <th>Categoria</th>
                     </tr>
                     </thead>
                     <tbody>

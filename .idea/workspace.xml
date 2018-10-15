@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
-      <change afterPath="$PROJECT_DIR$/app/view/resultadoPesquisa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/crud/CrudPesquisa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudPesquisa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/navLoged.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/navLoged.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/navLogedAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/navLogedAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/navUnloged.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/navUnloged.php" afterDir="false" />
-    </list>
+    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +160,7 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.123" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -203,13 +195,13 @@
         <counts>
           <entry key="consultasPesquisa" value="7" />
           <entry key="html" value="61" />
-          <entry key="php" value="14605" />
+          <entry key="php" value="14661" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="70" />
-          <entry key="PHP" value="14596" />
+          <entry key="PHP" value="14652" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -242,7 +234,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/crud/CrudPesquisa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
+            <state relative-caret-position="504">
               <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
             </state>
           </provider>
@@ -260,7 +252,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2497">
+            <state relative-caret-position="-2767">
               <caret line="136" column="47" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
             </state>
           </provider>
@@ -269,7 +261,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="1224">
               <caret line="68" column="54" selection-end-line="85" selection-end-column="7" />
             </state>
           </provider>
@@ -278,8 +270,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/resultadoPesquisa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="59" column="136" selection-start-line="59" selection-start-column="136" selection-end-line="59" selection-end-column="136" />
+            <state relative-caret-position="342">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/navLoged.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -350,11 +360,11 @@
         <option value="$PROJECT_DIR$/app/view/time.php" />
         <option value="$PROJECT_DIR$/app/view/viewEsportes.php" />
         <option value="$PROJECT_DIR$/consultasPesquisa" />
-        <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
-        <option value="$PROJECT_DIR$/app/view/navLoged.php" />
         <option value="$PROJECT_DIR$/app/controller/UsuarioController.php" />
         <option value="$PROJECT_DIR$/app/view/navUnloged.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudPesquisa.php" />
+        <option value="$PROJECT_DIR$/app/view/navLoged.php" />
+        <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
         <option value="$PROJECT_DIR$/app/view/resultadoPesquisa.php" />
       </list>
     </option>
@@ -679,12 +689,12 @@
       <workItem from="1539475922595" duration="13010000" />
       <workItem from="1539519301388" duration="8653000" />
       <workItem from="1539628029762" duration="4631000" />
-      <workItem from="1539637796058" duration="2896000" />
+      <workItem from="1539637796058" duration="3220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487466000" />
+    <option name="totallyTimeSpent" value="487790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,7 +709,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21946308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1066,8 +1076,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/resultadoPesquisa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="59" column="136" selection-start-line="59" selection-start-column="136" selection-end-line="59" selection-end-column="136" />
+        <state relative-caret-position="666">
+          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
         </state>
       </provider>
     </entry>
