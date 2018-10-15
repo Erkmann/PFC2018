@@ -43,6 +43,7 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
         </div>
     </div>
 </div>
+
 <div class="py-5">
     <div class="container">
         <div class="row">

@@ -1,0 +1,4 @@
+SELECT DISTINCT * FROM esportes WHERE nome_esporte like '%brasil%' OR historia like '%brasil%' OR regras like '%brasil%';
+SELECT DISTINCT * FROM ligas WHERE nome_liga like '%brasil%' OR pais like '%brasil%' OR regulamento like '%brasil%' OR historia like '%brasil%';
+SELECT DISTINCT * FROM craques WHERE nome_craque like '%brasil%';
+SELECT DISTINCT * FROM equipes WHERE nome_equipe like '%brasil%';
