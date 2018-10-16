@@ -26,9 +26,11 @@
            right: 0;
            position: absolute;
            z-index: -1;
-           background-size: 100% 70%;
-
+           background-size: 100% 150%;
+           background-repeat: no-repeat;
        }
+
+
     </style>
 </head>
 
@@ -106,14 +108,13 @@
     </div>
   </div>
   <div class="py-5 bg-light" >
-    <div class="container" style="border: solid 1.5px grey; border-radius: 3px; padding-bottom: 6px; padding-top: 6px; border-spacing: 30px; background-color: #B8B8B8" >
+    <div class="container" style="padding-bottom: 6px; padding-top: 6px; border-spacing: 30px; background-color: #B8B8B8" >
       <div class="row">
         <div class="col-md-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $esporte->getIconEsporte(); ?>" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><?= $esporte->getNomeEsporte();?></h5>
-              <p class="card-text">Seu Esporte de Hoje!</p>
+            <p class="card-text">Seu Esporte de Hoje!</p>
               <a href="EsporteController.php?rota=ver&id=<?= $esporte->getIdEsporte(); ?>" class="btn btn-secondary text-white">Ver Mais</a>
             </div>
           </div>
@@ -122,18 +123,16 @@
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $liga->getIconLiga(); ?>" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><?= $liga->getNomeLiga();?></h5>
-              <p class="card-text">Seu(a) Torneio/Liga de Hoje!</p>
+              <p class="card-text">Seu(a) Torneio de Hoje!</p>
               <a href="LigaController.php?rota=ver&id=<?= $liga->getIdLiga(); ?>" class="btn btn-secondary text-white">Ver Mais
                 <br> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 my-1">
+        <div class="col-md-3 col-sm-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $equipe->getIconEquipe(); ?>" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><?= $equipe->getNomeEquipe(); ?></h5>
               <p class="card-text">Seu Time de Hoje!</p>
               <a href="TimeController.php?rota=ver&id=<?= utf8_decode($equipe->getIdEquipe()); ?>" class="btn btn-secondary text-white">Ver Mais</a>
             </div>
@@ -143,9 +142,8 @@
           <div class="card">
             <img class="card-img-top img_personalizada " src="../../assets/images/<?= $craque->getIconCraque(); ?>" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title"><?= $craque->getNomeCraque(); ?></h5>
-              <p class="card-text">Seu(a) Jogador(a) de Hoje!</p>
-              <a href="CraqueController.php?rota=ver&id=<?= $craque->getIdCraque();?>" class="btn btn-secondary text-white">Ver Mais</a>
+              <p class="card-text">Seu(a) Craque de Hoje!</p>
+              <a  href="CraqueController.php?rota=ver&id=<?= $craque->getIdCraque();?>" class="btn btn-secondary text-white">Ver Mais</a>
             </div>
           </div>
         </div>

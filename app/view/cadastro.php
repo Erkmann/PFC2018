@@ -58,7 +58,7 @@ elseif(isset($_SESSION) AND $tipo == '2'){
       </div>
     </div>
   </div>
-<div class="container" style="margin-bottom: 18%"></div>
+<div class="container" style="margin-bottom: 8.5%"></div>
 <div class="text-white bg-secondary">
     <div class="container">
         <div class="row">

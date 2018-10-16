@@ -14,6 +14,7 @@ require_once __DIR__."/../crud/CrudComentarLiga.php";
 require_once __DIR__."/../crud/CrudComentarEsporte.php";
 require_once __DIR__."/../crud/CrudComentarEquipe.php";
 require_once __DIR__."/../crud/CrudComentarCraque.php";
+require_once __DIR__.'/../model/Dicionario.php';
 
 //TODO UM X PARA EXCLUIR O COMENTÁRIO, E UMA CHAVEZINHA PARA ATUALIZAR
 
@@ -24,6 +25,15 @@ if ($_GET['rota'] == 'comentarLiga') {
         $id_liga = $_GET['id_liga'];
         $txt_comentario = $_GET['txt_comentario'];
 
+        $d = new Dicionario();
+        $resRota = $d->verificaInput($rota);
+        $resIdUser = $d->verificaInput($id_usuario);
+        $resIdLiga = $d->verificaInput($id_liga);
+        $resTxtComentario = $d->verificaInput($txt_comentario);
+        if ($resRota == false OR $resIdUser == false OR $resIdLiga == false OR $resTxtComentario == false){
+            include_once '../view/alertaSql.php';
+            die();
+        }
         $crud = new CrudComentarLiga();
         $comentario = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
         $numComentariosExatos = $crud->getComentarioExato($comentario);
@@ -40,6 +50,16 @@ if ($_GET['rota'] == 'comentarEsporte') {
         $id_usuario = $_GET['id_usuario'];
         $id_esporte = $_GET['id_esporte'];
         $txt_comentario = $_GET['txt_comentario'];
+
+        $d = new Dicionario();
+        $resRota = $d->verificaInput($rota);
+        $resIdUser = $d->verificaInput($id_usuario);
+        $resIdEsporte = $d->verificaInput($id_esporte);
+        $resTxtComentario = $d->verificaInput($txt_comentario);
+        if ($resRota == false OR $resIdUser == false OR $resIdEsporte == false OR $resTxtComentario == false){
+            echo "NAO PODE";
+            die();
+        }
 
         $crud = new CrudComentarEsporte();
         $comentario = new ComentarEsporte($id_esporte, $id_usuario, $txt_comentario);

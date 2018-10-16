@@ -9,7 +9,9 @@ require_once __DIR__.'/../crud/CrudCraqueEquipe.php';
 require_once __DIR__.'/../crud/CrudEsporte.php';
 require_once __DIR__.'/../crud/CrudPesquisa.php';
 require_once __DIR__.'/../model/Email.php';
+require_once __DIR__.'/../model/Dicionario.php';
 
+$d = new Dicionario();
 function formularioCadastro(){
     //abir a tela
     include_once '../view/cadastro.php';
@@ -17,18 +19,27 @@ function formularioCadastro(){
 }
 
 function cadastrar(){
+    $d = new Dicionario();
+    $usuario = $d->verificaInput($_POST['usuario']);
+    $senha = $d->verificaInput($_POST['senha']);
+    $email = $d->verificaInput($_POST['email']);
 
-    $usuario = new Usuario($_POST['usuario'],$_POST['senha'], $_POST['email']);
+    if ($email == false OR $senha == false OR $usuario == false){
+        include_once '../view/alertaSql.php';
+        die();
+    }
+
+    $usuario = new Usuario($usuario,$senha, $email);
     $crudUsuario = new CrudUsuario();
     $crudUsuario->cadastrarUsuario($usuario);
 
-    $id = $crudUsuario->getId($_POST['email'], $_POST['senha']);
+    $id = $crudUsuario->getId($email, $senha);
 
     $subject = 'Email de Confirmacao!';
     $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
 
-    $email = new Email($_POST['email'], $subject, $message);
-    $email->sendEmail();
+    $emailS = new Email($email, $subject, $message);
+    $emailS->sendEmail();
 
     include_once '../view/alertaV.php';
 }
@@ -41,8 +52,15 @@ function formularioLogin(){
 
 function chamarVerificarLogin(){
 
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $d = new Dicionario();
+
+    $email = $d->verificaInput($_POST['email']);
+    $senha = $d->verificaInput($_POST['senha']);
+
+    if ($email == false OR $senha == false){
+        include_once '../view/alertaSql.php';
+        die();
+    }
 
     $a = new CrudUsuario();
     $res = $a->verificaLogin($email, $senha);
@@ -142,7 +160,12 @@ if ($_GET['rota'] == "cadastrar"){
     formularioCadastro();
 } elseif ($_GET['rota'] == "editar" AND isset($_GET['id'])){
     $c = new CrudUsuario();
-    $usuario = $c->getUsuario($_GET['id']);
+    $id = $d->verificaInput($_GET['id']);
+    if ($id == false){
+        include_once '../view/alertaSql.php';
+        die();
+    }
+    $usuario = $c->getUsuario($id);
     include_once "../view/formEdituser.php";
 
 } elseif ($_GET['rota'] == 'realizar_cadastro'){
@@ -300,7 +323,14 @@ elseif ($_GET['rota'] == 'enviarEmailCh'){
 }
 
 elseif ($_GET['rota'] == 'attSenha'){
-    attSenha($_POST['senha'], $_GET['id']);
+    $senha = $d->verificaInput($_POST['senha']);
+    $id = $d->verificaInput($_GET['id']);
+    if ($senha == false OR $id == false){
+        include_once '../view/alertaSql.php';
+        die();
+    }
+
+    attSenha($senha, $id);
 }
 
 elseif ($_GET['rota'] == 'resendVal'){
@@ -313,10 +343,21 @@ elseif ($_GET['rota'] == 'chPass'){
 }
 
 elseif ($_GET['rota'] == 'attSenhaL'){
-    attSenha($_POST['senha'],$_GET['id']);
+    $senha = $d->verificaInput($_POST['senha']);
+    $id = $d->verificaInput($_GET['id']);
+    if ($senha == false OR $id == false){
+        include_once '../view/alertaSql.php';
+        die();
+    }
+    attSenha($senha,$id);
 }
 
 elseif ($_GET['rota'] == 'pesquisa'){
-    pesquisa($_POST['termo']);
+    $pesquisa = $d->verificaInput($_POST['termo']);
+    if($pesquisa == false) {
+        include_once '../view/alertaSql.php';
+        die();
+    }
+    pesquisa($pesquisa);
 }
 
