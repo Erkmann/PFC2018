@@ -1,6 +1,9 @@
 <?php if(isset($_GET['erro'])){
     require_once "../controller/alertaController.php?rota=email";
-}   ?>
+}
+
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>

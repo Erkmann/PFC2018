@@ -166,7 +166,9 @@ elseif ($_GET['rota'] == "deletar" AND  isset($_GET['id'])){
     deletar($_GET['id']);
 }
 elseif ($_GET['rota'] == "editar2" AND isset($_GET['id'])){
-    $u = new Usuario($_POST['usuario'], $_POST['senha'], $_POST['email'],null,$_GET['id']);
+    $c = new CrudUsuario();
+    $user = $c->getUsuario($_GET['id']);
+    $u = new Usuario($_POST['usuario'], $user->getSenhaUsuario() , $user->getEmail(),null,$_GET['id']);
     editar($u);
 }
 elseif ($_GET['rota'] == "deletarE" AND  isset($_GET['id'])){

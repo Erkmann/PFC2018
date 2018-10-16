@@ -14,10 +14,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="../../assets/wireframe.css">
     <link rel="stylesheet" href="../../assets/mycss.css">
+
+    <style>
+       .divfundo::before{
+           content: "";
+           background: url('../../assets/images/fundo.jpg');
+           opacity: 0.5;
+           top: 0;
+           left: 0;
+           bottom: 0;
+           right: 0;
+           position: absolute;
+           z-index: -1;
+           background-size: 100% 70%;
+
+       }
+    </style>
 </head>
 
 <body>
-  <div class="collapse bg-dark" id="navbarHeader">
+  <div class="collapse" id="navbarHeader">
     <div class="container">
       <div class="row">
         <div class="col-md-7 py-4">
@@ -54,24 +70,25 @@
       elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
         require_once "navLogedAdmin.php";
       }?>
-  <div class="text-center py-5">
+  <div class="text-center py-5 divfundo">
+
     <div class="container">
       <div class="row my-5 justify-content-center">
         <div class="col-md-10">
-          <h1 class="text-dark">Bem Vindo&nbsp;</h1>
-          <p class="lead text-dark">Abaixo, você encontra algumas sugestões de times, esportes, ligas e jogadores da qual pode se interessar!</p>
+          <h1 class="text-dark" style="font-weight: bold">Bem Vindo&nbsp;</h1>
+          <p class="lead text-dark" style="font-weight: bold">Abaixo, você encontra algumas sugestões de times, esportes, ligas e jogadores da qual pode se interessar!</p>
           <div class="row">
             <div class="col-md-3">
-              <a class="btn m-1 w-50 text-white btn-primary" href="../controller/EsporteController.php?rota=esportes">Esportes</a>
+              <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/EsporteController.php?rota=esportes">Esportes</a>
             </div>
             <div class="col-md-3">
-              <a class="btn m-1 w-50 text-white btn-primary" href="../controller/LigaController.php?rota=ligas">Ligas</a>
+              <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/LigaController.php?rota=ligas">Ligas</a>
             </div>
             <div class="col-md-3">
-              <a class="btn m-1 w-50 text-white btn-primary" href="../controller/TimeController.php?rota=times">Times</a>
+              <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/TimeController.php?rota=times">Times</a>
             </div>
             <div class="col-md-3">
-              <a class="btn m-1 w-50 btn-primary text-white" href="../controller/CraqueController.php?rota=atletas">Atletas</a>
+              <a class="btn m-1 w-50 btn-primary text-white" style="font-weight: bold" href="../controller/CraqueController.php?rota=atletas">Atletas</a>
             </div>
 
             <!-- Abrir PHP
@@ -88,8 +105,8 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-light">
-    <div class="container">
+  <div class="py-5 bg-light" >
+    <div class="container" style="border: solid 1.5px grey; border-radius: 3px; padding-bottom: 6px; padding-top: 6px; border-spacing: 30px; background-color: #B8B8B8" >
       <div class="row">
         <div class="col-md-3 my-1">
           <div class="card">

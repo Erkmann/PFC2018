@@ -29,10 +29,7 @@
                 <form class="" action="../controller/UsuarioController.php?rota=editar2&id=<?=$_GET['id']?>" method="post">
                     <div class="form-group"> <label>Usuario</label>
                         <input type="text" name="usuario" value="<?= $usuario->getNomeusuario() ?>" class="form-control" placeholder="Nome"> <small class="form-text text-muted"></small> </div>
-                    <div class="form-group"> <label>Email</label>
-                        <input type="email" name="email" value="<?= $usuario->getEmail() ?>" class="form-control" placeholder="Email"> <small class="form-text text-muted"></small> </div>
-                    <div class="form-group"> <label>Senha</label>
-                        <input type="text" name="senha" value="<?= $usuario->getSenhausuario() ?>" class="form-control" placeholder="Senha"> </div>
+
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>

@@ -62,12 +62,12 @@ elseif(isset($_SESSION) AND $tipo == '2'){
                                 <?php foreach ($a as $aa):?>
 
                                 <tr>
-                                    <td><?php echo $aa->getIdusuario();?></td>
+                                    <td><?php echo $aa->getIdUsuario();?></td>
                                     <td><?php echo $aa->getNomeUsuario();?></td>
                                     <td><?php echo $aa->getEmail();?></td>
                                     <td>
-                                        <a href="" class="btn disabled btn-danger">Excluir</a>
-                                        <a href="" class="btn disabled btn-primary">Editar</a>
+                                        <a href="UsuarioController.php?rota=deletar&id=<?= $aa->getIdUsuario() ?>" class="btn  btn-danger">Excluir</a>
+                                        <a href="UsuarioController.php?rota=editar&id=<?= $aa->getIdUsuario() ?>" class="btn  btn-primary">Editar</a>
                                     </td>
                                 </tr>
                                 <?php endforeach;?>

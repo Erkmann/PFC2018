@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a" />
+    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/LigaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/LigaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/model/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/Email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/formEditUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/formEditUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/forms/changePassL.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/changePassL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/index.php" afterDir="false" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +170,7 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.123" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -172,6 +182,7 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.2281" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.40" value="1" />
@@ -189,20 +200,20 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="consultasPesquisa" value="7" />
           <entry key="html" value="61" />
-          <entry key="php" value="14712" />
+          <entry key="php" value="15446" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="70" />
-          <entry key="PHP" value="14703" />
+          <entry key="PHP" value="15437" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -210,13 +221,13 @@
         <counts>
           <entry key="consultasPesquisa" value="1" />
           <entry key="html" value="4" />
-          <entry key="php" value="144" />
+          <entry key="php" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="PHP" value="144" />
+          <entry key="PHP" value="162" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -233,64 +244,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/crud/CrudPesquisa.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/navUnloged.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2767">
-              <caret line="136" column="47" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
+            <state relative-caret-position="222">
+              <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
+        <entry file="file://$PROJECT_DIR$/app/view/alertaECh.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="68" column="54" selection-end-line="85" selection-end-column="7" />
+            <state relative-caret-position="36">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/crud/CrudUsuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/alertaEV.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/model/Email.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/resultadoPesquisa.php">
+        <entry file="file://$PROJECT_DIR$/app/view/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            <state relative-caret-position="324">
+              <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
+        <entry file="file://$PROJECT_DIR$/app/model/settingsEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/navLoged.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="144">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -308,6 +327,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>id</find>
+      <find>B8B8B8</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -316,12 +336,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/alert_comentario.php" />
-        <option value="$PROJECT_DIR$/app/view/alert_comentario.html" />
-        <option value="$PROJECT_DIR$/app/view/alert_comentario_deslogado.html" />
         <option value="$PROJECT_DIR$/app/crud/CrudComentarEquipe.php" />
         <option value="$PROJECT_DIR$/app/controller/TimeController.php" />
-        <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
         <option value="$PROJECT_DIR$/app/controller/CraqueController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudCraques.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudCraqueEquipe.php" />
@@ -330,10 +346,8 @@
         <option value="$PROJECT_DIR$/app/view/edita_comentario.html" />
         <option value="$PROJECT_DIR$/app/view/edita_comentario.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudComentarEsporte.php" />
-        <option value="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" />
         <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
         <option value="$PROJECT_DIR$/app/view/viewTimes.php" />
-        <option value="$PROJECT_DIR$/app/model/Email.php" />
         <option value="$PROJECT_DIR$/app/view/alertaVd.php" />
         <option value="$PROJECT_DIR$/app/view/login.php" />
         <option value="$PROJECT_DIR$/app/view/forms/formAddCraque.php" />
@@ -341,14 +355,12 @@
         <option value="$PROJECT_DIR$/app/view/forms/email.php" />
         <option value="$PROJECT_DIR$/app/view/alertaEN.php" />
         <option value="$PROJECT_DIR$/app/view/alertaV.php" />
-        <option value="$PROJECT_DIR$/app/view/alertaECh.php" />
         <option value="$PROJECT_DIR$/app/model/Usuario.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudUsuario.php" />
         <option value="$PROJECT_DIR$/app/view/alertaEV.php" />
         <option value="$PROJECT_DIR$/app/model/settingsEmail.php" />
         <option value="$PROJECT_DIR$/app/view/alertaH.php" />
         <option value="$PROJECT_DIR$/app/view/usuario.php" />
-        <option value="$PROJECT_DIR$/app/view/forms/changePassL.php" />
         <option value="$PROJECT_DIR$/app/view/forms/changePassword.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
         <option value="$PROJECT_DIR$/app/view/edita_comentario_time.php" />
@@ -361,12 +373,20 @@
         <option value="$PROJECT_DIR$/app/view/time.php" />
         <option value="$PROJECT_DIR$/app/view/viewEsportes.php" />
         <option value="$PROJECT_DIR$/consultasPesquisa" />
-        <option value="$PROJECT_DIR$/app/controller/UsuarioController.php" />
         <option value="$PROJECT_DIR$/app/view/navUnloged.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudPesquisa.php" />
         <option value="$PROJECT_DIR$/app/view/navLoged.php" />
         <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
         <option value="$PROJECT_DIR$/app/view/resultadoPesquisa.php" />
+        <option value="$PROJECT_DIR$/app/crud/CrudComentarLiga.php" />
+        <option value="$PROJECT_DIR$/app/controller/LigaController.php" />
+        <option value="$PROJECT_DIR$/app/view/admin.php" />
+        <option value="$PROJECT_DIR$/app/view/formEditUser.php" />
+        <option value="$PROJECT_DIR$/app/controller/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/app/view/forms/changePassL.php" />
+        <option value="$PROJECT_DIR$/app/model/Email.php" />
+        <option value="$PROJECT_DIR$/app/view/alertaECh.php" />
+        <option value="$PROJECT_DIR$/app/view/index.php" />
       </list>
     </option>
   </component>
@@ -419,6 +439,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -441,7 +462,14 @@
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="crud" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
@@ -451,13 +479,24 @@
             </path>
             <path>
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,7 +528,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.CrudPesquisa.php">
+  <component name="RunManager" selected="PHP Script.CrudComentarLiga.php">
     <configuration name="ComentarioController.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PFC2018/PFC2018/app/controller/ComentarioController.php">
       <method v="2" />
     </configuration>
@@ -522,10 +561,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.CrudComentarLiga.php" />
         <item itemvalue="PHP Script.CrudPesquisa.php" />
         <item itemvalue="PHP Script.CrudUsuario.php" />
         <item itemvalue="PHP Script.Email.php" />
-        <item itemvalue="PHP Script.CrudComentarLiga.php" />
         <item itemvalue="JavaScript Debug.ComentarioController.php" />
       </list>
     </recent_temporary>
@@ -665,12 +704,13 @@
       <workItem from="1539519301388" duration="8653000" />
       <workItem from="1539628029762" duration="4631000" />
       <workItem from="1539637796058" duration="3220000" />
-      <workItem from="1539643405127" duration="273000" />
+      <workItem from="1539643405127" duration="496000" />
+      <workItem from="1539688249619" duration="4198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="488063000" />
+    <option name="totallyTimeSpent" value="492484000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,7 +725,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22281879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2261745" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -718,28 +758,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarCraque.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="93" column="52" selection-start-line="93" selection-start-column="52" selection-end-line="93" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="18" selection-start-line="56" selection-start-column="2" selection-end-line="89" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarEquipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/thirds/vendor/phpmailer/phpmailer/src/PHPMailer.php" />
     <entry file="file://$PROJECT_DIR$/app/view/forms/formAddCraque.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -758,13 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" selection-start-line="12" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
@@ -791,27 +802,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/alertaV.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/alertaEV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/settingsEmail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/alertaECh.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -855,31 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudUsuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/forms/formAddEsporte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forms/changePassL.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -897,24 +866,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/edita_comentario_time.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="51" selection-start-line="51" selection-end-line="51" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="247" column="44" selection-start-line="247" selection-start-column="44" selection-end-line="247" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -955,13 +910,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/liga.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5688">
-          <caret line="316" column="52" selection-start-line="316" selection-start-column="52" selection-end-line="316" selection-end-column="52" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1008,17 +956,10 @@
     <entry file="file://$PROJECT_DIR$/app/view/esportes.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudPesquisa.php">
+    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="54" selection-end-line="85" selection-end-column="7" />
+        <state relative-caret-position="288">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1029,10 +970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
+    <entry file="file://$PROJECT_DIR$/app/view/viewEsportes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="631">
+          <caret line="68" column="54" selection-end-line="85" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1043,17 +984,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudPesquisa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2767">
-          <caret line="136" column="47" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
+        <state relative-caret-position="540">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/resultadoPesquisa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="226">
+          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/ComentarLiga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ComentarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3205">
+          <caret line="247" column="44" selection-start-line="247" selection-start-column="44" selection-end-line="247" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="316" column="52" selection-start-line="316" selection-start-column="52" selection-end-line="316" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/LigaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="69" column="112" selection-start-line="69" selection-start-column="112" selection-end-line="69" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/formEditUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/changePassL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/settingsEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/alertaEV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/crud/CrudUsuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/alertaECh.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="116" column="9" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

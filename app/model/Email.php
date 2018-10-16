@@ -48,10 +48,6 @@ class Email
 
     }
 
-    public function verificaEmail($id){
-
-    }
-
     /* Getters & Setters */
 
     public function getTo()

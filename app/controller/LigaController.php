@@ -11,6 +11,7 @@ if ($_GET['rota'] == 'ligas'){
     $crud = new CrudLiga();
     $ligas = $crud->getLigas();
     require_once "../view/viewLigas.php";
+
 }elseif ($_GET['rota'] == 'ver'){
     $crudU = new CrudUsuario();
     $crud = new CrudLiga();
@@ -35,7 +36,7 @@ if ($_GET['rota'] == 'ligas'){
         $comentarioObj->setIdComentario($id_comentario);
 
         $comentariosArrayObj[] = $comentarioObj;
-        $comentariosArrayObj = array_reverse($comentariosArrayObj, true);
+        //$comentariosArrayObj = array_reverse($comentariosArrayObj, true);
         //TODO MOSTRAR POR PRIMEIRO OS COMENTÁRIOS MAIS ATUAIS
 
 
