@@ -72,7 +72,11 @@ if(!isset($_SESSION["tipo"]))
             $("#submit_comentario").click(function () {
                 var txt_comentario = $("#txt_comentario").val();
 
-                $.get("ComentarioController.php",
+                if (txt_comentario == ''){
+                    alert('Campo em Branco!');
+                }
+
+                else{$.get("ComentarioController.php",
                     {
                         rota: "comentarEquipe",
                         id_time: id_time,
@@ -80,21 +84,26 @@ if(!isset($_SESSION["tipo"]))
                         txt_comentario: txt_comentario
                     },
                     function (data) {
+
                         if (data == "Faça login ou cadastre-se") {
                             //var resultado = data;
                             alert(data);
 
 
-                        }else{
+                        }if(data == 'erro1'){
                             //var comentarios = $("#comentarios").html();
-                            location.reload();
-
+                            // location.reload();
+                            alert('Caracteres Improprios, revise suas entradas!');
                         }
 
+                        else {
+
+                            location.reload();
+                        }
 
                     }
 
-                )
+                )}
             })
         })
     </script>

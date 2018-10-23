@@ -73,6 +73,12 @@
             $("#submit_comentario").click(function () {
                 var txt_comentario = $("#txt_comentario").val();
 
+                if (txt_comentario == ''){
+                    alert('Campo em Branco!');
+                }
+
+                else{
+
                 $.get("ComentarioController.php",
                     {
                         rota: "comentarEsporte",
@@ -81,21 +87,28 @@
                         txt_comentario: txt_comentario
                     },
                     function (data) {
+
+                    //alert(data);
                         if (data == "Faça login ou cadastre-se") {
                             //var resultado = data;
                             alert(data);
 
 
-                        }else{
+                        }if(data == 'erro'){
                             //var comentarios = $("#comentarios").html();
-                            location.reload();
+                            // location.reload();
+                            alert('Caracteres Improprios, revise suas entradas!');
+                        }
 
+                        else {
+
+                            location.reload();
                         }
 
 
                     }
 
-                )
+                )}
             })
             
 

@@ -67,6 +67,11 @@
 
             $("#submit_comentario").click(function () {
                 var txt_comentario = $("#txt_comentario").val();
+                if (txt_comentario == ''){
+                    alert('Campo em Branco!');
+                }
+
+                else{
 
                 $.get("ComentarioController.php",
                     {
@@ -81,16 +86,21 @@
                             alert(data);
 
 
-                        }else{
+                        }if(data == 'erro'){
                             //var comentarios = $("#comentarios").html();
-                            location.reload();
+                            // location.reload();
+                            alert('Caracteres Improprios, revise suas entradas!');
+                        }
 
+                        else {
+
+                            location.reload();
                         }
 
 
                     }
 
-                )
+                )}
             })
         })
     </script>

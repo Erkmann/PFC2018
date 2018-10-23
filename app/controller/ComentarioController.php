@@ -18,7 +18,10 @@ require_once __DIR__.'/../model/Dicionario.php';
 
 //TODO UM X PARA EXCLUIR O COMENTÁRIO, E UMA CHAVEZINHA PARA ATUALIZAR
 
+
+
 if ($_GET['rota'] == 'comentarLiga') {
+
     if (isset($_SESSION['tipo'])) {
         $rota = $_GET['rota'];
         $id_usuario = $_GET['id_usuario'];
@@ -26,13 +29,14 @@ if ($_GET['rota'] == 'comentarLiga') {
         $txt_comentario = $_GET['txt_comentario'];
 
         $d = new Dicionario();
-        $resRota = $d->verificaInput($rota);
-        $resIdUser = $d->verificaInput($id_usuario);
-        $resIdLiga = $d->verificaInput($id_liga);
-        $resTxtComentario = $d->verificaInput($txt_comentario);
-        if ($resRota == false OR $resIdUser == false OR $resIdLiga == false OR $resTxtComentario == false){
-            include_once '../view/alertaSql.php';
-            die();
+        $resRotaL = $d->verificaInput($rota);
+        $resIdUserL = $d->verificaInput($id_usuario);
+        $resIdLigaL = $d->verificaInput($id_liga);
+        $resTxtComentarioL = $d->verificaInput($txt_comentario);
+
+        if ($resRotaL != $rota OR $resIdUserL != $id_usuario OR $resIdLigaL != $id_liga OR $resTxtComentarioL != $txt_comentario){
+          echo 'Caracteres Improprios, revise suas entradas!';
+          die();
         }
         $crud = new CrudComentarLiga();
         $comentario = new ComentarLiga($id_liga, $id_usuario, $txt_comentario);
@@ -45,6 +49,7 @@ if ($_GET['rota'] == 'comentarLiga') {
 }
 
 if ($_GET['rota'] == 'comentarEsporte') {
+
     if (isset($_SESSION['tipo'])) {
         $rota = $_GET['rota'];
         $id_usuario = $_GET['id_usuario'];
@@ -52,12 +57,14 @@ if ($_GET['rota'] == 'comentarEsporte') {
         $txt_comentario = $_GET['txt_comentario'];
 
         $d = new Dicionario();
-        $resRota = $d->verificaInput($rota);
-        $resIdUser = $d->verificaInput($id_usuario);
-        $resIdEsporte = $d->verificaInput($id_esporte);
-        $resTxtComentario = $d->verificaInput($txt_comentario);
-        if ($resRota == false OR $resIdUser == false OR $resIdEsporte == false OR $resTxtComentario == false){
-            echo "NAO PODE";
+         $resRotaE = $d->verificaInput($rota);
+         $resIdUserE = $d->verificaInput($id_usuario);
+         $resIdEsporteE = $d->verificaInput($id_esporte);
+         $resTxtComentarioE = $d->verificaInput($txt_comentario);
+
+
+        if ($resRotaE != $rota OR $resIdUserE != $id_usuario OR $resIdEsporteE != $id_esporte OR $resTxtComentarioE != $txt_comentario){
+            echo 'erro';
             die();
         }
 
@@ -84,6 +91,19 @@ if ($_GET['rota'] == 'comentarEquipe') {
         $id_equipe = $_GET['id_time'];
         $txt_comentario = $_GET['txt_comentario'];
 
+        $d = new Dicionario();
+         $resRotaEq = $d->verificaInput($rota);
+         $resIdUserEq = $d->verificaInput($id_usuario);
+         $resIdEquipeEq = $d->verificaInput($id_equipe);
+         $resTxtComentarioEq = $d->verificaInput($txt_comentario);
+
+
+
+        if ($resRotaEq != $rota OR $resIdUserEq != $id_usuario OR $resIdEquipeEq != $id_equipe OR $resTxtComentarioEq != $txt_comentario){
+            echo 'erro1';
+            die();
+        }
+
         $crud = new CrudComentarEquipe();
         $comentario = new ComentarEquipe($id_equipe, $id_usuario, $txt_comentario);
         //$numComentariosExatos = $crud->getComentarioExato($comentario);
@@ -100,6 +120,17 @@ if ($_GET['rota'] == 'comentarCraque') {
         $id_usuario = $_GET['id_usuario'];
         $id_craque = $_GET['id_craque'];
         $txt_comentario = $_GET['txt_comentario'];
+
+        $d = new Dicionario();
+         $resRotaC = $d->verificaInput($rota);
+         $resIdUserC = $d->verificaInput($id_usuario);
+         $resIdCraqueC = $d->verificaInput($id_craque);
+         $resTxtComentarioC = $d->verificaInput($txt_comentario);
+
+        if ($resRotaC != $rota OR $resIdUserC != $id_usuario OR $resIdCraqueC != $id_craque OR $resTxtComentarioC != $txt_comentario){
+            echo 'erro';
+            die();
+        }
 
         $crud = new CrudComentarCraque();
         $comentario = new ComentarCraque($id_craque, $id_usuario, $txt_comentario);
