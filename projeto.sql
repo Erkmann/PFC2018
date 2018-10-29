@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 14-Out-2018 às 06:19
+-- Generation Time: 29-Out-2018 às 22:32
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -41,7 +41,14 @@ CREATE TABLE `comentar_craques` (
 --
 
 INSERT INTO `comentar_craques` (`id_comentario`, `id_usuario`, `id_craques`, `txt_comentario`, `dt_comentario`) VALUES
-(3, 102, 3, 'Gato pra caramba', '2018-07-26 16:55:31');
+(4, 115, 6, 'Pelé > Maradona', '2018-10-14 14:14:05'),
+(5, 115, 23, 'Pelé >>>>> Abismo >>>> Maradona', '2018-10-15 22:44:21'),
+(6, 115, 6, 'e123', '2018-10-16 11:22:52'),
+(7, 115, 6, 'sdasd', '2018-10-16 11:22:55'),
+(8, 115, 6, 'sdasasd', '2018-10-16 11:22:57'),
+(9, 115, 6, '331123', '2018-10-16 11:22:59'),
+(10, 106, 3, '', '2018-10-23 17:03:50'),
+(11, 106, 6, 'a', '2018-10-23 17:05:19');
 
 -- --------------------------------------------------------
 
@@ -62,8 +69,14 @@ CREATE TABLE `comentar_equipes` (
 --
 
 INSERT INTO `comentar_equipes` (`id_comentario`, `id_equipe`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(1, 18, 107, 'Alow', '2018-08-12 00:43:18'),
-(2, 18, 107, '', '2018-08-12 00:43:22');
+(3, 18, 115, 'Melhor Seleção do mundo   ', '2018-10-14 14:15:02'),
+(4, 18, 115, 'asdasd', '2018-10-16 11:21:42'),
+(5, 18, 115, 'dsasdsasda', '2018-10-16 11:21:46'),
+(7, 36, 115, 'nf', '2018-10-17 19:56:46'),
+(8, 27, 115, 'zuado', '2018-10-22 19:33:06'),
+(9, 19, 106, '', '2018-10-23 17:01:45'),
+(10, 18, 106, 'a', '2018-10-23 17:04:08'),
+(11, 18, 106, 'a', '2018-10-23 17:05:04');
 
 -- --------------------------------------------------------
 
@@ -85,7 +98,18 @@ CREATE TABLE `comentar_esportes` (
 
 INSERT INTO `comentar_esportes` (`id_comentario`, `id_esporte`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
 (27, 3, 104, 'topper', '2018-08-10 17:44:33'),
-(29, 1, 106, '  321', '2018-10-14 00:10:59');
+(29, 1, 106, '  321', '2018-10-14 00:10:59'),
+(30, 1, 115, 'alow!@#', '2018-10-14 14:01:22'),
+(34, 3, 115, '123', '2018-10-16 19:45:03'),
+(37, 3, 115, 'gfhgcfhfgh', '2018-10-17 19:35:25'),
+(38, 3, 115, 'ghfghfgh', '2018-10-17 19:35:30'),
+(39, 3, 115, '<', '2018-10-17 19:36:27'),
+(40, 1, 115, 'a', '2018-10-23 16:20:47'),
+(41, 1, 115, 'b', '2018-10-23 16:20:50'),
+(42, 1, 115, 'c', '2018-10-23 16:20:52'),
+(43, 1, 115, 'd', '2018-10-23 16:20:54'),
+(44, 1, 106, 'q', '2018-10-23 16:53:31'),
+(45, 3, 106, 'mitástico', '2018-10-23 19:06:07');
 
 -- --------------------------------------------------------
 
@@ -106,11 +130,21 @@ CREATE TABLE `comentar_liga` (
 --
 
 INSERT INTO `comentar_liga` (`id_comentario`, `id_liga`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(23, 1, 102, 'Blá', '2018-10-14 00:11:14'),
-(26, 1, 102, 'C', '2018-07-24 19:12:20'),
-(28, 1, 102, 'D', '2018-07-24 20:39:26'),
-(29, 1, 103, 'F', '2018-07-24 21:46:57'),
-(30, 1, 104, 'topper', '2018-08-10 18:39:06');
+(31, 1, 115, 'alow', '2018-10-14 13:40:44'),
+(32, 1, 115, 'ewqqwe1234', '2018-10-14 14:14:24'),
+(33, 1, 115, 'testando o ordenamento com id!', '2018-10-14 13:46:28'),
+(34, 1, 115, 'testando Denovo', '2018-10-14 14:01:01'),
+(35, 1, 115, 'alow123', '2018-10-16 11:21:06'),
+(36, 1, 115, '456654', '2018-10-16 11:21:12'),
+(37, 7, 115, 'a', '2018-10-16 19:36:04'),
+(38, 7, 115, 'b', '2018-10-16 19:36:18'),
+(40, 7, 115, 'b', '2018-10-23 16:21:46'),
+(41, 1, 115, 'a', '2018-10-22 19:32:19'),
+(42, 1, 115, 'porcaria', '2018-10-22 19:32:27'),
+(43, 1, 115, 'zuado', '2018-10-22 19:32:47'),
+(45, 7, 106, 'a', '2018-10-23 16:22:22'),
+(46, 1, 106, '1', '2018-10-23 16:59:18'),
+(47, 1, 106, 'a', '2018-10-23 17:05:34');
 
 -- --------------------------------------------------------
 
@@ -135,7 +169,7 @@ CREATE TABLE `craques` (
 
 INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titulos`, `numero_de_jogos`, `icon_craque`, `qtd_curtir`) VALUES
 (3, 'Andrey Arshavin.', '-', '29 de Maio de 1921', '1 Campeonato Russo, 1 Supercopa da R?ssia, 1 Copa da UEFA e 1 Supercopa Europeia', '75', '../../assets/images/arshavin.jpg', 0),
-(6, 'Pel?', '-', '23 de Outubro de 1940.', '10 Campeonatos Paulista, 4 Torneios Rio-S?o Paulo, 6 Campeonatos Brasileiro, 2 Libertadores, 2 Mundiais de Clubes e 3 Copas do Mundo.', '92', '../../assets/images/10082018071020pelezao.jpg', 0),
+(6, 'Pelé', '-', '23 de Outubro de 1940.', '10 Campeonatos Paulista, 4 Torneios Rio-S?o Paulo, 6 Campeonatos Brasileiro, 2 Libertadores, 2 Mundiais de Clubes e 3 Copas do Mundo.', '92', '../../assets/images/10082018071020pelezao.jpg', 0),
 (7, 'Hidetoshi Nakata.', '-', '22 de Janeiro de 1977.', '1 Campeonato Italiano e 1 Copa da It?lia.', '77', '../../assets/images/10082018072816nakata.jpg', 0),
 (8, 'Hugo Sanchez.', '-', '11 de Julho de 1958.', '1 Campeonato Mexicano, 1 Copa da CONCAFAF e 1 Copa do Rei da Espanha.', '70', '../../assets/images/10082018073656hugo-sanchez.jpg', 0),
 (9, 'Jan Celeumans.', '-', '28 de Fevereiro de 1957.', '3 Campeonatos Belgas e 2 Copas da B?lgica.', '96', '../../assets/images/10082018074114Jan-Ceulemans-1.jpg', 0),
@@ -154,16 +188,16 @@ INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titu
 (23, 'Diego Armando Maradona.', '-', '30 de Outubro de 1960.', '1 Campeonato Argentino, 1 Copa da Espanha, 1 Campeonato Italiano, 1 Copa da It?lia, 1 Copa do Mundo.', '91', '../../assets/images/10082018094025diego-maradona.jpg', 0),
 (24, 'Carlos Valderrama.', '-', '2 de Setembro de 1961.', '1 Copa da Fran?a, 1 Campeonato Colombiano.', '111', '../../assets/images/10082018094801valderrama.jpg', 0),
 (25, 'Obdulio Varela.', '-', '20 de Setembro de 1917.', '2 Campeonatos Uruguaio e 1 Copa do Mundo.', '45', '../../assets/images/10082018095102varela.jpg', 0),
-(26, 'Dely Vald?s.', '-', '12 de Mar?o de 1967.', '0', '32', '../../assets/images/10082018095258dely-valdes2.jpg', 0),
-(27, 'Diouf.', '-', '15 de Janeiro de 1981.', '0', '69.', '../../assets/images/14082018085125AP_02061604297.jpg', 0),
-(28, 'Mustapha Hadji.', '-', '16 de Novembro de 1971.', '0', '63', '../../assets/images/1408201809043405e0015552798ac7d892aa0294cc121a.jpg', 0),
-(29, 'Chokri El Ouaer.', '-', '15 de Agosto 1966.', '0', '93', '../../assets/images/14082018091240973032404-612x612.jpg', 0),
-(30, 'Chapuisat.', '-', '28 de Junho de 1969.', '1 Champions League.', '103', '../../assets/images/14082018091741414321_med__20170706082023_stephane_chapuisat.jpg', 0),
-(31, 'Davor Suker.', '-', '1 de Janeiro de 1968.', '1 Campeonato Espanhol, 1 Champions League e 1 Mundial de Clubes.', '69', '../../assets/images/14082018091956davor.jpg', 0),
-(32, 'Zlatan Ibrahimovic.', '', '3 de Outubro de 1981.', '2 Campeonatos Holandês, 6 Campeonatos Italianos, 1 Campeonato Espanhol, 1 Mundial de Clubes, 5 Campeonatos Francês, 2 Copas da França e 1 Europa Leagu', '116', '../../assets/images/140820180922346az3caoxd7vgtatfxf4mxpxfr.jpg', 0),
-(33, 'Michael Laudrup', '-', '15 de Junho de 1964.', '4 Campeonatos Espanhol e 1 Champions League.', '104', '../../assets/images/14082018092518imgS620I5129T20151014200808.jpg', 0),
-(34, 'Tim Cahill', '-', '6 de Dezembro de 1979.', '1 Copa da Ásia e 1 Campeonato Inglês da 3° Divisão.', '104', '../../assets/images/14082018092831tim-cahill.jpg', 0),
-(35, 'Teófilo Cubillas.', '-', '8 de Março de 1949.', '2 Campeonatos Peruano, 1 Campeonato Suiço e 1 Copa América.', '117', '../../assets/images/14082018093032cubillas_rep.jpeg', 0);
+(26, 'Dely Valdes.', '-', '12 de Mar?o de 1967.', '0', '32', '../../assets/images/10082018095258dely-valdes2.jpg', 0),
+(27, 'Diouf.', '-', '15 de Janeiro de 1981.', '0', '69.', '../../assets/images/29102018082506a9de7528550a56103ace0c74e109242a0222c7dd.jpg', 0),
+(28, 'Mustapha Hadji.', '-', '16 de Novembro de 1971.', '0', '63', '../../assets/images/2910201808395352faf.jpg', 0),
+(29, 'Chokri El Ouaer.', '-', '15 de Agosto 1966.', '0', '93', '../../assets/images/29102018084102IMGBN46861chokri-ouar.jpg', 0),
+(30, 'Chapuisat.', '-', '28 de Junho de 1969.', '1 Champions League.', '103', '../../assets/images/29102018084205stphane-chapuisat-35213864-4773-4872-9324-9aec0827e93-resize-750.jpeg', 0),
+(31, 'Davor Suker.', '-', '1 de Janeiro de 1968.', '1 Campeonato Espanhol, 1 Champions League e 1 Mundial de Clubes.', '69', '../../assets/images/2910201808423370gfeilogv187ftp8bibh09yj.jpg', 0),
+(32, 'Zlatan Ibrahimovic.', '-', '3 de Outubro de 1981.', '2 Campeonatos Holandês, 6 Campeonatos Italianos, 1 Campeonato Espanhol, 1 Mundial de Clubes, 5 Campeonatos Francês, 2 Copas da França e 1 Europa Leagu', '116', '../../assets/images/29102018084340zlatan-ibrahimovic-sweden-euro-2016_lbnncygsmww51f52e2ezyzjme.jpg', 0),
+(33, 'Michael Laudrup', '-', '15 de Junho de 1964.', '4 Campeonatos Espanhol e 1 Champions League.', '104', '../../assets/images/2910201808441749375-michael-laudrup-danmarks-bedste-gennem-tiderne--.jpg', 0),
+(34, 'Tim Cahill', '-', '6 de Dezembro de 1979.', '1 Copa da Ásia e 1 Campeonato Inglês da 3° Divisão.', '104', '../../assets/images/291020180844489128760-3x2-700x467.jpg', 0),
+(35, 'Teófilo Cubillas.', '-', '8 de Março de 1949.', '2 Campeonatos Peruano, 1 Campeonato Suiço e 1 Copa América.', '117', '../../assets/images/2910201808452116370020.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -183,7 +217,8 @@ CREATE TABLE `curtir_craques` (
 --
 
 INSERT INTO `curtir_craques` (`id_usuario`, `id_craques`, `dt_curtir`, `curtir`) VALUES
-(107, 3, '2018-08-11 17:59:14', 1);
+(115, 6, '2018-10-16 11:24:19', 1),
+(115, 7, '2018-10-22 19:30:47', 1);
 
 -- --------------------------------------------------------
 
@@ -197,6 +232,15 @@ CREATE TABLE `curtir_equipe` (
   `dt_curtir` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `curtir` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `curtir_equipe`
+--
+
+INSERT INTO `curtir_equipe` (`id_equipe`, `id_usuario`, `dt_curtir`, `curtir`) VALUES
+(18, 115, '2018-10-16 11:24:09', 1),
+(36, 115, '2018-10-17 19:55:57', 1),
+(27, 115, '2018-10-22 19:33:12', 1);
 
 -- --------------------------------------------------------
 
@@ -216,9 +260,8 @@ CREATE TABLE `curtir_esportes` (
 --
 
 INSERT INTO `curtir_esportes` (`id_esporte`, `id_usuario`, `curtir`, `dt_curtir`) VALUES
-(1, 102, 0, '2018-07-18 17:04:29'),
-(1, 103, 0, '2018-07-24 21:45:17'),
-(3, 102, 0, '2018-07-26 16:56:33');
+(1, 117, 1, '2018-10-17 19:59:32'),
+(1, 115, 1, '2018-10-22 19:30:32');
 
 -- --------------------------------------------------------
 
@@ -238,9 +281,9 @@ CREATE TABLE `curtir_ligas` (
 --
 
 INSERT INTO `curtir_ligas` (`id_usuario`, `dt_curtir`, `curtir`, `id_liga`) VALUES
-(103, '2018-07-24 21:46:48', 1, 1),
 (104, '2018-08-10 17:44:51', 1, 7),
-(106, '2018-08-14 19:30:43', 1, 1);
+(106, '2018-08-14 19:30:43', 1, 1),
+(115, '2018-10-16 11:23:37', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -262,7 +305,7 @@ CREATE TABLE `equipes` (
 --
 
 INSERT INTO `equipes` (`titulos`, `id_equipe`, `fundacao`, `nome_equipe`, `numero_torcedores`, `icon_equipe`) VALUES
-('Títulos: 5 Copas do Mundo, 4 Copas das Confedera??es e 8 Copas Am?rica.', 18, '-', 'Brasil', '-', '../../assets/images/10082018071130brasil.png'),
+('Títulos: 5 Copas do Mundo, 4 Copas das Confederações e 8 Copas América.', 18, '-', 'Brasil', '-', '../../assets/images/10082018071130brasil.png'),
 ('0', 19, '-', 'Irã', '-', '../../assets/images/10082018072207Bandeira-do-Ira.png'),
 ('4 Copas da Ásia.', 20, '-', 'Japão', '-', '../../assets/images/10082018072435bandeira-japao.jpg'),
 ('1 Copa das Confederações e uma Copa Ouro da Concacaf.', 21, '-', 'México', '-', '../../assets/images/100820180731521200px-Flag_of_Mexico.svg.png'),
@@ -278,33 +321,33 @@ INSERT INTO `equipes` (`titulos`, `id_equipe`, `fundacao`, `nome_equipe`, `numer
 ('7 Copas das Nações Africanas.', 31, '-', 'Egito', '-', '../../assets/images/10082018091609egito.gif'),
 ('0', 32, '-', 'Islândia', '-', '../../assets/images/10082018092139islandia.jpg'),
 ('0', 33, '-', 'Sérvia', '-', '../../assets/images/10082018092427servia.png'),
-('1 Copa do Mundo, 2 Copas das Confederações e 2 Eurocopas.', 34, '-', 'França', '-', '../../assets/images/10082018092900fran?a.jpg'),
+('1 Copa do Mundo, 2 Copas das Confederações e 2 Eurocopas.', 34, '-', 'França', '-', '../../assets/images/29102018075943FLAGFRANÇA.jpg'),
 ('1 Eurocopa.', 35, '-', 'Portugal ', '-', '../../assets/images/10082018093200bandeira-portugal.jpg'),
 ('2 Copas do Mundo, 1 Copa das Confederações e 14 Copas América.', 36, '-', 'Argentina', '-', '../../assets/images/10082018093757argentinaflag_grande.gif'),
 ('1 Copa América.', 37, '-', 'Colômbia', '-', '../../assets/images/10082018094328bandeira-da-colombia-2000px.png'),
 ('2 Copas do Mundo, 15 Copas América.', 38, '-', 'Uruguai', '-', '../../assets/images/10082018094949uruguai.jpg'),
 ('0', 39, '-', 'Panamá', '-', '../../assets/images/10082018095202panama.png'),
-('0', 40, '-', 'Senegal', '-', '../../assets/images/140820180850081200px-Flag_of_Senegal.svg.png'),
-('1 Copa das Nações Africanas.', 41, '-', 'Marrocos', '-', '../../assets/images/14082018090116bandeira-reino-marrocos.jpg'),
-('0', 42, '-', 'Tunísia', '-', '../../assets/images/140820180910351200px-Flag_of_Tunisia.svg.png'),
-('0', 43, '-', 'Suiça', '-', '../../assets/images/14082018091448ch.png'),
-('0', 44, '-', 'Croácia', '-', '../../assets/images/14082018091835bandeira-croacia.jpg'),
-('0', 45, '-', 'Suécia', '-', '../../assets/images/14082018092104se.png'),
-('1 Copa das Confederações e 1 Eurocopa.', 46, '-', 'Dinamarca', '-', '../../assets/images/14082018092423bandeira-da-dinamarca-2000px.png'),
-('Títulos: 1 Copa da Ásia.', 47, '-', 'Austrália', '-', '../../assets/images/14082018092723flagge-australien.gif'),
-('0', 49, '-', 'Peru', '-', '../../assets/images/14082018093213flagge-peru.gif'),
-('1 Superliga Série B e 5 Campeonatos Gaúchos', 56, '16 de Dezembro de 2011', 'LEBES CANOAS', 'Canoas, RS', '../../assets/images/16082018041754download.png'),
-('3 Campeonatos Mundias, 5 Campeonatos Sul-Americanos, 6 Superligas, 3 Copas Brasil e 9 Campeonatos Mineiros', 57, '2006', 'SADA CRUZEIRO', 'Belo Horizonte, MG', '../../assets/images/16082018042123cruzeiro291.jpg'),
-('7 Superligas 2 Campeonatos Sul-Americanos', 58, '15 de novembro de 1935', 'MINAS TENIS CLUBE', 'Belo Horizonte, MG', '../../assets/images/16082018042424Escudo_do_Minas_Tenis_Clube.svg.png'),
-('1 Superliga Série B', 59, '1988', 'MONTES CLAROS', 'Montes Claros, MG', '../../assets/images/16082018042802zIdMGopR_400x400.png'),
-('2 Copa do Brasil e 4 Campeonato Paulista.', 60, '2010.', 'TAUBATÉ FUNVIC', 'Taubaté, SP.', '../../assets/images/160820180430191sTKd7wA_400x400.jpg'),
-('1 Superliga, 4 Campeonato Paulista e 1 Sul-Americano.', 61, '2009', 'SESI-SP', 'São Paulo, SP.', '../../assets/images/16082018043135sesi-quadrado.png'),
-('0', 62, '2010.', 'VÔLEI RENATA/CAMPINAS.', 'Campinas, SP.', '../../assets/images/16082018043304Campinas.jpg'),
-('0', 63, '2017', 'CORINTHIANS/GUARULHOS', 'Guarulhos, SP', '../../assets/images/16082018043432bandeira-do-corinthians-listrada-100-x-080-metros-D_NQ_NP_887474-MLB25630191534_052017-F.jpg'),
-('0', 64, '2016', 'SESC-RJ', 'Rio de Janeiro, RJ.', '../../assets/images/16082018043627logo-sesc.png'),
-('0', 65, '2013.', 'CARAMURU-CASTRO', 'Castro, PR.', '../../assets/images/16082018043803Associação_Caramuru_Esportes_de_Castro.png'),
-('0', 66, '2012.', 'COPEL TELECOM MARINGÁ', 'Maringá, PR.', '../../assets/images/16082018043940logo-1.png'),
-('0', 67, '2008.', 'JF VOLEI', 'Juiz de Fora, MG.', '../../assets/images/16082018044102KkL6_pAB_400x400.jpg');
+('0', 40, '-', 'Senegal', '-', '../../assets/images/291020180800491200px-Flag_of_Senegal.svg.png'),
+('1 Copa das Nações Africanas.', 41, '-', 'Marrocos', '-', '../../assets/images/29102018080135BANDEIRA-MARROCOS-1024x683.jpg'),
+('0', 42, '-', 'Tunísia', '-', '../../assets/images/29102018080220tunisia.png'),
+('0', 43, '-', 'Suiça', '-', '../../assets/images/29102018080318bandeira-da-suica-ilustracao-da-bandeira-suica-que-acena_2227-741.jpg'),
+('0', 44, '-', 'Croácia', '-', '../../assets/images/29102018080444bandeira-croacia.jpg'),
+('0', 45, '-', 'Suécia', '-', '../../assets/images/29102018080525se.png'),
+('1 Copa das Confederações e 1 Eurocopa.', 46, '-', 'Dinamarca', '-', '../../assets/images/29102018080608flagge-daenemark.gif'),
+('Títulos: 1 Copa da Ásia.', 47, '-', 'Austrália', '-', '../../assets/images/29102018080735curiosidades-sobre-a-bandeira-da-australia-A2.jpg'),
+('0', 49, '-', 'Peru', '-', '../../assets/images/29102018080939flagge-peru.gif'),
+('1 Superliga Série B e 5 Campeonatos Gaúchos', 56, '16 de Dezembro de 2011', 'LEBES CANOAS', 'Canoas, RS', '../../assets/images/29102018081132LEBES.png'),
+('3 Campeonatos Mundias, 5 Campeonatos Sul-Americanos, 6 Superligas, 3 Copas Brasil e 9 Campeonatos Mineiros', 57, '2006', 'SADA CRUZEIRO', 'Belo Horizonte, MG', '../../assets/images/29102018081300Sada_Cruzeiro_Vôlei_Logo.png'),
+('7 Superligas 2 Campeonatos Sul-Americanos', 58, '15 de novembro de 1935', 'MINAS TENIS CLUBE', 'Belo Horizonte, MG', '../../assets/images/29102018081339cota-do-minas-tenis-clube_640x480_25_1a1c7636b5e4e935de186e33bf453e085cf03a61ac4600ff20910a2533863e.jpg'),
+('1 Superliga Série B', 59, '1988', 'MONTES CLAROS', 'Montes Claros, MG', '../../assets/images/29102018081507zIdMGopR_400x400.png'),
+('2 Copa do Brasil e 4 Campeonato Paulista.', 60, '2010.', 'TAUBATÉ FUNVIC', 'Taubaté, SP.', '../../assets/images/291020180815481sTKd7wA_400x400.jpg'),
+('1 Superliga, 4 Campeonato Paulista e 1 Sul-Americano.', 61, '2009', 'SESI-SP', 'São Paulo, SP.', '../../assets/images/29102018081629SESI.png'),
+('0', 62, '2010.', 'VÔLEI RENATA/CAMPINAS.', 'Campinas, SP.', '../../assets/images/29102018081720Vôlei_Renata.png'),
+('0', 63, '2017', 'CORINTHIANS/GUARULHOS', 'Guarulhos, SP', '../../assets/images/29102018081858GAY.png'),
+('0', 64, '2016', 'SESC-RJ', 'Rio de Janeiro, RJ.', '../../assets/images/29102018081953SESC.png'),
+('0', 65, '2013.', 'CARAMURU-CASTRO', 'Castro, PR.', '../../assets/images/29102018082044Associação_Caramuru_Esportes_de_Castro.png'),
+('0', 66, '2012.', 'COPEL TELECOM MARINGÁ', 'Maringá, PR.', '../../assets/images/29102018082322logo-1.png'),
+('0', 67, '2008.', 'JF VOLEI', 'Juiz de Fora, MG.', '../../assets/images/29102018082307KkL6_pAB_400x400.jpg');
 
 -- --------------------------------------------------------
 
@@ -323,9 +366,35 @@ CREATE TABLE `equipes_craques` (
 --
 
 INSERT INTO `equipes_craques` (`id_equipe`, `id_craques`, `id_associativa`) VALUES
-(18, 6, 25),
 (31, 18, 41),
-(25, 12, 42);
+(18, 6, 43),
+(40, 27, 44),
+(20, 7, 46),
+(21, 8, 48),
+(22, 9, 49),
+(23, 10, 50),
+(24, 11, 51),
+(25, 12, 52),
+(26, 13, 53),
+(27, 14, 54),
+(28, 15, 55),
+(29, 16, 56),
+(30, 17, 57),
+(32, 19, 58),
+(33, 20, 59),
+(34, 21, 60),
+(36, 23, 61),
+(37, 24, 62),
+(39, 26, 64),
+(38, 25, 71),
+(41, 28, 74),
+(42, 29, 75),
+(43, 30, 76),
+(44, 31, 77),
+(45, 32, 78),
+(46, 33, 79),
+(47, 34, 80),
+(49, 35, 81);
 
 -- --------------------------------------------------------
 
@@ -344,7 +413,6 @@ CREATE TABLE `equipes_ligas` (
 --
 
 INSERT INTO `equipes_ligas` (`id_associativa`, `id_equipe`, `id_liga`) VALUES
-(58, 18, 1),
 (61, 19, 1),
 (62, 21, 1),
 (63, 22, 1),
@@ -359,34 +427,35 @@ INSERT INTO `equipes_ligas` (`id_associativa`, `id_equipe`, `id_liga`) VALUES
 (72, 31, 1),
 (73, 32, 1),
 (74, 33, 1),
-(75, 34, 1),
 (76, 35, 1),
 (78, 20, 1),
 (79, 36, 1),
 (80, 37, 1),
 (81, 38, 1),
 (82, 39, 1),
-(83, 40, 1),
-(84, 41, 1),
-(85, 42, 1),
-(86, 43, 1),
-(87, 44, 1),
-(88, 45, 1),
-(89, 46, 1),
-(90, 47, 1),
-(91, 49, 1),
-(92, 56, 7),
-(93, 57, 7),
-(94, 58, 7),
-(95, 59, 7),
-(96, 60, 7),
-(97, 61, 7),
-(98, 62, 7),
-(99, 63, 7),
-(100, 64, 7),
-(101, 65, 7),
-(102, 66, 7),
-(103, 67, 7);
+(104, 18, 1),
+(105, 34, 1),
+(106, 40, 1),
+(107, 41, 1),
+(108, 42, 1),
+(109, 43, 1),
+(110, 44, 1),
+(111, 45, 1),
+(112, 46, 1),
+(113, 47, 1),
+(114, 49, 1),
+(115, 56, 7),
+(116, 57, 7),
+(117, 58, 7),
+(118, 59, 7),
+(119, 60, 7),
+(120, 61, 7),
+(121, 62, 7),
+(122, 63, 7),
+(123, 64, 7),
+(124, 65, 7),
+(126, 67, 7),
+(127, 66, 7);
 
 -- --------------------------------------------------------
 
@@ -408,7 +477,7 @@ CREATE TABLE `esportes` (
 --
 
 INSERT INTO `esportes` (`nome_esporte`, `historia`, `id_esporte`, `num_praticantes`, `regras`, `icon_esporte`) VALUES
-('Futebol', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 1, ' 4 bilh?es', 'gdhguyasgbygbaygbyhcyhfdydyfg', '../../assets/images/11082018025040futebol.jpg'),
+('Futebol', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', 1, ' 4 bilhões', 'gdhguyasgbygbaygbyhcyhfdydyfg', '../../assets/images/11082018025040futebol.jpg'),
 ('Voleibol', 'O v?lei, tamb?m chamado de volley ou voleibol, ? um esporte de origem norte-americana do s?culo XIX. ? um esporte de popularidade significativa em grande parte do mundo, e est? presente em muitos torneios e eventos esportivos de ?mbito internacionais, tais como os Jogos Ol?mpicos e os Jogos Panamericanos. Pode ser praticado tanto em quadras abertas quanto em quadras fechadas, bem como ? praticado quase que igualmente tanto por homens quanto mulheres.', 3, '', 'Uma partida de v?lei tem, normalmente, 5 sets, sem tempo definido. 1. Cada set ? terminado quando uma equipe alcan?a os 25 pontos, tendo 2 pontos de vantagem sobre a equipe advers?ria. Caso n?o tenha, o set prossegue at? que uma equipe conquiste tal vantagem. Cada time ? composto por 6 jogadores em quadra e 6 jogadores reserva. Ap?s o saque, cada time s? poder? tocar a bola tr?s vezes, sendo proibido que um jogador toque a bola duas vezes seguidas. A equipe vencedora ? aquela que ganhar o maior n?mero de sets.', '../../assets/images/volei.jpg');
 
 -- --------------------------------------------------------
@@ -434,7 +503,7 @@ CREATE TABLE `ligas` (
 
 INSERT INTO `ligas` (`id_liga`, `historia`, `fundacao`, `regulamento`, `pais`, `esporte_id_esporte`, `nome_liga`, `icon_liga`) VALUES
 (1, 'A história da Copa do Mundo de Futebol da FIFA se iniciou em 1928, durante um congresso da entidade, quando Jules Rimet conseguiu a aprovação para criar um torneio internacional. A primeira competição ocorreu em 1930, tendo a participação de 13 equipes convidadas, tendo o Uruguai como país-sede e como campeão.', '1930', 'A Copa do Mundo é disputada atualmente por 32 times e dividida em 8 grupos com 4 seleções cada, sendo jogo único, onde todas as equipes do grupo se enfrentam e os 2 melhores colocados se classificam para a fase de mata-mata.', 'null', 1, 'Copa do Mundo', '../../assets/images/copa.jpg'),
-(6, 'Ao longo da história, várias tentativas foram criadas para tentar iniciar um torneio que reunisse os melhores clubes europeus. O primeiro torneio pan-europeu foi o Challenge Cup , uma competição entre clubes no Império Austro-Húngaro. A Mitropa Cup, uma competição inspirada na Copa Challenge, foi criada em 1927, uma ideia do austríaco Hugo Meisl, e foi disputada entre clubes da Europa Central. Em 1930, a Coupe des Nations, a primeira tentativa de criar uma copa para clubes campeões nacionais da Europa, foi jogada e organizada pelo clube suíço Servette. Realizada em Genebra, reuniu dez campeões de todo o continente. O torneio foi conquistado pela ?jpest da Hungria. As nações latino-européias se uniram para formar a Copa Latina em 1949. Até que finalmente em 1955 foi criado uma nova competição, que viria a ser a principal competição de clubes da Europa. A Taça dos Clubes Campeões Europeus (português europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro) foi inspirada no Cam', '1955', 'O torneio come?a com uma fase de grupos de 32 equipes, divididas em oito grupos. Os grupos s?o definidos atrav?s de sorteio, sendo que equipes do mesmo pa?s n?o podem cair em grupos iguais. Cada equipe se encontra com os outros em sua casa e fora em um formato de ida e volta. A equipe vencedora e segundo colocado de cada grupo passam para a pr?xima rodada. A equipe que fica na terceira coloca??o entra na Liga Europa da UEFA.  Para este est?gio, a equipe vencedora de um grupo joga contra os vice-campe?es de outro grupo, e os times da mesma associa??o podem se enfrentar um contra o outro. A partir das quartas de final, o sorteio ? inteiramente aleat?rio, sem prote??o de associa??o. O torneio usa a regra do gol fora de casa: se a pontua??o agregada dos dois jogos estiver empatada, ent?o a equipe que marcou mais golos no est?dio do seu oponente avan?a.  A fase de grupos ocorre de setembro a dezembro, enquanto o mata-mata come?a em fevereiro. O sistema de mata-mata tamb?m ? de ida e volta, ', 'null', 1, 'Champions League', '../../assets/images/champions-league.jpg'),
+(6, 'Ao longo da história, várias tentativas foram criadas para tentar iniciar um torneio que reunisse os melhores clubes europeus. O primeiro torneio pan-europeu foi o Challenge Cup , uma competição entre clubes no Império Austro-Húngaro. A Mitropa Cup, uma competição inspirada na Copa Challenge, foi criada em 1927, uma ideia do austríaco Hugo Meisl, e foi disputada entre clubes da Europa Central. Em 1930, a Coupe des Nations, a primeira tentativa de criar uma copa para clubes campeões nacionais da Europa, foi jogada e organizada pelo clube suíço Servette. Realizada em Genebra, reuniu dez campeões de todo o continente. O torneio foi conquistado pela ?jpest da Hungria. As nações latino-européias se uniram para formar a Copa Latina em 1949. Até que finalmente em 1955 foi criado uma nova competição, que viria a ser a principal competição de clubes da Europa. A Taça dos Clubes Campeões Europeus (português europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro) foi inspirada no Cam', '1955', 'O torneio começa com uma fase de grupos de 32 equipes, divididas em oito grupos. Os grupos s?o definidos atrav?s de sorteio, sendo que equipes do mesmo pa?s n?o podem cair em grupos iguais. Cada equipe se encontra com os outros em sua casa e fora em um formato de ida e volta. A equipe vencedora e segundo colocado de cada grupo passam para a pr?xima rodada. A equipe que fica na terceira coloca??o entra na Liga Europa da UEFA.  Para este est?gio, a equipe vencedora de um grupo joga contra os vice-campe?es de outro grupo, e os times da mesma associa??o podem se enfrentar um contra o outro. A partir das quartas de final, o sorteio ? inteiramente aleat?rio, sem prote??o de associa??o. O torneio usa a regra do gol fora de casa: se a pontua??o agregada dos dois jogos estiver empatada, ent?o a equipe que marcou mais golos no est?dio do seu oponente avan?a.  A fase de grupos ocorre de setembro a dezembro, enquanto o mata-mata come?a em fevereiro. O sistema de mata-mata tamb?m ? de ida e volta, ', '-', 1, 'Champions League', '../../assets/images/champions-league.jpg'),
 (7, 'Superliga Brasileira de Voleibol Masculino ? o \"nome-fantasia\" da principal divis?o do Campeonato Brasileiro de Voleibol. A denomina??o \"S?rie A\" passou a ser utilizada a partir da temporada 2011/2012, na qual foi criada a S?rie B. Todos os campe?es anteriores da Superliga s?o reconhecidos como campe?es brasileiros de voleibol, assim como todos os campe?es da S?rie A desta temporada em diante. O torneio ? organizado anualmente pela Confedera??o Brasileira de Voleibol (CBV) e d? acesso ao seu campe?o ao Campeonato Sul-Americano de Clubes. Os dois ?ltimos colocados s?o rebaixados ? S?rie B na temporada seguinte.', '2011', 'A forma de disputa tem sido com uma fase classificat?ria em pontos corridos, turno e returno, quartas-de-final definidas em s?rie melhor-de-tr?s, semifinais em melhor-de-cinco e final em jogo ?nico.  O campe?o ganha o direito de disputar o Campeonato Sul-Americano de Clubes.', 'Brasil', 3, 'Superliga Masculina', '../../assets/images/superliga-de-volei-sky.jpg');
 
 -- --------------------------------------------------------
@@ -477,13 +546,13 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`email`, `senha`, `id_usuario`, `nome_usuario`, `tipo_usuario_id_tipo_usuario`, `verificado`, `id_pass`) VALUES
-('email@email.com', '123', 102, 'Jefferson Chaves', 2, 1, '0'),
-('suli@suli.suli', 'minhasenha', 103, 'Su', 1, NULL, '0'),
 ('vini123@gmail.com', '$2y$10$D/OJZkHv4gQZPY.xl6mzfO5a2noZ9hFYeHUn1OFZ/345ppy90Q86O', 104, 'vini', 2, NULL, '0'),
-('joaovitorjec@gmail.com', '$2y$10$ov2dgwhND0ZQMud30T9pEuEFDZ.UCDs7dlKAOLuQNEFdKlTqy8X9q', 105, 'joao', 2, NULL, '0'),
 ('senha@senha', '$2y$10$QqT8yVK3wV1Av/AcyJrkQObWSDrckKKbNzv5fq49ZX6UCQxWkUEd2', 106, 'Russo', 2, NULL, '0'),
-('123@123', '$2y$10$XVw9lnZqrjuQF0fnLzCp0ex8dyLylvkm5ocgD39ChlOj2YBjlwvqS', 107, 'asda', 1, NULL, '0'),
-('erkmann08@gmail.com', '$2y$10$bGrqauBq3UptAW.nw8m7Zu8ktlIZdul.t0T8mHawcxewDA3HWojBa', 115, 'Mateus', 1, 0, '17712341055bc2bf995428b');
+('erkmann08@gmail.com', '$2y$10$cpmekza2oW1VDiZncm1W2uYCKzrbVwDB8jAeY0O3G7ziqc8DfWXFW', 115, 'Mateus', 1, 1, '16807408115bce23e7b6aa1'),
+('joaovitorjec@gmail.com', '$2y$10$RF9mjFcLdSQOqD5GR/mu7eoFuA0SIBBBQjkpV7wVe6d1dtXw83xKG', 116, 'Joao Vitor', 1, 1, '8245833575bc5ccd5f0923'),
+('lluizafarias@gmail.com', '$2y$10$aHapalgJ3UABvcL4jErUp.EZCnJBS5qNFBMvE04CHc0Dqlcrq8u/e', 117, 'luiza', 1, 0, ''),
+('senha@senhaa', '$2y$10$rO66KXl3N9jpJeIaswoqgucFwq5r1J/4cjywCRsnmLhos8kbo6d42', 118, 'Mateus', 1, 0, ''),
+('euak@gmail.com', '$2y$10$WupCDLzp5JpD7Z1qxFe5Tex5da/wmmC4BhrlHSMwJwgp2kLO4LWuq', 119, 'eu', 1, 0, '');
 
 --
 -- Indexes for dumped tables
@@ -611,25 +680,25 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `comentar_esportes`
 --
 ALTER TABLE `comentar_esportes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `craques`
@@ -647,25 +716,25 @@ ALTER TABLE `equipes`
 -- AUTO_INCREMENT for table `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
 
 --
 -- AUTO_INCREMENT for table `esportes`
 --
 ALTER TABLE `esportes`
-  MODIFY `id_esporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_esporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ligas`
 --
 ALTER TABLE `ligas`
-  MODIFY `id_liga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_liga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tipo_usuario`
@@ -677,7 +746,7 @@ ALTER TABLE `tipo_usuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
 -- Constraints for dumped tables
