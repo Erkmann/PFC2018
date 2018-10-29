@@ -167,7 +167,7 @@
         <div class="col-md-6 offset-md-1">
           <h3 class="display-1"><?= $liga->getNomeLiga() ?></h3>
           <p class="lead">Fundação: <?= $liga->getFundacao() ?>
-            <br>País: <?= $liga->getPais() ?></p>
+            <br>Localização: <?= $liga->getPais() ?></p>
             <?php if (isset($_SESSION) and isset($_SESSION['tipo'])){
                 echo "<a id=\"like\" class=\"btn btn-secondary\" href=\"#\">
                 <i class=\"fa fa-fw fa-thumbs-o-up\"></i>Likes <p id=\"numCurtidas\">$curtidas</p></a>";
