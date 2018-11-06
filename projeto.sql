@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 29-Out-2018 às 22:32
--- Versão do servidor: 10.1.34-MariaDB
--- PHP Version: 7.2.8
+-- Generation Time: 06-Nov-2018 às 11:15
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -347,7 +347,16 @@ INSERT INTO `equipes` (`titulos`, `id_equipe`, `fundacao`, `nome_equipe`, `numer
 ('0', 64, '2016', 'SESC-RJ', 'Rio de Janeiro, RJ.', '../../assets/images/29102018081953SESC.png'),
 ('0', 65, '2013.', 'CARAMURU-CASTRO', 'Castro, PR.', '../../assets/images/29102018082044Associação_Caramuru_Esportes_de_Castro.png'),
 ('0', 66, '2012.', 'COPEL TELECOM MARINGÁ', 'Maringá, PR.', '../../assets/images/29102018082322logo-1.png'),
-('0', 67, '2008.', 'JF VOLEI', 'Juiz de Fora, MG.', '../../assets/images/29102018082307KkL6_pAB_400x400.jpg');
+('0', 67, '2008.', 'JF VOLEI', 'Juiz de Fora, MG.', '../../assets/images/29102018082307KkL6_pAB_400x400.jpg'),
+('2 Mundiais de Clubes, 3 Champions League, 1 League Europe, 20 Campeonatos Inglês, 12 Copas da Inglaterra e 5 Copas da Liga Inglesa.', 68, '1 de Janeiro de 1878', 'Manchester United', 'Manchester, Inglaterra', '../../assets/images/30102018125047manchester-united-21-df7520066b98f4c82c15131688711093-1024-1024.jpg'),
+('3 Copas dos Alpes, 20 Campeonatos Suíços e 12 Copas da Suíça.', 69, '15 de Novembro de 1893.', 'Basel', 'Basel, Suiça', '../../assets/images/3010201812541297105f25143555abcd35bd0ebdb9a290.png'),
+('1 Copa da UEFA, 6 Campeonatos Russo e 7 Copas da Rússia', 70, '27 de Agosto de 1911', 'CSKA Moscow', 'Moscow, Rússia', '../../assets/images/30102018125600CSKA_Moscow.png'),
+('2 Champions League, 36 Campeonatos Português, 26 Taças de Portugal', 71, '28 de Fevereiro de 1904', 'Benfica', 'Lisboa, Portugal', '../../assets/images/30102018010159benfica-a9696b5bb528248b4315131687788176-1024-1024.jpg'),
+('6 Campeonatos Francês e 11 Copas da França.', 72, '12 de Agosto de 1970.', 'PSG', 'Paris, França.', '../../assets/images/30102018010454psg1-1852533775b210999a15131689596423-1024-1024.jpg'),
+('5 Champions Leagues, 3 Mundiais de Clubes, 27 Campeonatos Alemão e 18 Copas da Alemanha.', 73, '27 de Fevereiro de 1900.', 'Bayern de Munique', 'Munique, Alemanha.', '../../assets/images/30102018010937bayern-de-munique-5.jpg'),
+('1 Champions League, 48 Campeonatos Escocês e 37 Copas da Escócia.', 74, '6 de Novembro de 1888.', 'Celtic', 'Glasgow, Escócia.', '../../assets/images/301020180113140704ed835fe709d3132b.png'),
+('1 Europa League, 34 Campeonatos Belga e 9 Copas da Bélgica.', 75, '17 de Maio de 1908.', 'Anderlecht', 'Bruxelas, Bélgica.', '../../assets/images/30102018011739thumb2-anderlecht-4k-logo-jupiler-pro-league-wooden-texture.jpg'),
+('3 Campeonatos Italiano e 9 Copas da Itália.', 76, '7 de Junho de 1927.', 'A.S Roma', 'Roma, Itália.', '../../assets/images/30102018012023roma-0565748528340afd4815131686946614-1024-1024.jpg');
 
 -- --------------------------------------------------------
 
@@ -455,7 +464,16 @@ INSERT INTO `equipes_ligas` (`id_associativa`, `id_equipe`, `id_liga`) VALUES
 (123, 64, 7),
 (124, 65, 7),
 (126, 67, 7),
-(127, 66, 7);
+(127, 66, 7),
+(131, 68, 6),
+(132, 69, 6),
+(133, 70, 6),
+(134, 71, 6),
+(135, 72, 6),
+(136, 73, 6),
+(138, 74, 6),
+(139, 75, 6),
+(140, 76, 6);
 
 -- --------------------------------------------------------
 
@@ -503,7 +521,7 @@ CREATE TABLE `ligas` (
 
 INSERT INTO `ligas` (`id_liga`, `historia`, `fundacao`, `regulamento`, `pais`, `esporte_id_esporte`, `nome_liga`, `icon_liga`) VALUES
 (1, 'A história da Copa do Mundo de Futebol da FIFA se iniciou em 1928, durante um congresso da entidade, quando Jules Rimet conseguiu a aprovação para criar um torneio internacional. A primeira competição ocorreu em 1930, tendo a participação de 13 equipes convidadas, tendo o Uruguai como país-sede e como campeão.', '1930', 'A Copa do Mundo é disputada atualmente por 32 times e dividida em 8 grupos com 4 seleções cada, sendo jogo único, onde todas as equipes do grupo se enfrentam e os 2 melhores colocados se classificam para a fase de mata-mata.', 'null', 1, 'Copa do Mundo', '../../assets/images/copa.jpg'),
-(6, 'Ao longo da história, várias tentativas foram criadas para tentar iniciar um torneio que reunisse os melhores clubes europeus. O primeiro torneio pan-europeu foi o Challenge Cup , uma competição entre clubes no Império Austro-Húngaro. A Mitropa Cup, uma competição inspirada na Copa Challenge, foi criada em 1927, uma ideia do austríaco Hugo Meisl, e foi disputada entre clubes da Europa Central. Em 1930, a Coupe des Nations, a primeira tentativa de criar uma copa para clubes campeões nacionais da Europa, foi jogada e organizada pelo clube suíço Servette. Realizada em Genebra, reuniu dez campeões de todo o continente. O torneio foi conquistado pela ?jpest da Hungria. As nações latino-européias se uniram para formar a Copa Latina em 1949. Até que finalmente em 1955 foi criado uma nova competição, que viria a ser a principal competição de clubes da Europa. A Taça dos Clubes Campeões Europeus (português europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro) foi inspirada no Cam', '1955', 'O torneio começa com uma fase de grupos de 32 equipes, divididas em oito grupos. Os grupos s?o definidos atrav?s de sorteio, sendo que equipes do mesmo pa?s n?o podem cair em grupos iguais. Cada equipe se encontra com os outros em sua casa e fora em um formato de ida e volta. A equipe vencedora e segundo colocado de cada grupo passam para a pr?xima rodada. A equipe que fica na terceira coloca??o entra na Liga Europa da UEFA.  Para este est?gio, a equipe vencedora de um grupo joga contra os vice-campe?es de outro grupo, e os times da mesma associa??o podem se enfrentar um contra o outro. A partir das quartas de final, o sorteio ? inteiramente aleat?rio, sem prote??o de associa??o. O torneio usa a regra do gol fora de casa: se a pontua??o agregada dos dois jogos estiver empatada, ent?o a equipe que marcou mais golos no est?dio do seu oponente avan?a.  A fase de grupos ocorre de setembro a dezembro, enquanto o mata-mata come?a em fevereiro. O sistema de mata-mata tamb?m ? de ida e volta, ', '-', 1, 'Champions League', '../../assets/images/champions-league.jpg'),
+(6, 'Ao longo da história, várias tentativas foram criadas para tentar iniciar um torneio que reunisse os melhores clubes europeus. O primeiro torneio pan-europeu foi o Challenge Cup , uma competição entre clubes no Império Austro-Húngaro. A Mitropa Cup, uma competição inspirada na Copa Challenge, foi criada em 1927, uma ideia do austríaco Hugo Meisl, e foi disputada entre clubes da Europa Central. Em 1930, a Coupe des Nations, a primeira tentativa de criar uma copa para clubes campeões nacionais da Europa, foi jogada e organizada pelo clube suíço Servette. Realizada em Genebra, reuniu dez campeões de todo o continente. O torneio foi conquistado pela ?jpest da Hungria. As nações latino-européias se uniram para formar a Copa Latina em 1949. Até que finalmente em 1955 foi criado uma nova competição, que viria a ser a principal competição de clubes da Europa. A Taça dos Clubes Campeões Europeus (português europeu) ou Copa dos Clubes Campeões Europeus (português brasileiro) foi inspirada no Cam', '1955', 'O torneio começa com uma fase de grupos de 32 equipes, divididas em oito grupos. Os grupos s?o definidos atrav?s de sorteio, sendo que equipes do mesmo pa?s n?o podem cair em grupos iguais. Cada equipe se encontra com os outros em sua casa e fora em um formato de ida e volta. A equipe vencedora e segundo colocado de cada grupo passam para a pr?xima rodada. A equipe que fica na terceira coloca??o entra na Liga Europa da UEFA.  Para este est?gio, a equipe vencedora de um grupo joga contra os vice-campe?es de outro grupo, e os times da mesma associa??o podem se enfrentar um contra o outro. A partir das quartas de final, o sorteio ? inteiramente aleat?rio, sem prote??o de associa??o. O torneio usa a regra do gol fora de casa: se a pontua??o agregada dos dois jogos estiver empatada, ent?o a equipe que marcou mais golos no est?dio do seu oponente avan?a.  A fase de grupos ocorre de setembro a dezembro, enquanto o mata-mata come?a em fevereiro. O sistema de mata-mata tamb?m ? de ida e volta, ', 'Europa', 1, 'Champions League', '../../assets/images/champions-league.jpg'),
 (7, 'Superliga Brasileira de Voleibol Masculino ? o \"nome-fantasia\" da principal divis?o do Campeonato Brasileiro de Voleibol. A denomina??o \"S?rie A\" passou a ser utilizada a partir da temporada 2011/2012, na qual foi criada a S?rie B. Todos os campe?es anteriores da Superliga s?o reconhecidos como campe?es brasileiros de voleibol, assim como todos os campe?es da S?rie A desta temporada em diante. O torneio ? organizado anualmente pela Confedera??o Brasileira de Voleibol (CBV) e d? acesso ao seu campe?o ao Campeonato Sul-Americano de Clubes. Os dois ?ltimos colocados s?o rebaixados ? S?rie B na temporada seguinte.', '2011', 'A forma de disputa tem sido com uma fase classificat?ria em pontos corridos, turno e returno, quartas-de-final definidas em s?rie melhor-de-tr?s, semifinais em melhor-de-cinco e final em jogo ?nico.  O campe?o ganha o direito de disputar o Campeonato Sul-Americano de Clubes.', 'Brasil', 3, 'Superliga Masculina', '../../assets/images/superliga-de-volei-sky.jpg');
 
 -- --------------------------------------------------------
@@ -710,7 +728,7 @@ ALTER TABLE `craques`
 -- AUTO_INCREMENT for table `equipes`
 --
 ALTER TABLE `equipes`
-  MODIFY `id_equipe` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id_equipe` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `equipes_craques`
@@ -722,7 +740,7 @@ ALTER TABLE `equipes_craques`
 -- AUTO_INCREMENT for table `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=128;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT for table `esportes`
