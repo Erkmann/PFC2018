@@ -44,7 +44,7 @@ function naoLogado(){
 
     $c = new CrudCraques();
     $craqueA = $c->getRandomId();
-    $craque = $c->getAtleta(23);
+    $craque = $c->getAtleta($craqueA);
 
 
     include_once '../view/index.php';
