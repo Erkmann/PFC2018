@@ -109,7 +109,7 @@ class CrudLiga
     public function insertLiga(Liga $liga)
     {
         $sql = "INSERT INTO `ligas`(`id_liga`, `historia`, `fundacao`, `regulamento`, `pais`, `esporte_id_esporte`, `nome_liga`, `icon_liga`) VALUES ('{$liga->getIdLiga()}','{$liga->getHistoria()}','{$liga->getFundacao()}','{$liga->getRegulamento()}','{$liga->getPais()}','{$liga->getIdEsporte()}','{$liga->getNomeLiga()}','{$liga->getIconLiga()}')";
-        $this->conexao->exec($sql);
+        try{$this->conexao->exec($sql);}catch(Exception $e){$e->getMessage();}
 
     }
 
