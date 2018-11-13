@@ -144,10 +144,60 @@
         .chamada_comentario{
             font-family: cursive;
         }
+
+        .conteudo{
+            padding: 10px 20px 10px 20px;
+        }
+
+        .contentI{
+            //border: 0.2em solid grey;
+            margin-top: 50px;
+            box-shadow: 0px 0px 12px #888888;
+            padding: 10px 0 10px 0 ;
+            border-radius: 0.5em;
+        }
+
+        .contentB{
+            padding: 20px 0 0 0;
+            margin-bottom: 0;
+        }
+
+        .inico{
+
+            background-repeat: no-repeat;
+        }
+
+        .inico::before{
+            background: url(<?= $esporte->getIconEsporte();?>);
+            opacity:0.5;
+            position: absolute;
+        }
+
+
+        .contentI::before{
+            content: "";
+            background: url(<?= $esporte->getIconEsporte();?>);
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position:;
+            z-index: -1;
+            background-size: 100% 0%;
+            background-repeat: no-repeat;
+        }
+
+        .h1{
+            text-align: center;
+        }
+
+
+
     </style>
 </head>
 
-<body>
+<div>
   <?php
   if (isset($_SESSION)) {
       $tipo = $_SESSION['tipo'];
@@ -163,11 +213,11 @@
 
   ?>
   <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4   ">
+    <div class="container contentI">
+      <div class="row linha">
+        <div class=" col-md-6">
           <img class="d-block mx-auto img-fluid rounded-circle" style="width: 350px; height: 350px;" src="<?= $esporte->getIconEsporte();?>"> </div>
-        <div class="col-md-7 offset-md-1">
+        <div class="col-md-6">
           <h1 class="display-1 text-capitalize"><?= $esporte->getNomeEsporte()?></h1>
           <p class="lead">Número de Praticantes: <?= $esporte->getNumPraticantes(); ?></p>
             <?php if (isset($_SESSION) and isset($_SESSION['tipo'])){
@@ -191,88 +241,61 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-light">
+  </div>
+  <div class="py-3 bg-light contentB">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <div class="col-md-4">
           <a class="btn mx-5 btn-primary w-50 text-capitalize text-white text-center
-margin_vertical_1" href="#regras">Regras</a>
+" href="#regras">Regras</a>
         </div>
         <div class="col-md-4">
           <a class="btn btn-primary w-50 text-center mx-5
-margin_vertical_1" href="#historia">História</a>
+" href="#historia">História</a>
         </div>
         <div class="col-md-4">
           <a class="btn btn-primary mx-5 w-50
-margin_vertical_1" href="#ligas">Ligas</a>
+" href="#ligas">Ligas</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5">
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row contentI">
+        <div class="col-md-4 conteudo" >
           <a name="regras">
-            <h1 class="">Regras</h1>
+            <h1 class="h1">Regras</h1>
           </a>
+            <p><?= $esporte->getRegras(); ?></p>
+
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="text-dark"><?= $esporte->getRegras(); ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+
+
+
+      <div class="col-md-4 conteudo" >
           <a name="historia">
-            <h1 class="">História</h1>
+              <h1 class="h1">Historia</h1>
           </a>
-        </div>
+          <p><?= $esporte->getHistoria(); ?></p>
+
       </div>
 
-    </div>
-  </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class=""><?= $esporte->getHistoria(); ?></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+
+
+      <div class="col-md-4 conteudo" >
           <a name="ligas">
-            <h1 class="">Ligas</h1>
+              <h1 class="h1">Ligas</h1>
           </a>
-        </div>
+          <p><?php foreach ($ligass as $l):?>
+                  <a href="LigaController.php?rota=ver&id=<?= $l->getIdLiga(); ?>"><?= $l->getNomeLiga(); ?></a><br>
+              <?php endforeach;?></p>
       </div>
-    </div>
   </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class=""><?php foreach ($ligass as $l):?>
-            <a href="LigaController.php?rota=ver&id=<?= $l->getIdLiga(); ?>"><?= $l->getNomeLiga(); ?></a><br>
-            <?php endforeach;?>
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
+
+
+
   <div class="py-5">
       <div class="container">
           <div class="row">
