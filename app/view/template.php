@@ -21,13 +21,36 @@
             margin-bottom:  50px;
             //margin-right:  50px;
         }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
     </style>
 
 </head>
 <body>
+<div class="container body">
 
-<div class="container">
-    <div class="col-md-12 body">
+
+
+    <div class="col-md-12">
+       <div class="row">
+           <h1>Esporte</h1>
+       </div>
+        <div class="row">
+            <p>Data de Criacao: Ontem</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-md-12 ">
         <div class="col-md-4">
             <h1>Regras</h1>
             <h3 class="content">Uma partida de v?lei tem, normalmente, 5 sets, sem tempo definido. 1. Cada set ? terminado quando uma equipe alcan?a os 25 pontos, tendo 2 pontos de vantagem sobre a equipe advers?ria. Caso n?o tenha, o set prossegue at? que uma equipe conquiste tal vantagem. Cada time ? composto por 6 jogadores em quadra e 6 jogadores reserva. Ap?s o saque, cada time s? poder? tocar a bola tr?s vezes, sendo proibido que um jogador toque a bola duas vezes seguidas. A equipe vencedora ? aquela que ganhar o maior n?mero de sets.</h3>

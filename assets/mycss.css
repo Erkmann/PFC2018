@@ -1,4 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
+@import url('../../assets/fonts/FredokaOne-Regular.ttf');
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One");
+@import url('../../assets/fonts/AlfaSlabOne-Regular.ttf');
+
+
 .img_personalizada {
     width: 100%;
     height: 170px;
+}
+
+.curtido{
+    background-color: #12bbad ;
+}
+
+.closeico{
+    margin-left:90%;
+}
+
+.cabecalho{
+    background-color: #E4F0E4;
+    font-family:  cursive;
+    width: 100%;
+}
+
+.chamada_comentario{
+    font-family: cursive;
+}
+
+.conteudo{
+    padding: 10px 20px 10px 20px;
+}
+
+.contentI{
+    box-shadow: 0px 0px 12px #888888;
+    padding: 10px 0 10px 0 ;
+    border-radius: 0.5em;
+}
+
+.chamada_comentario{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.contentB{
+    padding: 0.6em 0 0.5em 0;
+    margin-bottom: 0;
+}
+
+.h1{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.p{
+    text-align: center;
+}
+
+#txt_comentario{
+    margin-bottom: 0.5em;
+}
+
+#exclui_comentario{
+    margin-top: 100px !important;
+}
+
+.text-hide{
+    height: 0;
+    width: 0;
+}
+
+.comentario{
+    box-shadow: 0 0 12px #888888;
+    margin-top: -0.3em;
+}
+
+.contentC{
+    padding: 10px 10px 10px 10px;
 }

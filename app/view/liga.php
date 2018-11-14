@@ -123,21 +123,68 @@
             margin-left: 90%;
         }
 
-        #linha_separa_comentarios{
-            width: 100%;
-            height: 0.3%;
-            background-color: #827674;
-        }
         .cabecalho{
             background-color: #E4F0E4;
             font-family:  cursive;
-            width: 80%;
+            width: 100%;
         }
 
         .chamada_comentario{
             font-family: cursive;
         }
 
+        .conteudo{
+            padding: 10px 20px 10px 20px;
+        }
+
+        .contentI{
+            box-shadow: 0px 0px 12px #888888;
+            padding: 10px 0 10px 0 ;
+            border-radius: 0.5em;
+        }
+
+        .contentB{
+            padding: 0.6em 0 0.5em 0;
+            margin-bottom: 0;
+        }
+
+        .h1{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .p{
+            text-align: center;
+        }
+
+        #txt_comentario{
+            margin-bottom: 0.5em;
+        }
+
+        #exclui_comentario{
+            margin-top: 100px !important;
+        }
+
+        .text-hide{
+            height: 0;
+            width: 0;
+        }
+
+        .comentario{
+            box-shadow: 0 0 12px #888888;
+            margin-top: -0.3em;
+        }
+
+        .contentC{
+            padding: 10px 10px 10px 10px;
+        }
+
+        .btns{
+            margin-top: 0.05em;
+        }
 
     </style>
 
@@ -159,13 +206,13 @@
 
 
   ?>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 ">
-          <img class="img-fluid d-block rounded-circle mx-auto" style="width: 350px; height: 350px;" src="<?= $liga->getIconLiga();?>"> </div>
-        <div class="col-md-6 offset-md-1">
-          <h3 class="display-1"><?= $liga->getNomeLiga() ?></h3>
+  <div class="py-2">
+    <div class="container inico contentI">
+      <div class="row linha">
+        <div class="col-md-6 ">
+          <img class="img-fluid d-block imagemPerfil rounded-circle mx-auto" style="width: 350px; height: 350px;" src="<?= $liga->getIconLiga();?>"> </div>
+        <div class="col-md-6">
+          <h2 class="display-1 text-capitalize"><?= $liga->getNomeLiga() ?></h2>
           <p class="lead">Fundação: <?= $liga->getFundacao() ?>
             <br>Localização: <?= $liga->getPais() ?></p>
             <?php if (isset($_SESSION) and isset($_SESSION['tipo'])){
@@ -184,157 +231,131 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-light">
+
+
+  <div class="py-1">
     <div class="container">
-      <div class="row">
+      <div class="row contentB">
           <div class="col-md-3">
-              <a class="btn btn-primary w-50 mx-5 text-center p-1
-margin_vertical_1" href="#equipes">Equipes</a>
+              <a class="btn btns btn-primary w-50 mx-5 text-center
+" href="#equipes">Equipes</a>
           </div>
         <div class="col-md-3">
-          <a class="btn btn-primary w-50 text-center p-1 mx-5
-margin_vertical_1" href="#regulamento">Regulamento</a>
+          <a class="btn btns btn-primary w-50 text-center  mx-5
+" href="#regulamento">Regulamento</a>
         </div>
         <div class="col-md-3">
-          <a class="btn btn-primary w-50 mx-5 text-center text-capitalize p-1
-margin_vertical_1" href="#historia">Historia</a>
+          <a class="btn btns btn-primary w-50 mx-5 text-center text-capitalize
+" href="#historia">Historia</a>
         </div>
           <div class="col-md-3">
-              <a class="btn btn-primary w-50 mx-5 text-center text-capitalize p-1
-margin_vertical_1" href="#esporte">Esporte</a>
+              <a class="btn btns btn-primary w-50 mx-5 text-center text-capitalize
+" href="#esporte">Esporte</a>
           </div>
       </div>
     </div>
   </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+
+    <div class="container py-2">
+
+      <div class="row contentI">
+        <div class="col-md-3 conteudo">
           <a name="equipes">
             <h1 class="">Equipes</h1>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="py-5 bg-light">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <p class=""><?php foreach ($equipes as $equipe):?>
-                          <a href="TimeController.php?rota=ver&id=<?= $equipe->getIdEquipe(); ?>"><?= $equipe->getNomeEquipe(); ?></a><br>
-                      <?php endforeach;?>
-                  </p>
-              </div>
+              <p class=""><?php foreach ($equipes as $equipe):?>
+                      <a href="TimeController.php?rota=ver&id=<?= $equipe->getIdEquipe(); ?>"><?= $equipe->getNomeEquipe(); ?></a><br>
+                  <?php endforeach;?>
+              </p>
           </div>
-      </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+
+
+        <div class="col-md-3 conteudo">
           <a name="regulamento">
             <h1 class="">Regulamento</h1>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="py-5 bg-light">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <p class=""><?= $liga->getRegulamento() ?></p>
-              </div>
+            <p class=""><?= $liga->getRegulamento() ?></p>
           </div>
-      </div>
-  </div>
 
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3 conteudo">
           <a name="historia">
             <h1 class="">História</h1>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class=""><?= $liga->getHistoria() ?> </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="py-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
+          <p class=""><?= $liga->getHistoria() ?> </p>
+      </div>
+
+
+
+              <div class="col-md-3 conteudo">
                   <a name="esporte">
                       <h1 class="">Esporte</h1>
                   </a>
+
+
+
+                  <p class="p">
+                          <a class="" href="EsporteController.php?rota=ver&id=<?= $esporte->getIdEsporte(); ?>"><?= $esporte->getNomeEsporte(); ?></a><br>
+                  </p>
+
+      </div>
+  </div>
+  </div>
+  <div class="py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 contentC contentI">
+                  <label>Deixe seu comentário</label>
+                  <input id="txt_comentario" type="text" class="form-control" placeholder="Digite seu comentário">
+                  <input type="submit" id="submit_comentario"  class="btn btn-primary">
               </div>
           </div>
       </div>
   </div>
 
-  <div class="py-5 bg-light">
+  <div class="">
       <div class="container">
           <div class="row">
-              <div class="col-md-12">
-                  <p class="">
-                          <a href="EsporteController.php?rota=ver&id=<?= $esporte->getIdEsporte(); ?>"><?= $esporte->getNomeEsporte(); ?></a><br>
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="py-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                          <label>Deixe seu comentário</label>
-                          <input id="txt_comentario" type="text" class="form-control" placeholder="Digite seu comentário">
-                          <input type="submit" id="submit_comentario"  class="btn btn-primary">
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="py-5 bg-light">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
                   <h1 class="chamada_comentario">COMENTÁRIOS</h1>
               </div>
+              <div class="col-md-4"></div>
           </div>
       </div>
   </div>
   <?php foreach ($comentariosArrayObj as $comentario): ?>
-
-  <div id = "comentarios" class="py-5">
       <div class="container">
-          <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_liga&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_liga=<?= $comentario->getIdLiga() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
-          <a id="edita_comentario" href="ComentarioController.php?rota=edita_comentario_liga&id_usuario=<?= $_SESSION['id']?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_liga=<?= $comentario->getIdLiga()?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="update_icon" src="../../assets/images/update_icon.png" width="20px"></a>
+  <div id = "comentarios" class="py-1">
+      <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 comentario">
           <div class="row">
               <div class="col-md-12">
-                  <p id="id_user_comentario" class=" lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
-                  <p id="date_comentario" class=" lead text-left">DATA: <?= $comentario->getDtComentario() ?> </p><br>
-                  <p id="text_comentario" class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
+
                   <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
                   <p id="txt_comentario_feito" class="text-hide"><?= $comentario->getTxtComentario() ?> </p>
 
+                  <p id="text_comentario" class="cabecalho lead text-left">TEXTO: <?= $comentario->getTxtComentario() ?> </p>
+
+                  <p id="id_user_comentario" class="  text-left"> <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                  <p id="date_comentario" class="  text-left"> <?= $comentario->getDtComentario() ?> </p><br>
+
+
+
+                  <div class="row py-1 col-12"><div class="col-6"><a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_liga&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_liga=<?= $comentario->getIdLiga() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
+                      </div>
+                      <div class="col-6"><a id="edita_comentario" href="ComentarioController.php?rota=edita_comentario_liga&id_usuario=<?= $_SESSION['id']?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_liga=<?= $comentario->getIdLiga()?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="update_icon" src="../../assets/images/update_icon.png" width="20px"></a>
+                      </div>
+              </div>
+          </div>
+          </div>
+              <div class="col-md-2"></div>
               </div>
           </div>
       </div>
   </div>
-  <div id="linha_separa_comentarios"></div>
 
   <?php endforeach;?>
 
@@ -347,8 +368,8 @@ margin_vertical_1" href="#esporte">Esporte</a>
           </div>
       </div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="../../assets/scripts/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 

@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="../../assets/esporte.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/mycss.css">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -126,19 +127,14 @@
             background-color: #12bbad ;
         }
 
-        #close_icon{
-            margin-left: 90%;
+        .closeico{
+            margin-left:90%;
         }
 
-        #linha_separa_comentarios{
-            width: 100%;
-            height: 0.3%;
-            background-color: #827674;
-        }
         .cabecalho{
             background-color: #E4F0E4;
             font-family:  cursive;
-            width: 80%;
+            width: 100%;
         }
 
         .chamada_comentario{
@@ -150,46 +146,57 @@
         }
 
         .contentI{
-            //border: 0.2em solid grey;
-            margin-top: 50px;
             box-shadow: 0px 0px 12px #888888;
             padding: 10px 0 10px 0 ;
             border-radius: 0.5em;
         }
 
+        .chamada_comentario{
+            text-align: center;
+            padding-bottom: 1em;
+        }
+
         .contentB{
-            padding: 20px 0 0 0;
+            padding: 0.6em 0 0.5em 0;
             margin-bottom: 0;
-        }
-
-        .inico{
-
-            background-repeat: no-repeat;
-        }
-
-        .inico::before{
-            background: url(<?= $esporte->getIconEsporte();?>);
-            opacity:0.5;
-            position: absolute;
-        }
-
-
-        .contentI::before{
-            content: "";
-            background: url(<?= $esporte->getIconEsporte();?>);
-            opacity: 0.5;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position:;
-            z-index: -1;
-            background-size: 100% 0%;
-            background-repeat: no-repeat;
         }
 
         .h1{
             text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .p{
+            text-align: center;
+        }
+
+        #txt_comentario{
+            margin-bottom: 0.5em;
+        }
+
+        #exclui_comentario{
+            margin-top: 100px !important;
+        }
+
+        .text-hide{
+            height: 0;
+            width: 0;
+        }
+
+        .comentario{
+            box-shadow: 0 0 12px #888888;
+            margin-top: -0.3em;
+        }
+
+        .contentC{
+            padding: 10px 10px 10px 10px;
+        }
+
+        .btns{
+            margin-top: 0.05em;
         }
 
 
@@ -212,24 +219,26 @@
 
 
   ?>
-  <div class="py-5">
-    <div class="container contentI">
+
+
+  <div class="py-2">
+    <div class="container inico contentI">
       <div class="row linha">
         <div class=" col-md-6">
-          <img class="d-block mx-auto img-fluid rounded-circle" style="width: 350px; height: 350px;" src="<?= $esporte->getIconEsporte();?>"> </div>
+          <img class="d-block mx-auto img-fluid imagemPerfil rounded-circle" style="width: 350px; height: 350px;" src="<?= $esporte->getIconEsporte();?>"> </div>
         <div class="col-md-6">
-          <h1 class="display-1 text-capitalize"><?= $esporte->getNomeEsporte()?></h1>
+          <h2 class="display-1 text-capitalize"><?= $esporte->getNomeEsporte()?></h2>
           <p class="lead">Número de Praticantes: <?= $esporte->getNumPraticantes(); ?></p>
             <?php if (isset($_SESSION) and isset($_SESSION['tipo'])){
-                echo "<a id=\"like\" class=\"btn btn-secondary\" href=\"#\">
+                echo "<a id=\"like\" class=\"btn btn-secondary btnLike\" href=\"#\">
                 <i class=\"fa fa-fw fa-thumbs-o-up\"></i>Likes <p id=\"numCurtidas\">$curtidas</p></a>";
             }elseif (!isset($_SESSION) or !isset($_SESSION['tipo'])){
-                echo "<a id='numCurtidasD' class=\"btn btn-secondary\" href=\"#\">
+                echo "<a id='numCurtidasD' class=\"btn btn-secondary btnLike\" href=\"#\">
                 <i class=\"fa fa-fw fa-thumbs-o-up\"></i>Likes <p id='numCurtidas'>$curtidas</p></a>";
             }
             ?>
             <p id="a" class="text-hide"><?= $_GET['id']?></p>
-            <p id="b" class="text-hide"><?= // TODO TROCAR O ID NO JQUERY
+            <p id="b" class="text-hide"><?=
                 $_SESSION['id']?></p>
             <p id="c" class="text-hide"></p>
           <div>
@@ -238,30 +247,33 @@
 
           </div>
         </div>
+
       </div>
     </div>
   </div>
-  </div>
-  <div class="py-3 bg-light contentB">
+</div>
+
+
+  <div class="py-1">
     <div class="container">
-      <div class="row ">
+      <div class="row contentB ">
         <div class="col-md-4">
-          <a class="btn mx-5 btn-primary w-50 text-capitalize text-white text-center
+          <a class=" btns btn mx-5 btn-primary w-50 text-capitalize text-white text-center
 " href="#regras">Regras</a>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-primary w-50 text-center mx-5
+          <a class="btns btn btn-primary w-50 text-center mx-5
 " href="#historia">História</a>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-primary mx-5 w-50
+          <a class="btn btns btn-primary mx-5 w-50
 " href="#ligas">Ligas</a>
         </div>
       </div>
     </div>
   </div>
 
-    <div class="container">
+    <div class="container py-2">
       <div class="row contentI">
         <div class="col-md-4 conteudo" >
           <a name="regras">
@@ -287,7 +299,7 @@
           <a name="ligas">
               <h1 class="h1">Ligas</h1>
           </a>
-          <p><?php foreach ($ligass as $l):?>
+          <p class="p"><?php foreach ($ligass as $l):?>
                   <a href="LigaController.php?rota=ver&id=<?= $l->getIdLiga(); ?>"><?= $l->getNomeLiga(); ?></a><br>
               <?php endforeach;?></p>
       </div>
@@ -297,9 +309,9 @@
 
 
   <div class="py-5">
-      <div class="container">
+      <div class="container ">
           <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-4 contentI contentC">
                   <label>Deixe seu comentário</label>
                   <input id="txt_comentario" type="text" class="form-control" placeholder="Digite seu comentário">
                   <input type="submit" id="submit_comentario"  class="btn btn-primary">
@@ -307,38 +319,44 @@
           </div>
       </div>
   </div>
-  <div class="py-5 bg-light">
-      <div class="container">
+
+  <div class="">
+      <div class="container ">
           <div class="row">
-              <div class="col-md-12">
-                  <h1 class="chamada_comentario">COMENTÁRIOS</h1>
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                  <h2 class="chamada_comentario">COMENTÁRIOS</h2>
               </div>
+              <div class="col-md-4"></div>
           </div>
       </div>
   </div>
+
+
   <?php foreach ($comentariosArrayObj as $comentario): ?>
 
-      <div id = "comentarios" class="py-5">
-          <a id="exclui_comentario" href="ComentarioController.php?rota=excluir_comentario_esporte&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a>
-          <a id="edita_comentario" href="ComentarioController.php?rota=edita_comentario_esporte&id_usuario=<?= $_SESSION['id']?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte()?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon" src="../../assets/images/update_icon.png" width="20px"></a>
-          <div class="container">
+      <div class="container">
+      <div id = "comentarios" class="py-1">
               <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8 comentario">
                       <p id="id_comentario" class="text-hide"><?= $comentario->getIdComentario() ?></p>
                       <p id="dt_comentario" class="text-hide"><?= $comentario->getDtComentario() ?></p>
                       <p id="text_comentario" class="text-hide"><?= $comentario->getTxtComentario() ?></p>
-                      <p class=" lead text-left">USUÁRIO: <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
 
-                      <p class="  lead text-left"> DATA: <?= $comentario->getDtComentario() ?></p> <br>
-                      <p class=" cabecalho lead text-left"> COMENTÁRIO: <?= $comentario->getTxtComentario() ?>
-                      </p>
+                      <p class=" cabecalho lead text-left"> COMENTÁRIO: <?= $comentario->getTxtComentario() ?></p>
 
+                      <p class="  text-left"> <?php $usuarioComentario = $crudU->getUsuario($comentario->getIdUsuario()); echo $usuarioComentario->getNomeUsuario()?></p>
+                      <p class="  text-left">  <?= $comentario->getDtComentario() ?></p> <br>
+
+                     <div class="row py-1 col-12"><div class="col-6"><a id="exclui_comentario" class="botaoC" href="ComentarioController.php?rota=excluir_comentario_esporte&id_usuario=<?= $_SESSION['id'] ?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte() ?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img class="closeico" id="close_icon" src="../../assets/images/close_icon.png" width="20px"></a></div>
+                      <div class="col-6"><a id="edita_comentario" class="botaoC" href="ComentarioController.php?rota=edita_comentario_esporte&id_usuario=<?= $_SESSION['id']?>&id_comentario=<?= $comentario->getIdComentario()?>&txt_comentario=<?= $comentario->getTxtComentario()?>&id_esporte=<?= $comentario->getIdEsporte()?>&dt_comentario=<?= $comentario->getDtComentario() ?>"><img id="close_icon"  src="../../assets/images/update_icon.png" width="20px"></a></div>
+                     </div>
                   </div>
+                  <div class="col-md-2"></div>
               </div>
-
           </div>
       </div>
-      <div id="linha_separa_comentarios"></div>
   <?php endforeach;?>
 
   <div class="text-white bg-secondary">

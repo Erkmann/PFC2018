@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
-      <change afterPath="$PROJECT_DIR$/app/view/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/atleta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/atleta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/esporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/esporte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/liga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/liga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/navLogedAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/navLogedAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/time.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mycss.css" afterDir="false" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -164,7 +169,7 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="42" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -180,7 +185,7 @@
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.34" value="3" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.40" value="1" />
@@ -202,34 +207,38 @@
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="44" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="consultasPesquisa" value="7" />
+          <entry key="css" value="8" />
           <entry key="html" value="61" />
-          <entry key="php" value="19292" />
+          <entry key="php" value="21334" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CSS" value="8" />
           <entry key="HTML" value="70" />
-          <entry key="PHP" value="19283" />
+          <entry key="PHP" value="21325" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="consultasPesquisa" value="1" />
+          <entry key="css" value="1" />
           <entry key="html" value="4" />
-          <entry key="php" value="195" />
+          <entry key="php" value="201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="HTML" value="4" />
-          <entry key="PHP" value="195" />
+          <entry key="PHP" value="201" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -245,11 +254,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="219" column="28" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="28" />
+            <state relative-caret-position="882">
+              <caret line="346" column="14" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -258,19 +267,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/template.php">
+        <entry file="file://$PROJECT_DIR$/app/view/time.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="113">
+              <caret line="340" column="18" lean-forward="true" selection-start-line="340" selection-start-column="18" selection-end-line="340" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/index.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+            <state relative-caret-position="-216">
+              <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -297,7 +306,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/crud/CrudComentarCraque.php" />
         <option value="$PROJECT_DIR$/app/view/index.html" />
         <option value="$PROJECT_DIR$/app/view/edita_comentario.html" />
         <option value="$PROJECT_DIR$/app/view/edita_comentario.php" />
@@ -333,7 +341,6 @@
         <option value="$PROJECT_DIR$/app/model/Email.php" />
         <option value="$PROJECT_DIR$/app/view/alertaECh.php" />
         <option value="$PROJECT_DIR$/app/view/navLoged.php" />
-        <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
         <option value="$PROJECT_DIR$/app/view/navUnloged.php" />
         <option value="$PROJECT_DIR$/app/view/cadastro.php" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
@@ -341,13 +348,15 @@
         <option value="$PROJECT_DIR$/app/view/alertaSql.php" />
         <option value="$PROJECT_DIR$/app/model/Dicionario.php" />
         <option value="$PROJECT_DIR$/app/controller/ComentarioController.php" />
-        <option value="$PROJECT_DIR$/app/view/time.php" />
-        <option value="$PROJECT_DIR$/app/view/atleta.php" />
-        <option value="$PROJECT_DIR$/app/view/liga.php" />
         <option value="$PROJECT_DIR$/app/controller/HomeController.php" />
         <option value="$PROJECT_DIR$/app/crud/CrudLiga.php" />
         <option value="$PROJECT_DIR$/app/view/template.php" />
+        <option value="$PROJECT_DIR$/app/view/navLogedAdmin.php" />
+        <option value="$PROJECT_DIR$/assets/mycss.css" />
+        <option value="$PROJECT_DIR$/app/view/liga.php" />
         <option value="$PROJECT_DIR$/app/view/esporte.php" />
+        <option value="$PROJECT_DIR$/app/view/time.php" />
+        <option value="$PROJECT_DIR$/app/view/atleta.php" />
       </list>
     </option>
   </component>
@@ -369,8 +378,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="y" value="-10" />
+    <option name="x" value="191" />
+    <option name="y" value="17" />
     <option name="width" value="1390" />
     <option name="height" value="790" />
   </component>
@@ -402,6 +411,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -424,37 +434,10 @@
               <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PFC2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
-              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
-              <item name="PFC2018" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -677,12 +660,13 @@
       <workItem from="1541499508675" duration="592000" />
       <workItem from="1541526866842" duration="698000" />
       <workItem from="1542104107136" duration="1760000" />
-      <workItem from="1542143856699" duration="5703000" />
+      <workItem from="1542143856699" duration="6276000" />
+      <workItem from="1542207626916" duration="10240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="517591000" />
+    <option name="totallyTimeSpent" value="528404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +681,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21677852" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21946308" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -730,13 +714,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -904,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="73" selection-start-line="2" selection-start-column="73" selection-end-line="2" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/navLoged.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1008,31 +978,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="78" column="21" selection-start-line="74" selection-start-column="15" selection-end-line="78" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/crud/CrudLiga.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="93" column="66" selection-start-line="93" selection-start-column="66" selection-end-line="93" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1052,25 +1001,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        <state relative-caret-position="1332">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="432">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/navLogedAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-791">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/liga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="232" column="8" lean-forward="true" selection-start-line="232" selection-start-column="8" selection-end-line="232" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="219" column="28" selection-start-line="219" selection-start-column="28" selection-end-line="219" selection-end-column="28" />
+        <state relative-caret-position="882">
+          <caret line="346" column="14" selection-start-line="346" selection-start-column="14" selection-end-line="346" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="340" column="18" lean-forward="true" selection-start-line="340" selection-start-column="18" selection-end-line="340" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/atleta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
         </state>
       </provider>
     </entry>
