@@ -23,24 +23,18 @@ function cadastrar(){
     $usuario = $d->verificaInput($_POST['usuario']);
     $senha = $d->verificaInput($_POST['senha']);
     $email = $d->verificaInput($_POST['email']);
-
     if ($email == false OR $senha == false OR $usuario == false){
         include_once '../view/alertaSql.php';
         die();
     }
-
     $usuario = new Usuario($usuario,$senha, $email);
     $crudUsuario = new CrudUsuario();
     $crudUsuario->cadastrarUsuario($usuario);
-
     $id = $crudUsuario->getId($email, $senha);
-
     $subject = 'Email de Confirmacao!';
     $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
-
     $emailS = new Email($email, $subject, $message);
     $emailS->sendEmail();
-
     include_once '../view/alertaV.php';
 }
 

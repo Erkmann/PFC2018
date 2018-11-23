@@ -38,8 +38,8 @@ elseif(isset($_SESSION) AND $tipo == '2'){
                         <label>Fundação</label>
                         <input type="text" class="form-control" value="<?= $equipe->getFundacao() ?>" placeholder="Fundacao" name="fundacao"> </div>
                     <div class="form-group">
-                        <label>Numero de Torcedores</label>
-                        <input type="text" class="form-control" value="<?= $equipe->getNumeroTorcedores() ?>" placeholder="Numero de Torcedores" name="num_torcedores"> </div>
+                        <label>Localização</label>
+                        <input type="text" class="form-control" value="<?= $equipe->getNumeroTorcedores() ?>" placeholder="Localização" name="num_torcedores"> </div>
                     <div class="form-group">
                         <label>Títulos</label>
                         <input type="text" class="form-control" value="<?= $equipe->getTitulos() ?>" placeholder="Titulos" name="titulos"> </div>
