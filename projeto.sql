@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 23-Nov-2018 às 14:36
--- Versão do servidor: 10.1.35-MariaDB
--- versão do PHP: 7.2.9
+-- Generation Time: 25-Nov-2018 às 00:31
+-- Versão do servidor: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,20 +36,6 @@ CREATE TABLE `comentar_craques` (
   `dt_comentario` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Extraindo dados da tabela `comentar_craques`
---
-
-INSERT INTO `comentar_craques` (`id_comentario`, `id_usuario`, `id_craques`, `txt_comentario`, `dt_comentario`) VALUES
-(4, 115, 6, 'Pelé > Maradona', '2018-10-14 14:14:05'),
-(5, 115, 23, 'Pelé >>>>> Abismo >>>> Maradona', '2018-10-15 22:44:21'),
-(6, 115, 6, 'e123', '2018-10-16 11:22:52'),
-(7, 115, 6, 'sdasd', '2018-10-16 11:22:55'),
-(8, 115, 6, 'sdasasd', '2018-10-16 11:22:57'),
-(9, 115, 6, '331123', '2018-10-16 11:22:59'),
-(10, 106, 3, '', '2018-10-23 17:03:50'),
-(11, 106, 6, 'a', '2018-10-23 17:05:19');
-
 -- --------------------------------------------------------
 
 --
@@ -63,20 +49,6 @@ CREATE TABLE `comentar_equipes` (
   `txt_comentario` text CHARACTER SET utf8 NOT NULL,
   `dt_comentario` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `comentar_equipes`
---
-
-INSERT INTO `comentar_equipes` (`id_comentario`, `id_equipe`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(3, 18, 115, 'Melhor Seleção do mundo   ', '2018-10-14 14:15:02'),
-(4, 18, 115, 'asdasd', '2018-10-16 11:21:42'),
-(5, 18, 115, 'dsasdsasda', '2018-10-16 11:21:46'),
-(7, 36, 115, 'nf', '2018-10-17 19:56:46'),
-(8, 27, 115, 'zuado', '2018-10-22 19:33:06'),
-(9, 19, 106, '', '2018-10-23 17:01:45'),
-(10, 18, 106, 'a', '2018-10-23 17:04:08'),
-(11, 18, 106, 'a', '2018-10-23 17:05:04');
 
 -- --------------------------------------------------------
 
@@ -97,20 +69,7 @@ CREATE TABLE `comentar_esportes` (
 --
 
 INSERT INTO `comentar_esportes` (`id_comentario`, `id_esporte`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(27, 3, 104, 'topper', '2018-08-10 17:44:33'),
-(29, 1, 106, '  321', '2018-10-14 00:10:59'),
-(30, 1, 115, 'alow!@#', '2018-10-14 14:01:22'),
-(34, 3, 115, '123', '2018-10-16 19:45:03'),
-(37, 3, 115, 'gfhgcfhfgh', '2018-10-17 19:35:25'),
-(38, 3, 115, 'ghfghfgh', '2018-10-17 19:35:30'),
-(39, 3, 115, '<', '2018-10-17 19:36:27'),
-(40, 1, 115, 'a', '2018-10-23 16:20:47'),
-(41, 1, 115, 'b', '2018-10-23 16:20:50'),
-(42, 1, 115, 'c', '2018-10-23 16:20:52'),
-(43, 1, 115, 'd', '2018-10-23 16:20:54'),
-(44, 1, 106, 'q', '2018-10-23 16:53:31'),
-(45, 3, 106, 'mitástico', '2018-10-23 19:06:07'),
-(46, 5, 106, 'opa', '2018-11-20 10:45:49');
+(49, 1, 146, '123', '2018-11-24 23:30:07');
 
 -- --------------------------------------------------------
 
@@ -125,28 +84,6 @@ CREATE TABLE `comentar_liga` (
   `txt_comentario` text CHARACTER SET utf8 NOT NULL,
   `dt_comentario` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `comentar_liga`
---
-
-INSERT INTO `comentar_liga` (`id_comentario`, `id_liga`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
-(31, 1, 115, 'alow', '2018-10-14 13:40:44'),
-(32, 1, 115, 'ewqqwe1234', '2018-10-14 14:14:24'),
-(33, 1, 115, 'testando o ordenamento com id!', '2018-10-14 13:46:28'),
-(34, 1, 115, 'testando Denovo', '2018-10-14 14:01:01'),
-(35, 1, 115, 'alow123', '2018-10-16 11:21:06'),
-(36, 1, 115, '456654', '2018-10-16 11:21:12'),
-(37, 7, 115, 'a', '2018-10-16 19:36:04'),
-(38, 7, 115, 'b', '2018-10-16 19:36:18'),
-(40, 7, 115, 'b', '2018-10-23 16:21:46'),
-(41, 1, 115, 'a', '2018-10-22 19:32:19'),
-(42, 1, 115, 'porcaria', '2018-10-22 19:32:27'),
-(43, 1, 115, 'zuado', '2018-10-22 19:32:47'),
-(45, 7, 106, 'a', '2018-10-23 16:22:22'),
-(46, 1, 106, '1', '2018-10-23 16:59:18'),
-(47, 1, 106, 'a', '2018-10-23 17:05:34'),
-(48, 9, 106, 'oi', '2018-11-20 10:45:24');
 
 -- --------------------------------------------------------
 
@@ -205,7 +142,7 @@ INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titu
 (38, 'LeBron James', '-', '30 de Dezembro de 1984', '3 NBAs e 2 Olimpíadas', '-', '../../assets/images/20112018065827lebron-james-nba-finals-miami-heat-san-antonio-spurs2.jpg', 0),
 (39, 'Magic Johnson', '-', '14 de Agosto de 1959', '1 NBAs e 1 Olimpíada', '-', '../../assets/images/20112018065959GettyImages-242793.0.jpg', 0),
 (40, 'Larry Bird', '-', '7 de Dezembro de 1957', '3 NBAs e 1 Olimpíada.', '-', '../../assets/images/20112018070117zlarry.jpeg', 0),
-(41, 'Alessandro Rosa Vieira (FALCÃO)', '', '8 de Junho 1977', '1 Mundial de Clubes, 5 Libertadores, 9 Ligas Futsal, 7 Taças Brasil, 2 Copas do Mundo e 5 Copas América.', '', '../../assets/images/20112018070721156382619 (1).jpg', 0),
+(41, 'Alessandro Rosa Vieira (FALCÃO)', '-', '8 de Junho 1977', '1 Mundial de Clubes, 5 Libertadores, 9 Ligas Futsal, 7 Taças Brasil, 2 Copas do Mundo e 5 Copas América.', '-', '../../assets/images/20112018070721156382619 (1).jpg', 0),
 (42, 'Lenísio Teixeira Júnior.', '', '23 de Outubro de 1976', '1 Mundial de Clubes, 3 Ligas Futsal e 1 Copa do Mundo', '', '../../assets/images/20112018070932lenisio-1-credito-muriel-gomes-correio-de-uberlandia.jpg', 0),
 (43, 'Carlos Roberto Castro (CHOCO)', '', '12 de Junho de 1971', '1 Copa do Mundo', '', '../../assets/images/20112018071528hqdefault.jpg', 0),
 (44, 'Manoel Tobias', '', '19 de Abril de 1971', '2 Copas do Mundo e 7 Copas América', '', '../../assets/images/20112018072058manoel-tobias-vibra-com-gol-marcado-pela-selecao-brasileira-1292619695435_1024x768.jpg', 0),
@@ -224,15 +161,6 @@ CREATE TABLE `curtir_craques` (
   `curtir` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Extraindo dados da tabela `curtir_craques`
---
-
-INSERT INTO `curtir_craques` (`id_usuario`, `id_craques`, `dt_curtir`, `curtir`) VALUES
-(115, 6, '2018-10-16 11:24:19', 1),
-(115, 7, '2018-10-22 19:30:47', 1),
-(106, 21, '2018-11-06 18:14:30', 1);
-
 -- --------------------------------------------------------
 
 --
@@ -245,15 +173,6 @@ CREATE TABLE `curtir_equipe` (
   `dt_curtir` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `curtir` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `curtir_equipe`
---
-
-INSERT INTO `curtir_equipe` (`id_equipe`, `id_usuario`, `dt_curtir`, `curtir`) VALUES
-(18, 115, '2018-10-16 11:24:09', 1),
-(36, 115, '2018-10-17 19:55:57', 1),
-(27, 115, '2018-10-22 19:33:12', 1);
 
 -- --------------------------------------------------------
 
@@ -268,14 +187,6 @@ CREATE TABLE `curtir_esportes` (
   `dt_curtir` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Extraindo dados da tabela `curtir_esportes`
---
-
-INSERT INTO `curtir_esportes` (`id_esporte`, `id_usuario`, `curtir`, `dt_curtir`) VALUES
-(1, 117, 1, '2018-10-17 19:59:32'),
-(1, 115, 1, '2018-10-22 19:30:32');
-
 -- --------------------------------------------------------
 
 --
@@ -288,15 +199,6 @@ CREATE TABLE `curtir_ligas` (
   `curtir` tinyint(1) NOT NULL,
   `id_liga` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Extraindo dados da tabela `curtir_ligas`
---
-
-INSERT INTO `curtir_ligas` (`id_usuario`, `dt_curtir`, `curtir`, `id_liga`) VALUES
-(104, '2018-08-10 17:44:51', 1, 7),
-(106, '2018-08-14 19:30:43', 1, 1),
-(115, '2018-10-16 11:23:37', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -476,10 +378,11 @@ INSERT INTO `equipes_craques` (`id_equipe`, `id_craques`, `id_associativa`) VALU
 (104, 38, 89),
 (109, 39, 90),
 (82, 40, 91),
-(121, 41, 92),
 (121, 42, 93),
 (112, 43, 96),
-(122, 43, 97);
+(122, 43, 97),
+(121, 41, 98),
+(124, 41, 99);
 
 -- --------------------------------------------------------
 
@@ -698,31 +601,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`email`, `senha`, `id_usuario`, `nome_usuario`, `tipo_usuario_id_tipo_usuario`, `verificado`, `id_pass`) VALUES
-('vini123@gmail.com', '$2y$10$D/OJZkHv4gQZPY.xl6mzfO5a2noZ9hFYeHUn1OFZ/345ppy90Q86O', 104, 'vini', 2, NULL, '0'),
-('senha@senha', '$2y$10$QqT8yVK3wV1Av/AcyJrkQObWSDrckKKbNzv5fq49ZX6UCQxWkUEd2', 106, 'Russo', 2, NULL, '0'),
-('erkmann08@gmail.com', '$2y$10$cpmekza2oW1VDiZncm1W2uYCKzrbVwDB8jAeY0O3G7ziqc8DfWXFW', 115, 'Mateus', 1, 1, '16807408115bce23e7b6aa1'),
-('lluizafarias@gmail.com', '$2y$10$aHapalgJ3UABvcL4jErUp.EZCnJBS5qNFBMvE04CHc0Dqlcrq8u/e', 117, 'luiza', 1, 0, ''),
-('senha@senhaa', '$2y$10$rO66KXl3N9jpJeIaswoqgucFwq5r1J/4cjywCRsnmLhos8kbo6d42', 118, 'Mateus', 1, 0, ''),
-('euak@gmail.com', '$2y$10$WupCDLzp5JpD7Z1qxFe5Tex5da/wmmC4BhrlHSMwJwgp2kLO4LWuq', 119, 'eu', 1, 0, ''),
-('a@a', '$2y$10$0.MbDzrfesi1ClDUsPDjROHK13qpwRNL66MaOSUrPpteoLBjNjebK', 120, 'a', 1, 0, ''),
-('a@a', '$2y$10$yCsLfbAbatRHBwRt92H04eYpy5wUrOcUFNBpQT8rUbrXimcg6/N9K', 121, 'a', 1, 0, ''),
-('a@a', '$2y$10$lY9.UwiUfTSUf/xqGZHcb.pfhCZeZJ/4SDNvS5n7vsDYISf1tk56O', 122, 'a', 1, 0, ''),
-('b@b', '$2y$10$SxpVx1z62SBHESWr4WAqROx07puB76S00PoWSUfNIzuFOaItxhv6q', 123, 'b', 1, 0, ''),
-('c@c', '$2y$10$6WBSsNW1Lsk9OdHqn9us0uUEzHOZJvTVv9H7Aoon1qhHGZm/F/Auq', 124, 'c', 1, 0, ''),
-('d@d', '$2y$10$E0ft5jcBCHw9f6ze67ClMul0yFQzRQrTAYxurRHOjKcfAHHEwPIsi', 125, 'd', 1, 0, ''),
-('e@e', '$2y$10$uxP53vz26DUqoqIPJG0cH.w/SNgwforH/ugWqlXyHuYVlE3ezsPz6', 126, 'e', 1, 0, ''),
-('f@f', '$2y$10$znPsaVOjCeV/UEgWmnTBm.bclZaVZ1s2.DOLXnCStaKJjyzZNTGim', 127, 'f', 1, 0, ''),
-('f@f', '$2y$10$t1IlSyQO/XXwfrUOM.k2rOi84Jyf2jPuQPAc6378Qh44gM/IcM3UO', 128, 'f', 1, 0, ''),
-('f@g', '$2y$10$56Sgq.xXnHtWd.2oDTlm.ujAV8YMz7uFGsrCesZW0Z1FMA2l9PgE2', 129, 'g', 1, 0, ''),
-('g@g', '$2y$10$jewz34NmeW3LZuyRy27eCOoq3yBNkm9NiVUoWtN5PMayRmWUjI4mK', 130, 'g', 1, 0, ''),
-('g@g', '$2y$10$euiVn3j9UmBTNUeO7bj.k.Hem.gAOSH8bntcCUpcM10.K6kPZM6v6', 131, 'g', 1, 0, ''),
-('h@h', '$2y$10$Bh1SPlTulZcHnws.z3J8deaD.rhzYUjovvojbT.1ugRiAjgejvvi6', 132, 'h', 1, 0, ''),
-('h@h', '$2y$10$mM4WY8LLjRtD4CjrMoO5Lufyob/cKSUCz4rA0S8PABB6QaY9NDNri', 133, 'h', 1, 0, ''),
-('l@l', '$2y$10$e/EV6vH2zHZgrT2.G3VIjeK6.T5yh7IIbuWw855PqKiNH5cyQXPoi', 134, 'l', 1, 0, ''),
-('l@l', '$2y$10$n.MEnn25/WePjo98tRPmJeRzw3cKCM.7H86HzgVecX0bdhd9jgb.C', 135, 'l', 1, 0, ''),
-('l@l', '$2y$10$UXdSVhCRqv/t27zvFPMsvOA/o005cQHQt6.yHPVQA3RdPq697MnBq', 136, 'l', 1, 0, ''),
-('l@lm', '$2y$10$yy4pGzVKZo8zYFL5W8mkGumWENCYSlP.Q.ydL/o9MiuJHoCsSrlxe', 137, 'l', 1, 0, ''),
-('joaovitorjec@gmail.com', '$2y$10$wil2XF4sc/70J305EpAdmOnIC7S0x4hRUAzfYTmbhxQL0edB8/Do2', 138, 'joao.santos', 1, 0, '');
+('erkmann08@gmail.com', '$2y$10$kX4JZ9fXSpK5bWpmsCa1kuiOpbcr.8l3DmZxGYaizxKnL3e5SpW1q', 146, 'GME', 2, 1, '');
 
 --
 -- Indexes for dumped tables
@@ -850,25 +729,25 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `comentar_esportes`
 --
 ALTER TABLE `comentar_esportes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `craques`
@@ -886,7 +765,7 @@ ALTER TABLE `equipes`
 -- AUTO_INCREMENT for table `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT for table `equipes_ligas`
@@ -916,7 +795,7 @@ ALTER TABLE `tipo_usuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
+  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
 
 --
 -- Constraints for dumped tables

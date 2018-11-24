@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="../../assets/cadastro.css" type="text/css"> </head>
 
 <body class="">
-<nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-    <div class="container">
-        <a class="navbar-brand" href="index.php">TCC</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fa d-inline fa-lg fa-envelope-o"></i> Contato</a>
-                </li>
-            </ul>
-            <a class="btn navbar-btn ml-2 text-white btn-secondary text-capitalize" href="login.php"><i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Login</a>
-        </div>
-    </div>
-</nav>
+<?php
+
+if (isset($_SESSION)){$tipo = $_SESSION['tipo'];}
+
+if(isset($_SESSION) AND $tipo != '2'){
+    require_once "../view/navLoged.php";
+}
+elseif (!isset($_SESSION)){
+    require_once "../view/navUnloged.php";
+}
+elseif(isset($_SESSION) AND $tipo == '2'){
+    require_once "../view/navLogedAdmin.php";
+}?>
+
 <div class="py-5">
     <div class="container">
         <div class="row">

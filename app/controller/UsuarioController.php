@@ -29,7 +29,10 @@ function cadastrar(){
     }
     $usuario = new Usuario($usuario,$senha, $email);
     $crudUsuario = new CrudUsuario();
-    $crudUsuario->cadastrarUsuario($usuario);
+    $crud = $crudUsuario->cadastrarUsuario($usuario);
+    if ($crud == false){
+        die();
+    }
     $id = $crudUsuario->getId($email, $senha);
     $subject = 'Email de Confirmacao!';
     $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
@@ -130,7 +133,7 @@ function attSenha($senha, $id){
 
     $c = new CrudUsuario();
     $c->updateSenha($senha,$id);
-    header('location: HomeController.php');
+    header('location: HomeController.php?rota=logado');
 }
 
 function reeenviarEmailConfirmacao($id, $email){
@@ -353,5 +356,9 @@ elseif ($_GET['rota'] == 'pesquisa'){
         die();
     }
     pesquisa($pesquisa);
+}
+
+elseif ($_GET['rota'] == 'errroEmail'){
+    header('location: alertaController.php?rota=email');
 }
 

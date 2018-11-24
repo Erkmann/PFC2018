@@ -1,5 +1,6 @@
 <?php if(isset($_GET['erro'])){
-    require_once "../controller/alertaController.php?rota=email";
+    header('location:../controller/alertaController.php?rota=email');
+    die();
 }   ?>
 
 <!DOCTYPE html>

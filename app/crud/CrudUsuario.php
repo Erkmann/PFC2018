@@ -23,13 +23,16 @@ class CrudUsuario {
         foreach ($resultado as $r){
 
             if ($r->getEmail() == $u){
-               header('location: ../view/cadastro.php?erro=email');
+               header('location: ../controller/UsuarioController.php?rota=errroEmail');
+               return false;
             }
         }
 
         $sql = "INSERT INTO usuario (email, senha, nome_usuario, tipo_usuario_id_tipo_usuario,verificado) VALUES ('{$user->getEmail()}','{$this->criptografarPass($user->getSenhaUsuario())}','{$user->getNomeUsuario()}','{$user->getIdTipoUsuario()}', 0)";
 
         $this->conexao->exec($sql);
+
+        return true;
 
     }
 
