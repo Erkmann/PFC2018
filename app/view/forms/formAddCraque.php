@@ -64,3 +64,5 @@ elseif(isset($_SESSION) AND $tipo == '2'){
         </div>
     </div>
 </div>
+
+<?php  require_once "../view/footer.html"?>

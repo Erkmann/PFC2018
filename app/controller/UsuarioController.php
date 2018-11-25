@@ -33,12 +33,14 @@ function cadastrar(){
     if ($crud == false){
         die();
     }
+    else{
     $id = $crudUsuario->getId($email, $senha);
     $subject = 'Email de Confirmacao!';
     $message = "Para confirmar seu Email acesse: "."http://localhost/GitHub/PFC2018/app/controller/UsuarioController.php?rota=verificar&id=".$id;
     $emailS = new Email($email, $subject, $message);
     $emailS->sendEmail();
     include_once '../view/alertaV.php';
+    }
 }
 
 function formularioLogin(){
