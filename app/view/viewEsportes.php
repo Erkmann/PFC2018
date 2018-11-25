@@ -67,15 +67,8 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
         </div>
     </div>
     <div class="container" style="margin-bottom: 29%"></div>
-</div><div class="text-white bg-secondary">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-3">
-                <p class="text-center text-white">©</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <?php  require_once "../view/footer.html"?>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

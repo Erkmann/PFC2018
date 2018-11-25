@@ -151,15 +151,7 @@
     </div>
   </div>
 
-  <div class="text-white bg-secondary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <p class="text-center text-white">©</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php  require_once "../view/footer.html"?>
 
 
   <!--  //TODO Remover links na pasta ao invés da internet -->
