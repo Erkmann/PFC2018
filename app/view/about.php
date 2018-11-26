@@ -36,8 +36,10 @@ elseif(isset($_SESSION['tipo']) AND $tipo == '2'){
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-muted">O site se apresenta uma enciclopédia de forma a guiar usuários novatos na questão de informações sobre determinado esporte, liga, times e atletas. <br> No menu principal são apresentadas as 4 opções citadas acima, onde o usuário opta por sua categoria na qual deseja explorar. Além disso, o menu também sugere uma opção de cada categoria na sua parte inferior. <br>
+                <h3 class="text-muted">O site se apresenta como uma enciclopédia de forma a guiar usuários novatos na questão de informações sobre determinado esporte, liga, times e atletas. <br>
 
+                    No menu principal são apresentadas as 4 opções citadas acima, onde o usuário opta por sua categoria na qual deseja explorar. Além disso, o menu também sugere uma opção de cada categoria na sua parte inferior. <br>
+                    <br>
                     Estão disponíveis para o usuário, sobre os esportes: sua história, o número de praticantes, regras, ídolos deste esporte e ligas. <br>
 
                     Estão disponíveis para o usuário, sobre as ligas: sua história, ano de fundação, regulamento, equipes que participam, país onde é disputada, ídolos desta liga e esporte na qual ela pertence.<br>
@@ -45,7 +47,7 @@ elseif(isset($_SESSION['tipo']) AND $tipo == '2'){
                     Estão disponíveis para o usuário, sobre os times: liga que pertence, ano de fundação, títulos conquistados, localização e maior ídolo.<br>
 
                     Estão disponíveis para o usuário, sobre os atletas: ano de nascimento, ano de morte, títulos conquistados e equipes que fez parte.<br>
-
+                    <br>
                     O site possibilita, além das informações, as opções de like e comentários sobre todas as suas categorias, que ficam visíveis em suas respectivas páginas. Para essas funções estarem disponíveis para o usuário, ele deve se cadastrar e, posteriormente fazer o login, no site. Para o acesso a informação, login e cadastro não são necessários.
                 </h3>
             </div>

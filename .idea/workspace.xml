@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/settingsEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/settingsEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/formEditUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/formEditUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAddCraque.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAddCraque.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAddEquipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAddEquipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAddEsporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAddEsporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAddLiga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAddLiga.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAttCraque.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAttCraque.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAttEquipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAttEquipe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAttEsporte.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAttEsporte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view/forms/formAttLiga.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/forms/formAttLiga.php" afterDir="false" />
-    </list>
+    <list default="true" id="b5d65595-8354-407f-9446-83821aa2b0fd" name="Default" comment="a" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +160,7 @@
     <session id="-1143122311">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="45" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -226,14 +211,14 @@
           <entry key="consultasPesquisa" value="7" />
           <entry key="css" value="8" />
           <entry key="html" value="69" />
-          <entry key="php" value="21874" />
+          <entry key="php" value="21903" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="8" />
           <entry key="HTML" value="78" />
-          <entry key="PHP" value="21865" />
+          <entry key="PHP" value="21894" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
@@ -242,14 +227,14 @@
           <entry key="consultasPesquisa" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="5" />
-          <entry key="php" value="231" />
+          <entry key="php" value="241" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="5" />
-          <entry key="PHP" value="231" />
+          <entry key="PHP" value="241" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -760,12 +745,12 @@
       <workItem from="1543174774532" duration="13000" />
       <workItem from="1543174946741" duration="39000" />
       <workItem from="1543174991798" duration="999000" />
-      <workItem from="1543179504816" duration="561000" />
+      <workItem from="1543179504816" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538581000" />
+    <option name="totallyTimeSpent" value="538851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +763,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24228188" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -813,44 +797,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/consultasPesquisa">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/esportes.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudPesquisa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/ComentarLiga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/crud/CrudComentarLiga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/alertaEV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/alertaECh.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -962,20 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/editar.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/formEditUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1011,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttEquipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -1133,11 +1062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttLiga.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-751" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/esporte.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1145,13 +1069,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddCraque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddEquipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAddLiga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttCraque.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttEquipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="84" column="43" selection-start-line="84" selection-start-column="43" selection-end-line="84" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttEsporte.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/forms/formAttLiga.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/editar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
-          <caret line="209" column="32" selection-start-line="209" selection-start-column="32" selection-end-line="209" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="209" selection-start-line="209" selection-end-line="209" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/formEditUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
         </state>
       </provider>
     </entry>
