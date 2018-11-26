@@ -64,5 +64,7 @@ elseif(isset($_SESSION) AND $tipo == '2'){
         </div>
     </div>
 </div>
-
+    <div class="container" style="margin-bottom: 15em"></div>
 <?php  require_once "../view/footer.html"?>
+</body>
+</html>

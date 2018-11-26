@@ -66,7 +66,8 @@ elseif(isset($_SESSION) AND $_SESSION['tipo'] == '2'){
             </div>
         </div>
     </div>
-    <div class="container" style="margin-bottom: 29%"></div>
+</div>
+    <div class="container" style="margin-bottom: 15em"></div>
     <?php  require_once "../view/footer.html"?>
 
 

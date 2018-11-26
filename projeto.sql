@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Nov-2018 às 00:31
+-- Generation Time: 26-Nov-2018 às 22:38
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -601,7 +601,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`email`, `senha`, `id_usuario`, `nome_usuario`, `tipo_usuario_id_tipo_usuario`, `verificado`, `id_pass`) VALUES
-('erkmann08@gmail.com', '$2y$10$kX4JZ9fXSpK5bWpmsCa1kuiOpbcr.8l3DmZxGYaizxKnL3e5SpW1q', 146, 'GME', 2, 1, '');
+('erkmann08@gmail.com', '$2y$10$xkUjgCUKX6qCWAFjq8AGc.d4jjva1Y8ku6pCckxz1TVCblv8Fknty', 146, 'GME Admin', 2, 1, '18088831175bfc64f8aca14');
 
 --
 -- Indexes for dumped tables
@@ -729,13 +729,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `comentar_craques`
 --
 ALTER TABLE `comentar_craques`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `comentar_equipes`
 --
 ALTER TABLE `comentar_equipes`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `comentar_esportes`
@@ -747,7 +747,7 @@ ALTER TABLE `comentar_esportes`
 -- AUTO_INCREMENT for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `craques`
@@ -777,7 +777,7 @@ ALTER TABLE `equipes_ligas`
 -- AUTO_INCREMENT for table `esportes`
 --
 ALTER TABLE `esportes`
-  MODIFY `id_esporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_esporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `ligas`
@@ -795,7 +795,7 @@ ALTER TABLE `tipo_usuario`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+  MODIFY `id_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
 
 --
 -- Constraints for dumped tables

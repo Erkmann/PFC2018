@@ -207,7 +207,7 @@ elseif(isset($_SESSION) AND $tipo == '2'){
     </div>
 </div>
 
-<div style="margin-bottom: 200px"></div>
+<div style="margin-bottom: 300px"></div>
 
 <?php  require_once "../view/footer.html"?>
 
