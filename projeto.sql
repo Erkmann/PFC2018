@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 26-Nov-2018 às 22:38
+-- Generation Time: 26-Nov-2018 às 23:40
 -- Versão do servidor: 10.1.34-MariaDB
 -- PHP Version: 7.2.8
 
@@ -85,6 +85,13 @@ CREATE TABLE `comentar_liga` (
   `dt_comentario` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `comentar_liga`
+--
+
+INSERT INTO `comentar_liga` (`id_comentario`, `id_liga`, `id_usuario`, `txt_comentario`, `dt_comentario`) VALUES
+(1, 9, 146, 'asda', '2018-11-26 22:08:11');
+
 -- --------------------------------------------------------
 
 --
@@ -107,20 +114,20 @@ CREATE TABLE `craques` (
 --
 
 INSERT INTO `craques` (`id_craques`, `nome_craque`, `morte`, `nascimento`, `titulos`, `numero_de_jogos`, `icon_craque`, `qtd_curtir`) VALUES
-(3, 'Andrey Arshavin.', '-', '29 de Maio de 1921', '1 Campeonato Russo, 1 Supercopa da R?ssia, 1 Copa da UEFA e 1 Supercopa Europeia', '75', '../../assets/images/arshavin.jpg', 0),
-(6, 'Pelé', '-', '23 de Outubro de 1940.', '10 Campeonatos Paulista, 4 Torneios Rio-S?o Paulo, 6 Campeonatos Brasileiro, 2 Libertadores, 2 Mundiais de Clubes e 3 Copas do Mundo.', '92', '../../assets/images/10082018071020pelezao.jpg', 0),
-(7, 'Hidetoshi Nakata.', '-', '22 de Janeiro de 1977.', '1 Campeonato Italiano e 1 Copa da It?lia.', '77', '../../assets/images/10082018072816nakata.jpg', 0),
+(3, 'Andrey Arshavin.', '-', '29 de Maio de 1921', '1 Campeonato Russo, 1 Supercopa da Rússia, 1 Copa da UEFA e 1 Supercopa Europeia', '75', '../../assets/images/arshavin.jpg', 0),
+(6, 'Pelé', '-', '23 de Outubro de 1940.', '10 Campeonatos Paulista, 4 Torneios Rio-São Paulo, 6 Campeonatos Brasileiro, 2 Libertadores, 2 Mundiais de Clubes e 3 Copas do Mundo.', '92', '../../assets/images/10082018071020pelezao.jpg', 0),
+(7, 'Hidetoshi Nakata.', '-', '22 de Janeiro de 1977.', '1 Campeonato Italiano e 1 Copa da Itália.', '77', '../../assets/images/10082018072816nakata.jpg', 0),
 (8, 'Hugo Sanchez.', '-', '11 de Julho de 1958.', '1 Campeonato Mexicano, 1 Copa da CONCAFAF e 1 Copa do Rei da Espanha.', '70', '../../assets/images/10082018073656hugo-sanchez.jpg', 0),
-(9, 'Jan Celeumans.', '-', '28 de Fevereiro de 1957.', '3 Campeonatos Belgas e 2 Copas da B?lgica.', '96', '../../assets/images/10082018074114Jan-Ceulemans-1.jpg', 0),
-(10, 'Park Ji-Sung.', '-', '25 de Fevereiro de 1981.', '1 Copa do Imperador do Jap?o, 2 Campeonatos Holand?s, 4 Campeonatos Ingl?s, 3 Copas da Inglaterra, 1 Champions League e 1 Mundial de Clubes.', '100', '../../assets/images/10082018074749parkji-sung3_get_30.jpg', 0),
+(9, 'Jan Celeumans.', '-', '28 de Fevereiro de 1957.', '3 Campeonatos Belgas e 2 Copas da Bélgica.', '96', '../../assets/images/10082018074114Jan-Ceulemans-1.jpg', 0),
+(10, 'Park Ji-Sung.', '-', '25 de Fevereiro de 1981.', '1 Copa do Imperador do Japão, 2 Campeonatos Holandês, 4 Campeonatos Inglês, 3 Copas da Inglaterra, 1 Champions League e 1 Mundial de Clubes.', '100', '../../assets/images/10082018074749parkji-sung3_get_30.jpg', 0),
 (11, 'Saeed Al-Owairan.', '-', '19 de Agosto de 1967.', '0', '75', '../../assets/images/10082018075500PA-289270.jpg', 0),
 (12, 'Franz Beckenbauer.', '-', '11 de Setembro de 1945.', '3 Champions League, 4 Copas da Alemanha, 5 Campeonatos Alem?o, 1 Copa do Mundo, 1 Eurocopa, 1 Campeonato Estadunidense.', '103', '../../assets/images/10082018080259franz-beckenbauer-adidas-tracksuit-2222.jpeg', 0),
 (13, 'Bobby Moore.', '-', '12 de Abril de 1941.', '2 Copas da Inglaterra e 1 Copa do Mundo.', '108', '../../assets/images/10082018080749maxresdefault-5-1024x679.jpg', 0),
 (14, 'Raul Gonzalez', '-', '27 de Junho de 1977.', '2 Mundiais de Clubes, 3 Champions League, 6 Campeonatos Espanhol.', '102', '../../assets/images/10082018085547cca4af21708a0ea9.jpg', 0),
-(15, 'Jay-Jay Okocha.', '-', '14 de Agosto de 1973.', '1 Copa das Na??es Africanas e 1 Copa da Fran?a.', '75', '../../assets/images/10082018090215Jay-Jay-Okocha.jpg', 0),
+(15, 'Jay-Jay Okocha.', '-', '14 de Agosto de 1973.', '1 Copa das Nações Africanas e 1 Copa da França.', '75', '../../assets/images/10082018090215Jay-Jay-Okocha.jpg', 0),
 (16, 'Bryan Ruiz.', '-', '18 de Agosto de 1985.', '1 Champions League da CONCAFAF, 1 Campeonato Costarriquenho, 1 Campeonato Holand?s, 1 Copa da Holanda e 1 Copa da Liga de Portugal.', '109', '../../assets/images/10082018090753Bryan+Ruiz+Scotland+Vs+Costa+Rica+International+BFmvsYgJetXl.jpg', 0),
 (17, 'Zbigniew Boniek.', '-', '3 de Mar?o de 1956.', '2 Campeonatos Polacos.', '80', '../../assets/images/10082018091431polones.jpg', 0),
-(18, 'Mohamed Salah.', '-', '15 de Junho de 1992', '1 Campeonato Sui?o, 1 Campeonato Ingl?s e 1 Copa da Inglaterra.', '57', '../../assets/images/10082018092711salah.jpg', 0),
+(18, 'Mohamed Salah.', '-', '15 de Junho de 1992', '1 Campeonato Suiço, 1 Campeonato Inglês e 1 Copa da Inglaterra.', '57', '../../assets/images/10082018092711salah.jpg', 0),
 (19, 'Gylfi Sigurdsson.', '-', '8 de Setembro de 1989.', '0', '55', '../../assets/images/10082018092257sigurdsson.jpeg', 0),
 (20, 'Vladimir Jugovic.', '-', '30 de Agosto de 1939.', '2 Campeonatos Iugosl?vio, 1 Copa da It?lia, 1 Champions League e 2 Mundiais de Clubes.', '37', '../../assets/images/10082018092600jugovic.jpg', 0),
 (21, 'Zinedine Zidane ', '-', '23 de Junho de 1972.', '2 Mundiais de Clubes, 2 Campeonatos Italianos, 1 Champions League, 1 Campeonato Espanhol, 1 Copa do Mundo e 1 Eurocopa.', '108', '../../assets/images/10082018093036zidane.JPG', 0),
@@ -747,31 +754,31 @@ ALTER TABLE `comentar_esportes`
 -- AUTO_INCREMENT for table `comentar_liga`
 --
 ALTER TABLE `comentar_liga`
-  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `craques`
 --
 ALTER TABLE `craques`
-  MODIFY `id_craques` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_craques` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `equipes`
 --
 ALTER TABLE `equipes`
-  MODIFY `id_equipe` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
+  MODIFY `id_equipe` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
 
 --
 -- AUTO_INCREMENT for table `equipes_craques`
 --
 ALTER TABLE `equipes_craques`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
 --
 -- AUTO_INCREMENT for table `equipes_ligas`
 --
 ALTER TABLE `equipes_ligas`
-  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
+  MODIFY `id_associativa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
 
 --
 -- AUTO_INCREMENT for table `esportes`
@@ -783,7 +790,7 @@ ALTER TABLE `esportes`
 -- AUTO_INCREMENT for table `ligas`
 --
 ALTER TABLE `ligas`
-  MODIFY `id_liga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_liga` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tipo_usuario`
