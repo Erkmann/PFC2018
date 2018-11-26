@@ -275,7 +275,7 @@
 
     <div class="container py-2">
       <div class="row contentI">
-        <div class="col-md-4 conteudo" >
+        <div class="col-md-12 conteudo" >
           <a name="regras">
             <h1 class="h1">Regras</h1>
           </a>
@@ -285,7 +285,7 @@
 
 
 
-      <div class="col-md-4 conteudo" >
+      <div class="col-md-6 conteudo" >
           <a name="historia">
               <h1 class="h1">Historia</h1>
           </a>
@@ -295,7 +295,7 @@
 
 
 
-      <div class="col-md-4 conteudo" >
+      <div class="col-md-6 conteudo" >
           <a name="ligas">
               <h1 class="h1">Ligas</h1>
           </a>

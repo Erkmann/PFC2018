@@ -80,16 +80,16 @@
           <h1 class="text-dark" style="font-weight: bold">Bem Vindo&nbsp;</h1>
           <p class="lead text-dark" style="font-weight: bold">Abaixo, você encontra algumas sugestões de times, esportes, ligas e jogadores da qual pode se interessar!</p>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/EsporteController.php?rota=esportes">Esportes</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/LigaController.php?rota=ligas">Ligas</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <a class="btn m-1 w-50 text-white btn-primary" style="font-weight: bold" href="../controller/TimeController.php?rota=times">Times</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <a class="btn m-1 w-50 btn-primary text-white" style="font-weight: bold" href="../controller/CraqueController.php?rota=atletas">Atletas</a>
             </div>
 
@@ -110,7 +110,7 @@
   <div class="py-5 bg-light" >
     <div class="container" style="padding-bottom: 6px; padding-top: 6px; border-spacing: 30px; background-color: #B8B8B8" >
       <div class="row">
-        <div class="col-md-3 my-1">
+        <div class="col-md-6 col-sm-6 col-lg-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $esporte->getIconEsporte(); ?>" alt="Card image cap">
             <div class="card-body">
@@ -119,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 my-1">
+        <div class="col-md-6 col-sm-6 col-lg-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $liga->getIconLiga(); ?>" alt="Card image cap">
             <div class="card-body">
@@ -129,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 my-1">
+        <div class="col-md-6 col-sm-6 col-lg-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada" src="<?= $equipe->getIconEquipe(); ?>" alt="Card image cap">
             <div class="card-body">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 my-1">
+        <div class="col-md-6 col-sm-6 col-lg-3 my-1">
           <div class="card">
             <img class="card-img-top img_personalizada " src="../../assets/images/<?= $craque->getIconCraque(); ?>" alt="Card image cap">
             <div class="card-body">

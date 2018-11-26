@@ -259,36 +259,36 @@
     <div class="container py-2">
 
       <div class="row contentI">
-        <div class="col-md-3 conteudo">
-          <a name="equipes">
-            <h1 class="">Equipes</h1>
-          </a>
-
-              <p class=""><?php foreach ($equipes as $equipe):?>
-                      <a href="TimeController.php?rota=ver&id=<?= $equipe->getIdEquipe(); ?>"><?= $equipe->getNomeEquipe(); ?></a><br>
-                  <?php endforeach;?>
-              </p>
-          </div>
 
 
-        <div class="col-md-3 conteudo">
+
+        <div class="col-md-6 conteudo">
           <a name="regulamento">
             <h1 class="">Regulamento</h1>
           </a>
             <p class=""><?= $liga->getRegulamento() ?></p>
           </div>
 
-        <div class="col-md-3 conteudo">
+        <div class="col-md-6 conteudo">
           <a name="historia">
             <h1 class="">História</h1>
           </a>
 
           <p class=""><?= $liga->getHistoria() ?> </p>
       </div>
+          <div class="col-md-6 conteudo">
+              <a name="equipes">
+                  <h1 class="">Equipes</h1>
+              </a>
+
+              <p class="text-center"><?php foreach ($equipes as $equipe):?>
+                      <a href="TimeController.php?rota=ver&id=<?= $equipe->getIdEquipe(); ?>"><?= $equipe->getNomeEquipe(); ?></a><br>
+                  <?php endforeach;?>
+              </p>
+          </div>
 
 
-
-              <div class="col-md-3 conteudo">
+              <div class="col-md-6 conteudo">
                   <a name="esporte">
                       <h1 class="">Esporte</h1>
                   </a>
