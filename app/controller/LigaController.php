@@ -55,6 +55,8 @@ if ($_GET['rota'] == 'ligas'){
 
 elseif ($_GET['rota'] == 'editar'){
 
+
+
     $l = new CrudLiga();
     $ligaV = $l->getLiga($_GET['id']);
     if ($_FILES['icone']['size'] > 0){
@@ -62,6 +64,8 @@ elseif ($_GET['rota'] == 'editar'){
     $ligaN = new Liga($_POST['nome'], $_POST['historia'], $_POST['fundacao'], $_POST['regulamento'], $_POST['pais'], $_GET['id'], $_POST['esporte'], "../../assets/images/".$nomearq);}
     else {$ligaN = new Liga($_POST['nome'], $_POST['historia'], $_POST['fundacao'], $_POST['regulamento'], $_POST['pais'], $_GET['id'], $_POST['esporte'], $ligaV->getIconLiga());}
     $l->updateLiga($ligaN);
+
+
 
     header('location: UsuarioController.php?rota=getUsers');
 }
